@@ -1,0 +1,205 @@
+:PROPERTIES:
+:ID:       b447e20e-d7be-44c5-a93b-c2d70daa2617
+:END:
+Eski_Ejder | 2023-09-07 08:18:13 UTC | #1
+
+[[https://github.com/HydraDragonAntivirus/Hydra-Dragon-Antivirus-Linux][HydraDragonAntivirus/Hydra-Dragon-Antivirus-Linux:
+Hydra Dragon Anti-virus For Linux (github.com)]] Gördüğünüz gibi
+antivirüs yaptım. Virüs araştırmacıları için açık kaynak yaptım ki
+kullanabilsinler. Rehber videosu kanalımda var.
+
+--------------
+
+Mustafa | 2023-09-07 16:47:21 UTC | #2
+
+Linux'ta Nerdeyse Virüs Yok Diye Biliyorum, O Yüzünden Antivirüs'e
+ihtiyaç yok
+
+--------------
+
+akruX | 2023-09-07 16:48:26 UTC | #3
+
+Bence bilincli bir kullanıcının antivirüse ihtiyacı yok.
+
+--------------
+
+yusufipek | 2023-09-07 17:59:22 UTC | #5
+
+[quote="Mustafa, post:2, topic:214, full:true"] Linux'ta Nerdeyse Virüs
+Yok Diye Biliyorum, O Yüzünden Antivirüs'e ihtiyaç yok [/quote]
+
+[quote="akruX, post:3, topic:214, full:true"] Bence bilincli bir
+kullanıcının antivirüse ihtiyacı yok. [/quote]
+
+Dostlar bu söyledikleriniz yarı doğru. Evet Linux'ta virüs diğer
+sistemlere göre daha az ama hiç yok değil. Linux'ta da bir sürü virüs
+var sadece sunucu tarafı daha fazla hedefleniyor.
+
+Ve evet bilinçli teknoloji tüketicisinin anti virüse ihtiyacı olmaz ama
+konuyla alakasız bir durum. Dostumuz burada yaptığı projesini paylaşmış.
+Destekleyici olup eleştiri yapılacaksa da alakalı eleştiri yapılmasında
+fayda var. :)
+
+--------------
+
+kentuckyfanclub | 2023-09-07 22:41:34 UTC | #6
+
+Düz Clam wrapperı. Olayı anlamadım, bu tam olarak neyi düzeltiyor
+tamamen Clam olmasıyla?
+
+--------------
+
+Eski_Ejder | 2023-09-08 13:18:06 UTC | #7
+
+Gerçek zamanlı web koruması ve 60 milyonluk veri tabanı var ekstra
+olarak. Diğer küçük şeyleri anlatmadım.
+
+--------------
+
+TURAN | 2023-09-08 13:29:13 UTC | #8
+
+Eline sağlık dostum gayet hoş duruyor.
+
+--------------
+
+morgan | 2023-09-08 17:41:19 UTC | #9
+
+Çoğu kişi Windows kullandığı için Linux kullanıcıları saldırıya
+öncelikli hedeflenen kişiler olmuyor. İndirdiğin uyglamalardan virüsün
+daha az olmasının sebebi uygulamaların diğer kişilerce incelenmesinden
+kaynaklı.
+
+--------------
+
+F2010furs | 2023-09-08 17:55:39 UTC | #10
+
+Özgür yazılım mıdır acaba?
+
+--------------
+
+demirdegerli | 2023-09-08 18:09:17 UTC | #11
+
+GPL lisansı göremedim, sadece açık kaynak şu an.
+
+--------------
+
+Eski_Ejder | 2023-09-08 19:32:02 UTC | #12
+
+Evet tamamen özgür ama herhangi bir lisansa bağlı değil şu an.
+İsterseniz siz ekleyebilirsiniz.
+
+--------------
+
+yusufipek | 2023-09-08 19:34:21 UTC | #13
+
+Bu doğru bir şey değil. Lisansı önden eklemenizde fayda var. Bir
+projenin ana lisansı yoksa ileride değiştirildiğinde kopyalar da ona
+uymak zorunda kalıyor. Yani özgür olduğunu iddia ediyorsanız şu an GPL
+lisansı olduğunu belirtmelisiniz.
+
+--------------
+
+d0x | 2023-09-10 06:47:46 UTC | #14
+
+Lisans niye yok efendim, hemen eklemenizi öneririm GPL 4.0 ekle hatta
+:smiley:
+
+--------------
+
+Eski_Ejder | 2023-09-10 20:08:10 UTC | #15
+
+GPL 4.0 yok ama 3.0 ekledim en altta READMe.md'de.
+
+--------------
+
+kentuckyfanclub | 2023-09-10 21:26:27 UTC | #16
+
+Bayağı efsanevi bir lisans anlayışı olmuş. Ek olarak virüs kapmamak için
+executable çalıştırmıyoruz. [[upload://8KgpU0PCn9hHxYjrqbsj67bBoaZ.png]]
+
+--------------
+
+Eski_Ejder | 2023-09-11 20:22:08 UTC | #17
+
+Orayı silmemişim pardon.
+
+--------------
+
+Eski_Ejder | 2023-09-14 17:56:00 UTC | #18
+
+Daha da gelişti. Lisans olarak en özgürünü seçtim.
+
+--------------
+
+Quitaxd | 2023-09-14 19:00:09 UTC | #19
+
+neden readmeye? direkt ekle normal.
+
+--------------
+
+Eski_Ejder | 2023-12-08 17:08:09 UTC | #20
+
+Önceki versiyonları gerçekten rezil ve çöptü. Şu an ki versiyon deli
+gibi güçlü ClamAV'ye kıyasla. ClamAV 8% bulduğu 25 ne güncel virüs
+dosyasından 100% buluyor. Fakat çok fazla yanlış pozitif var. Windows
+odaklı şu an ama Linux'da wine ile rahatlıkla çalışabilir. GPLv3
+lisansını seçtim.
+[[https://docs.clamav.net/manual/Installing/Community-projects.html][Community
+Projects - ClamAV Documentation]] ClamAV dokümasyonuna girdim. Son
+sürümünü başlıkta attığım github linkinde olacak ama daha yüklemedim
+kurulumlu halini. Kurulum dosyası ise .exe'dir. Dosyaları çıkartım
+Windows'da sonra Linux üzerinden çalıştırabilirsiniz. Diğer kapalı
+kaynak antivirüslerin aksine sonuna kadar taradığı için gayet hantal.
+Birde son sürümde yanlış pozitfleri kontrol etmedim. Deli gibi yanlış
+pozitif verebilir ondan kusura bakmayın ama ileride düzelecektir. Hantal
+olmasını sonraki sürümde optimize tarama butonu ile aşırı hantaldan
+biraz hantala düşüreceğim. Virüs bulduğunda o dosyayı taramayı bırakacak
+ve güzel bir README.md olacak ileride. Birde kendi yaptığım hantal YARA
+kuralları 60 saniye içinde bir şey bulmazsa taramayı bırakacak. Böyle
+optimize edeceğim. Şu anlık neredeyse tamamen gücüne sezgisele ve
+tersine mühendisliğe bağlı. Demo versiyonu şu anda. Şu anda olan sürümde
+gayet iyi ama bu dediklerimi yapmak kaldı. Birde 800x600 ekrana
+sığdırdım antivirüsü. Arayüze odaklanmadım. Daha çok işlevlselliğine.
+
+--------------
+
+Eski_Ejder | 2023-12-27 14:15:21 UTC | #21
+
+[[https://github.com/HydraDragonAntivirus/Xylent/tree/main][HydraDragonAntivirus/Xylent:
+A powerful antivirus built using Electron framework and python
+(github.com)]] Son kaynak kodu buradda. Xylent olarak değişti proje.
+Artık Windows'da çalışıyor ama Wien ile Linux'da çalıştırmayı
+deneyebilirsiniz. Şu an her şeyi entegre etmedim o yüzden ClamAV yok ama
+25 yeni virüsten 90%'ını buluyor. Her şeyi entegre etsem hepsini
+buluyor. YARA wrapper'ı şu an. MBR yok edince yapanı tespit etme gibi
+yaptığım şeylerin kodlarını daha sonra python'a çevireceğim. Onlar en
+sona kaldı.
+
+--------------
+
+Mertol2 | 2023-12-27 15:26:45 UTC | #22
+
+Abi iyi yapmışsın, her türlü virüsü tespit edip temizleyebiliyorsa
+güzel, bide o antivirüs programını kafasına göre oyunlarımızı silmiyecek
+şekilde ayarlarsan güzel olur ve gerektiğinde programı silmeden tamamen
+kapatmak için bir tuş koyarsanda iyi olur. Çünkü bazı antivirüs
+programları içinde virüs olmadığı halde bir kurulum işlemine engel
+olabiliyor, beni uyarsın ama ben bu programa izin ver dediğimde programı
+ellemesin. Bunlar sadece bir antivirüs programında olsa iyi olacağını
+düşündüğüm şeyler. Ellerine sağlık.
+
+--------------
+
+Eski_Ejder | 2024-01-03 12:38:54 UTC | #23
+
+Şu anlık aşırı agresif sezgiseli var. Bir sistem kurdum yanlış
+pozitifleri engellemek için fakat şu anlık başka şeyler üzerinde
+duruyorum. O yüzden sürekli temp dosyalarına virüs uyarısı gelebilir şu
+snda çalıştırılırsa. Her türlü virüsu buluyor. ClamAV kullanmıyor şu
+anlık. Onu pasife çekeceğim yani aktif koruma yapmayacak. Bütün
+sezgiselleri entegre etmedim. Yoksa daha agresif ve daha güçlü olurdu. O
+sezgiselleri şu anda paylaştım github'da. SIGMA, CAPA, IDS, SUBLIME
+sezgiselleri. Birde kendi elimle yaptığım sezgiseller var. Onları en son
+ekleyeceğim. MBR yok olunca tespit ediyor C++ dilinde.
+
+--------------

@@ -1,0 +1,107 @@
+:PROPERTIES:
+:ID:       b255afe8-4da8-428e-9216-d08ebfd244bc
+:END:
+demirdegerli | 2023-09-10 14:02:08 UTC | #1
+
+*** Windows 11 yüklerken bu ekrana geldiğimizde oturum aç diyoruz.
+:PROPERTIES:
+:CUSTOM_ID: windows-11-yüklerken-bu-ekrana-geldiğimizde-oturum-aç-diyoruz.
+:END:
+#+caption: image|690x442
+[[upload://Qd2oqYfdLXWCyWXLb44GU3v8aX.png]]
+
+*** Daha sonra e-posta adresi yerine *=no@thankyou.com=* yazıp ileri diyoruz.
+:PROPERTIES:
+:CUSTOM_ID: daha-sonra-e-posta-adresi-yerine-nothankyou.com-yazıp-ileri-diyoruz.
+:END:
+#+caption: image|690x442
+[[upload://4ukPHNQcl4q1swq0Wpvelrp3d9E.png]]
+
+*** Şifre kısmına rastgele bir şeyler yazıyoruz ve oturum aç diyoruz.
+:PROPERTIES:
+:CUSTOM_ID: şifre-kısmına-rastgele-bir-şeyler-yazıyoruz-ve-oturum-aç-diyoruz.
+:END:
+#+caption: image|690x442
+[[upload://xB7LtZBQ8xu30BZHZuVczD1eLWD.png]]
+
+*** Gelen ekranda "Eyvah, bir sorun oluştu" diyecek ama yok sayıp ileri diyoruz.
+:PROPERTIES:
+:CUSTOM_ID: gelen-ekranda-eyvah-bir-sorun-oluştu-diyecek-ama-yok-sayıp-ileri-diyoruz.
+:END:
+#+caption: image|690x442
+[[upload://3J80Dkm2PFLHO7iLNdRniXChXfV.png]]
+
+*** Sonunda yerel hesap açma ekranına geldik, konuyu beğenmeyi ve beni takip etmeyi unutmayın!
+:PROPERTIES:
+:CUSTOM_ID: sonunda-yerel-hesap-açma-ekranına-geldik-konuyu-beğenmeyi-ve-beni-takip-etmeyi-unutmayın
+:END:
+#+caption: image|690x442
+[[upload://kTPCArtzm1i0VfhlrPWJHoWaq4u.png]]
+
+--------------
+
+Kutay | 2023-09-10 13:33:34 UTC | #2
+
+Ya da Ethernet kablosunu çekebilirsiniz. Hesap açma kısmında öyle
+yapıyorum.Eğer custom ISO hazırlıyorsanız, Ntlite içerisinden
+kapatabiliyorsunuz.
+
+--------------
+
+yusufipek | 2023-09-10 14:02:24 UTC | #3
+
+Ben 11'de etherneti çektiğimde olmamıştı. :(
+
+--------------
+
+Kutay | 2023-09-10 14:04:34 UTC | #4
+
+Ethernet kablosunu çektikten sonra hesap girme kısmında ileri geri
+yaptınız mı?
+
+--------------
+
+wise | 2023-09-10 14:21:29 UTC | #5
+
+[quote="yusufipek, post:3, topic:1018, full:true"] Ben 11'de etherneti
+çektiğimde olmamıştı. :frowning: [/quote]
+
+Ethernet kablosunu çekmek veya bağlantıyı koparmak yerine çok daha basit
+bir yöntemi var. [[upload://otF9gaDXFDSFfUHFPt2BqXMHQcb.jpeg]]
+
+Ntlite'ın yaptığı şeyin temel olarak aynısı. OOBE olarak adlandırılan bu
+sistem aslında bazı sorulara hazır cevaplar verilmesini veya hazır
+kurulum ISO ları hazırlanmasını sağlıyor. Ntlite da OOBE için bazı
+girdiler ekleyerek bazı kısımları atlamayı veya olayımızda olduğu gibi
+çevrimdışı hesap açmayı mümkün kılıyor.
+[[upload://wRH4QS7jGpes6oRRTujXMnMbZb4.jpeg]]
+
+"İnternetim Yok" ekranını görmeniz gereken kısma geldiğiniz zaman eğer
+bu seçenek çıkmıyor ise =Shift+F10= tuşlarına bastığınızda konsol ekranı
+açılacaktır. Buraya **oobe\bypassnro** yazıp onayladığınız takdirde
+artık "İnternet bağlantım yok" seçeneği çıkacaktır.
+[[upload://rwJhVGZXOADGDTLnaGbSGH8pG2F.jpeg]]
+
+Böylece bir Microsoft Hesabına ihityaç duymadan ve bence daha önemlisi
+kurulum öncesi ön tanımlı Windows Driverlarını kurmadan kurulum
+yapabileceksiniz. Benim ekran kartım Windows'un driverlarında sorun
+yaşıyor mesela.
+
+Not: RAM ve CPU ihtiyaçlarını da bu tip bir yöntem (Regedit'e key
+ekleme) ile kaldırmanız mümkündür. Olur da Rufus ile ISO dosyasını
+yazdırırken unutursanız tekrar dönüp yeniden yazdırmanıza gerek yoktur.
+
+--------------
+
+yusufipek | 2023-09-10 14:41:37 UTC | #6
+
+Hatırlamıyorum uzun süre geçti aradan ama önemli değil. 😄
+
+--------------
+
+demirdegerli | 2023-09-10 14:50:02 UTC | #7
+
+Dediğiniz OOBE yöntemi daha karışık ama driver kısmında işe yarayabilir
+dediğiniz gibi.
+
+--------------

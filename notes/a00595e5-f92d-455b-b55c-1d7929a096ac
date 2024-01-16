@@ -1,0 +1,52 @@
+:PROPERTIES:
+:ID:       a00595e5-f92d-455b-b55c-1d7929a096ac
+:END:
+emirhan701 | 2023-09-08 18:14:34 UTC | #1
+
+BSD dünyasına giriş yapmayı isteyenler için kısa ve işlevli bir rehber
+hazırlamak istedim.
+
+İlk olarak herhangi bir sanal makine uygulaması seçiyoruz. Ben burada
+VirtualBox kullanmayı tercih ettiğim için
+"https://www.virtualbox.org/wiki/Downloads" adresinden VirtualBox'ı
+indiriyorum.
+
+Daha sonra "https://www.ghostbsd.org/download" adresinden GhostBSD'nin
+"iso" dosyasını indiriyoruz.
+
+Dosyaları indirdikten sonra VirtualBox Makine-Yeni seçeneğine giriyorum
+ve ayarları burada belirttiğim şekilde yapıyorum. (Bellek, İşlemci,
+Sabit disk ayarlarınızı kendi tercihinize bağlı ayarlayabilirsiniz.)
+[[upload://ssI69InQ1rbPKmqOzqS3WfYpw5s.jpeg]]
+[[upload://kTth5oVXFRW8wUiCn8vD96l4O8u.jpeg]]
+[[upload://7by9OYpbiE0avMxIeVziGTWfjnN.jpeg]]
+
+Şimdi oluşturduğum sanal makineyi başlatıyorum.
+
+Gerekli süre bir şey yapmadan bekledikten sonra live ekranı geliyor.
+Buradan Masa üstündeki Install GhostBSD yazılı ikona tıkladıktan sonra
+karşımıza kurulum ekranı geliyor.
+[[upload://yjw2yHc5yyQzNPk6F7mWBm6HySK.jpeg]]
+
+Türkçe dilini seçip next'e bastıktan sonra burada klavye olarak
+Turkish'i seçiyoruz. Bir sonraki ekranda Europe/Istanbul'u seçip next'e
+basıyoruz.
+
+Daha sonra çıkan ekranda full disk configuration diyoruz.
+
+Buradan Sanal diksimizi seçip Swap alanını ayarlıyoruz.(Tavsiye olarak
+30 gb lık alan verdiyseniz 2048 mb varsayılan swap değeri kalsın.)
+
+Sonraki ekrana da next diyip root parolamızı belirliyoruz.
+
+Diğer ekranda ise kullanıcımızın ayarlarını yapıp "Install" diyerek
+kuruluma başlıyoruz. [[upload://iOkNZLhsCV5NXSNefrbphWiaq1M.jpeg]]
+
+Kurulumdan sonra Aygıtlar sekmesinden optik sürücüyü kaldırıp sanal
+makinemizi yeniden başlatıyoruz.(Aygıtlar-Optik sürücüler)
+
+Kurulumumuz hayırlı olsun artık belirlediğiniz şifreyi girip sisteminizi
+başlatabilirsiniz. [[upload://8Sfe5CdfgF1TKHKJjAMb44rs4iZ.jpeg]]
+[[upload://5rLCe8Ui7hKpsGXXAshrEuX1WAw.jpeg]]
+
+--------------

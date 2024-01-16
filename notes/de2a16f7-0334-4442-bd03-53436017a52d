@@ -1,0 +1,117 @@
+:PROPERTIES:
+:ID:       de2a16f7-0334-4442-bd03-53436017a52d
+:END:
+omer | 2023-09-07 16:56:49 UTC | #1
+
+#+begin_quote
+/Rehber Chrome Eklentileri Kullanılarak Yazılmıştır Fakat İsterseniz
+[[https://addons.mozilla.org/tr/firefox/addon/foxified/][Foxified]] ile
+Firefox'da kullanabilirsiniz. (Opera Varsayılan Olarak Chrome
+Eklentilerini Destekliyor)/
+
+#+end_quote
+
+1. [[https://chrome.google.com/webstore/detail/fasterweb/nmgpnfccjfjhdenioncabecepjcmdnjg][FasterWeb]]
+   eklentisi sayesinde bir bağlantıya tıklamadan önce yüklenmesini
+   sağlayabilirsiniz.
+
+2. [[https://chrome.google.com/webstore/detail/speed-up-browsing/hkhnldpdljhiooeallkmlajnogjghdfb][Speed-Up
+   Browsing]] eklentisi sayesinde bir sitenin önbelleğini silme süresini
+   geciktirebilirsiniz, bu sayede o siteye her girdiğinizde önbellek
+   yüklenmek zorunda kalmaz. (Bu süreyi değiştirebiliyorsunuz)
+
+#+begin_quote
+[[upload://eKwetWihyJEmeOC4CjkLOBjglCJ.png]] /Seçenekler kısmına
+tıklarsanız gerekli menüye ulaşacaksınız./
+
+#+end_quote
+
+3. [@3] [[https://chrome.google.com/webstore/detail/memory-saver/dhnagkedjknpmhmdoaggchdefbmbeabk][Memory
+   Saver]] eklentisi sayesinde belirli sekmelerin bir süre sonra
+   uyutulmasını sağlayabilirsiniz ayrıca belirli RAM seviyesinin altına
+   inildiğinde tüm sekmeleri uykuya alabilmesini de sağlayabilirsiniz.
+   (Sabitlediğiniz sekmelerin uyutulmasını engelleyebiliyorsunuz)
+
+#+begin_quote
+[[upload://nr8ga95ibIIVRVleKq9xnRZK9ag.png]] /Seçenekler bu şekilde/
+
+#+end_quote
+
+4. [@4] *İSTEĞE BAĞLI*
+   [[https://chrome.google.com/webstore/detail/onetab/chphlpgkkbolifaimnlloiipkdnihall][OneTab]]
+   eklentisi ile açık olan tek sekmeleri bir liste olarak kaydedip
+   kapatabiliyorsunuz. Ayırca bu listeleri isimlendirebilirsiniz ve
+   istediğiniz kadar liste açabilirsiniz. Bu sayede sekmeleri kapatmadan
+   10-20 kadar sekmenizi kaydederek daha da hız kazanabilirsiniz.
+
+#+begin_quote
+[[upload://1j0UAVzbQgwGSFqm7vXG06Yl3SB.png]]
+[[upload://kfdvbqRsqgGZm4dFsbiKRICb88C.png]]
+
+#+end_quote
+
+5. [@5] *İSTEĞE BAĞLI*
+   [[https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm][uBlock
+   Origin]] eklentisi ile reklamları engelleyerek ekstra hız
+   kazanabilirsiniz. (Çoğu site artık bunları algılıyor, bunu da
+   [[https://chrome.google.com/webstore/detail/anti-adblock-detector/kjhdffcfinhkdfbbhjlfoadcdfgihmlp][belirli
+   eklentiler]] aracılığı ile engelleyebilirsiniz fakat orası size
+   kalmış)
+
+--------------
+
+akruX | 2023-09-07 17:00:12 UTC | #2
+
+chromium ve firefox tabanlı tarayıcılar desek daha güzel olur sanki,
+eline sağlık güzel rehber.
+
+--------------
+
+Mustafa | 2023-09-07 17:01:42 UTC | #3
+
+Baya Yararlı Bir Rehber Olmuş Şu Taşınma Olaylarından Sonra Denerim :+1:
+
+--------------
+
+omer | 2023-09-07 18:32:02 UTC | #4
+
+Denebilir öyle de, yardımcı olduysa ne mutlu bana :slight_smile:
+
+--------------
+
+omer | 2023-09-07 18:32:50 UTC | #5
+
+Teşekkürler hocam, daha çok insana ulaşarak daha çok insana yardım
+ettiği zaman iyice güzelleşiyor rehberler :smiley:
+
+--------------
+
+Metin | 2023-09-07 18:51:34 UTC | #6
+
+Sistemi siteleri ve içerikleri yükleme açısından hızlandırıyor gibi
+duruyor ama ramlere biraz fazla yük bindiriyor gibi olduğu için rami az
+olan arkadaşlara önermem.
+
+Ama sayfa açma konusunda efektif eklentiler.
+
+--------------
+
+Kerem | 2023-09-10 08:30:38 UTC | #7
+
+*Foxified' Firefox eklentilerini Chromium'da çalıştırmaya yaramaktadır.*
+Yani bu gönderideki Firefox ibaresini kaldırın. Zira foxified linkinde
+bulunan addon ile 3 eklentiyi de kuramadım.
+
+--------------
+
+omer | 2023-09-10 11:22:48 UTC | #8
+
+Ben kullanmıştım daha önce,
+[[https://github.com/Noitidart/Chrome-Store-Foxified/releases/tag/v2.4][şunu]]
+bir deneyin isterseniz.
+
+--------------
+
+wise | 2023-10-15 18:45:49 UTC | #10
+
+--------------

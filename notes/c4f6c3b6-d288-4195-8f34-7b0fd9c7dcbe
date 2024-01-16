@@ -1,0 +1,89 @@
+:PROPERTIES:
+:ID:       c4f6c3b6-d288-4195-8f34-7b0fd9c7dcbe
+:END:
+Woa | 2023-09-11 10:58:13 UTC | #1
+
+❓Sık sık karşılaştığım bir soru var: "500 GB Sabit Diskim var ama 465
+GB görünüyor. 35 GB nerede?" Burada rakamları örnek olarak verdim ama bu
+eksiklik her disk boyutunda yaklaşık %7 oranında görünür. Peki bunun
+nedeni nedir?
+
+🗣 Bu durumun oluşmasına sebep olan şey sabit disk üreticileri ile
+işletim sistemlerinin Megabyte'ı (MB) farklı tanımlamalarından
+kaynaklanıyor. Gelin bu aradaki farkı görelim;
+
+❌ Üreticilere göre 1 Megabyte;
+
+Depolama kapasitesi olarak kullanıldığında, 1 Megabyte (MB) = Bir milyon
+byte'a, 1 Gigabayt (GB) = 1 milyar byte'a ve 1 Terabayt (TB) = 1 trilyon
+byte'a eşittir. (Yani 1000 ve katları olarak hesaplanır)
+
+Aktarım hızı veya arayüz hızı (USB, PCI vs.) olarak kullanıldığında,
+saniye başına Megabayt (MB/s) = saniyede bir milyon byte'a, saniye
+başına megabit (Mb/s) = saniyede bir milyon bite ve saniye başına
+gigabit (Gb/s) = saniyede bir milyar bite eşittir. (Yani 1000 ve katları
+olarak hesaplanır)
+
+✅ Oysa işletim sistemlerine göre;
+
+1 Megabyte (MB) = 1.048.576 byte'a eşittir. (Yani 1024 ve katları olarak
+hesaplanır) 1 KiloByte= 1024 Byte olduğuna göre, 1 MB= 1024 KiloByte
+olduğuna göre 1 MB=1024x1024= 1.048.576 byte olur
+
+🧑‍💻 Peki gerçek boyutu nasıl hesaplayabiliriz?
+
+32 gb flash diskimiz olduğunu varsayalım bunu biz bilgisayara
+taktığımızda boyutu ne kadar göreceğiz?
+
+🪄 Kapasite x 0.93 = Gerçek Kapasite (32 Gb) x 0,93 = (29,7)
+
+Evet gördükki aslında 32 GB diye aldığımız flash belleğin gerçek boyutu
+29,7 GB 😊
+
+--------------
+
+akdeniz | 2023-09-11 13:08:35 UTC | #2
+
+Linux'ta bunun için GB ve GiB ayrımı var ve bunu seviyorum. istersen
+1,000 ve katları olarak hesaplayıp babalar gibi 500 GB diyor, istersen 2
+ve kuvvetleri olarak hesaplayıp 465 GiB diyor. Mis gibi.
+
+Edit: terimleri karıştırmışım sağ olsun [cite/t:@jomo] beni düzeltti.
+
+--------------
+
+jomo | 2023-09-11 12:45:49 UTC | #3
+
+Yanlışlık olmuş. GiB ve GB, farklı ölçü birimlerini temsil ederler. GB,
+genellikle 1000'in katları şeklinde ilerlerken, 1KiB 1024 bayt (2^10) ve
+1KB ise 1000 bayt (10^3) olarak hesaplanır. Aynı şekilde, 1MiB 1KiB'ın
+1024 katı olan 2^20 baytı temsil ederken, 1MB 1KB'ın 1000 katı olan 10^6
+baytı ifade eder.
+
+https://tr.wikipedia.org/wiki/Gibibyte
+
+--------------
+
+wise | 2023-09-11 12:56:12 UTC | #4
+
+Konuyla bağlantılı olduğu için ufak bir bilgi daha ekleme ihtiyacı
+hissediyorum. Orta veya üst düzey bir SSD/HDD kullanıyor iseniz veya
+uzun ömürlü (yüksek TBW) bir cihaza sahip iseniz bazen
+[[https://www.kingston.com/tr/blog/pc-performance/overprovisioning][Over-Provision]]
+denilen bir yöntem de kullanılabiliyor. Bu iki şekilde oluyor. 10 TB
+diye aldığınız bir disk bu hesaba göre 9,?? TB değil 6-7 TB olabiliyor.
+Kalan kısmın bozuk sektör ve diğer hatalar için revize olarak
+bekletiliyor. Bu ilk yaklaşım. İkinci ve daha doğru olan (nispeten
+pahalı) yaklaşım ise 10 TB olarak aldığınız diskin gerçekten size 10TB
+alan sunması ama aslında 15-20 TB olarak üretilmiş olması. Samsung,
+Crucial ve Sandisk gibi bazı firmalar hem bu kafa karışıklığını gidermek
+hem de vadettikleri alandan kısmamak için daha yüksek kapasiteli
+diskleri daha düşük kapasiteye OP yapıp o şekilde pazarlamaktır.
+
+--------------
+
+akdeniz | 2023-09-11 13:07:25 UTC | #5
+
+düzeltme için teşekkürler
+
+--------------

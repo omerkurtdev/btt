@@ -1,0 +1,183 @@
+:PROPERTIES:
+:ID:       ea7e6001-89ed-4aba-a42d-e8b1dccfef55
+:END:
+timucin | 2023-09-13 09:49:32 UTC | #1
+
+Merhaba arkadaşlar, öncelikle iyi forumlar. Bugün çocukluğumdan beri
+sıkça duyduğum "Program yazmak için matematik gerekir!" yalanını bu
+sektörde yıllarca freelance web geliştiriciliği yapmış ve şu an bir
+yazılım şirketinde taban programcısı olarak staj yapan biri olarak
+cevaplayacağım. İlk önce, bu bahsettiğim arkadaşların neden böyle
+dediğini anlamak için programlamanın ve algoritmanın ne olduğunu
+anlamamız gerekiyor.
+
+* Programlama
+:PROPERTIES:
+:CUSTOM_ID: programlama
+:END:
+Programlama, bilgisayarın anlayabileceği bir dilde görevleri
+gerçekleştirmesi için talimatlar verme sürecidir. Bu süreç matematik
+gerektirmez. Programlama dilleri, matematiksel bir temele dayanmazlar.
+Diller, insanların bilgisayarla iletişim kurmasını sağlamak için
+oluşturulmuştur. Bu dillerin yapıları ve sözdizimi matematikle
+alakasızdır. Bu diller, mantıklı düşünme, bir problemi tanımlama, uygun
+bir çözüm yolu oluşturma ve bu yolu adım adım uygulama yeteneğiyle
+ilgilidir. Herhangi bir matematik bilgisine ihtiyaç duymadan problemi
+anlama ve çözme becerisiyle programlama öğrenilir. Genellikle İngilizce
+temelli sözdizimleri kullanılır. Matematik, programlama için bir araç
+olabilir ancak gereklilik değildir. Programlama, tekrarladığım gibi
+mantığa dayanır. Doğru adımların belirlenmesiyle koşulların işlenmesine
+benzer temel mantıksal niteliklere dayanır. Bunun sonucunda program
+yazmak, makinenin anladığı bir dilde emir vermek demektir. Bunun
+temelinde yatan şey mantıktır ve bu programlamanın temelidir.
+
+* Algoritma
+:PROPERTIES:
+:CUSTOM_ID: algoritma
+:END:
+Algoritma, soyut bir düşünme aşamasıdır. Matematik, soyut konseptlerle
+ilgilidir ve algoritmanın temelinde yatan prensipler matematikle ilgili
+olabilir. Örneğin, bir sıralama algoritması yaptığınızda, bu
+algoritmanın çalışıp çalışmadığını test etmek için matematiksel
+kavramlar kullanırsınız. Algoritma geliştirmek, sayı teorisi ve
+kriptografi gibi matematiksel türevlerle büyük önem taşır. Özellikle
+güvenlik ile ilgili çoğu alanda, matematik algoritmanın temel taşı
+haline gelir. Algoritma geliştirmek, matematiksel düşünme ve analiz
+becerisine dayanır. Bu yüzden, algoritma üretmek ve matematik arasında
+bir bağlantı vardır.
+
+Sonuç olarak, program yazmak mantıksal düşünme ve söz diziliminden
+kaynaklı, daha azınlıkta olan İngilizceye dayanır fakat daha önce
+yapılmamış veya matematiksel algoritma gerektiren programlar genellikle
+matematiğe dayanır. Bununla birlikte, oyun geliştirmek ve elbette
+yaptığınız programın matematik ile ilgili olması da matematik
+gerektirir. Bu arkadaşların fikirlerinin çoğu, ekranda sayılar ve bir
+düzine yazı gördüğü için hiçbir şey bilmemesine rağmen yıllardır program
+yazıyormuş gibi konuştuklarından dolayı insanlara bu fikri dayatarak
+yaygınlaşmıştır. Oysaki çoğu, Boolean ve Float arasındaki farkı
+bilmeyecek kadar bilgisizlerdir.
+
+--------------
+
+sinansarikaya | 2023-09-12 23:20:35 UTC | #2
+
+Web alanında temel matematik yeterlidir. Bazen ihtiyaç duyabilyosun bu
+normal. Bunun dışında veri bilimi ve makine öğrenmesi alanında yazılımcı
+olacaksan matematiğe çok ihtiyaç duyarsın. Bu alanlarda kullanılan
+matematiğin bir kısmını saymak gerekirse örneğin cebir, geometri,
+trigonometri, istatistik ve daha fazlası kullanılıyor.
+
+--------------
+
+anon21506950 | 2023-09-13 05:49:19 UTC | #3
+
+Oyun geliştirme alanında da matematik istiyor.
+
+--------------
+
+timucin | 2023-09-13 08:23:20 UTC | #4
+
+Yazıda bahsediyorum hocam okumamışsınız.
+
+--------------
+
+Beta_alfa | 2023-09-13 09:49:52 UTC | #5
+
+Merhaba Timuçin Bey, yazdıklarınıza kısmen katılıyorum. Öncelikle
+matematik bilim dalı MEB'de öğretilmeye çalışılan müfredat ile
+sınırlanamaz. Birçok programın yazılması için üst düzey bir matematik
+bilgisine ihtiyaç yoktur. Ancak matematik zekasına sahip olmak gerekir.
+Analitik , matematiksel bir zekaya sahip değilseniz, problem çözümünde
+sorun yaşarsınız. "Program yazmak için matematik gerekir." klişesinde,
+temelde anlatılmak istenilen yukarıda belirttiğim durumdur. Bu şekilde
+bir zeka yapısına sahipseniz , matematiği çok iyi bir şekilde
+öğrenebilirsiniz. Bu sözün ülkemizde önemli bir yer etmesinin bir diğer
+nedeni de 1980'li, bilgisayarın Türkiye'de kullanılmaya başlandığı,
+yıllarda bu işi; temel bilimler alanındaki matematikçilerin ve
+fizikçilerin yüklenmesidir. İlk dönemlerde üniversitelerde bilgisayar
+mühendisliği , yazılım mühendisliği veya programlama ile ilgili bir
+bölüm olmadığı için bu alanda fizikçiler ve özellikle matematikçiler
+çalışmıştır.Ayrıca bir programı yazmak için mantık bilimi önem arz
+etmektedir. Mantık bilimi, kısmen matematiğin alt dallarından kabul
+edilmektedir.
+
+"Programlama dilleri, matematiksel bir temele dayanmazlar." bu cümleniz
+tamamen yanlıştır. Programlama dilleri kullanarak hazırladığınız bir
+programın çalıştığı platform, matematiksel (sayısal ) olarak çalışır.
+Programlama dillerinin temeli matematiktir. Özellikle programlama dili
+farklı bir mimari veya farklı bir yapı için geliştiriliyorsa; matematik
+ciddi manada ön plandadır. Mesela günümüzde bilgisayar çalışma
+sisteminde köklü devrim yapan kuantum programlama çok üst düzey
+matematik bilgisi istemektedir. (Onunda scripti mevcut.)
+
+Şu anda tüm gençlerin programlama öğrenmesini tavsiye ediyorum. Tüm
+meslekler için programlama öğretilmesi gerektiğini düşünüyorum. 2008
+yılında bilişim kariyerimi bırakmama rağmen sürekli programlamaya
+ihtiyacım oldu. İşlerimi kolaylaştırmak veya daha hızlı bir şekilde
+halletmek için sürekli program yazmaya devam ettim. Gelecek için elzem
+olduğunu düşünüyorum.
+
+Programlamaya yeni başlayanlar veya bu alanda kariyer planlayanlar için;
+1-) Matematiksel bir düşünme tarzına analitik bir zekaya sahipseniz ve
+birçok sorunu çözerken bunları kullanabiliyorsanız; birçok programı
+yazabilirsiniz. Özellikle üst seviye diller ve script diller kullanarak
+bir çok sorunu halledebilirsiniz. 2-) Yeni bir algoritma
+geliştirecekseniz ve/veya yeni geliştirilmiş bir algoritmayı
+yazılımlarınıza adapte edecekseniz, iyi bir matematik bilginiz olması
+lazım. (Okuduğunuzu anlamanız lazım. Algoritmalar genelde matematiksel
+olarak ifade edilir.) 3-) Yeni bir programlama dili yazmayı
+düşünüyorsanız veya yeni bir mimaride çalışacaksanız (İşin AR-GE
+kısmında çalışacaksanız veya işin AR-GE'sinde kariyer planlıyorsanız)
+çok çok üst düzey bir matematiksel bilgiye ihtiyacınız olacaktır.
+
+--------------
+
+safa | 2023-09-13 09:49:54 UTC | #6
+
+ah şu web developerlar :)
+
+--------------
+
+Metin | 2023-09-13 09:52:41 UTC | #7
+
+Program var program var yani, artık çoğu kütüphanede sizin yerinize
+matematik yapan fonksiyonlar, programlar var. Hatta çoğu konuda hazır
+cevaplar var internette.
+
+--------------
+
+muhammedikbalyildiz | 2023-09-13 10:12:50 UTC | #8
+
+Oyun geliştirme bazen fizik de istiyor, zor alan gerçekten
+
+--------------
+
+Enigma_mist | 2023-09-13 18:01:23 UTC | #9
+
+Hiç bu yalana denk gelmedim nedense. Bilgisayar mühendisliği vb.
+bölümlerin sayısal olması bilgisayarların matematik ile çalışmasıyla
+alakalı.
+
+--------------
+
+timucin | 2023-09-13 18:44:04 UTC | #10
+
+Değerli eleştiriniz için teşekkür ederim fakat demek istediğimi net bir
+şekilde anlamamışsınız. Dediğiniz daha önce eşi olmayan algoritmaları
+üretmek ve bazı programlar kesinlikle matematik gerektirir yazıda bundan
+bahsediyorum zaten.
+
+--------------
+
+timucin | 2023-09-15 10:32:55 UTC | #11
+
+Merhaba safa web developer değilim uzun zaman önce bıraktım şuan
+kurumsal bir şirkette otamatik kurulumlar için script yazıyorum
+eğitimimide bu yönde almaktayım zaten. Kurduğum argümanlara karşılık
+sadece "ah şu web developerlar :slight_smile:" demek yerine sende
+tecrübelerini belki o küçümsediğin web geliştiriciliği alanında yaptığım
+projeleri bu konudaki eğitim düzeyini çalıştığın kurumları daha
+sonrasında bu tecrübelerine dayanarak argümanımı eleştirmen daha uygun
+olur.
+
+--------------

@@ -1,0 +1,661 @@
+:PROPERTIES:
+:ID:       a38f0435-a7fd-4886-8492-05da01f9c789
+:END:
+akdeniz | 2023-09-07 07:00:52 UTC | #1
+
+[u]*/bu benim uzun zaman önce kendi sayfam için yazdığım bir yazıydı. şu
+anda bir tartışma başlatması ümidiyle paylaşıyorum. her şeyi bilen adam
+edasıyla yazmış olmama aldırış etmeyin, farklı fikirlere açığım.
+saygılar sevgiler <3/*[/u]
+
++++
+
+bu dünya üzerindeki hiçbir gücün bana birincil mesajlaşma uygulaması
+olarak whatsapp kullandıramayacağını söylememe gerek yoktur diye
+düşünüyorum. hatta son birkaç haftadır hiç kullanmıyorum. sildim gitti.
+gençleştim resmen, bu kadar mı fark eder?
+
+tabii whatsapp'i mahremiyet ve dijital özgürlük konusundaki
+endişelerinizden ötürü bıraktıysanız tercih edeceğiniz whatsapp
+alternatifini iyi düşünmelisiniz.
+
+özgür yazılım dünyasında da bu konuda her kafadan ayrı bir ses çıkıyor.
+[b]telegram[/b], [b]signal[/b], [b]matrix[/b], [b]xmpp[/b],
+[b]bip(:D?)[/b] ve daha niceleri... gerçi her kafadan ayrı bir sesin
+çıkması özgür yazılımın doğasında var. hepimizin kullandığı yazılımlar
+farklı ama iş mesajlaşmaya geldiğinde biraz olsun birbirimize uyum
+sağlamak zorunda kalıyoruz.
+
+ve bu yazıda ideale en yakın mesajlaşma "yolunu" arayacağız. yolunu
+diyorum çünkü sadece programlarla sınırlı değiliz. matrix ve xmpp,
+[u]bağlanmak için çok sayıda program seçeneğine sahip olduğumuz
+protokollerdir. aynı email ve irc gibi[/u]. bu durumun getirdiği
+avantajlar ve dezavantajlar var. bunları da konuşacağız.
+
+şimdi sadede gelelim...
+
+bazıları özgürlük ve mahremiyet açısından oldukça iyi olsa da istenen
+son kullanıcı deneyimini veremiyor. ben ve benim gibilerin son kullanıcı
+deneyimine pek ihtiyacı olmasa da, mesajlaşma uygulamalarını tek kişi
+kullanmadığımızdan, değerlendirme yaparken "bu uygulamanın
+misyonerliğini yapabilir miyiz?" sorusunu tekrar tekrar kendimize
+sormalıyız diye düşünüyorum.
+
+bazıları ise son kullanıcı için iyi olup mahremiyet açısından sınıfta
+kalıyor. ya da direkt özgür olmuyorlar. hangi akla hizmetse [b]bip[/b]
+diyenler vardı bi ara, hani milletçe şu whatsapp sözleşmesinin
+paranoyasını yaşadığımız dönem. gizlilik politikası whatsapp'tan farklı
+olmayan ve kapalı kaynaklı bir uygulamayı kullanmanın da ötesinde,
+hükümet tarafından desteklenen bir uygulamayı kullanmaktan bahsediyoruz.
+whatsapp denen gudubet yanında melek kalıyor. gerçi bip kullanalım
+diyenler de çoğunlukla devlet otoritesinin altında ezilmek için yanıp
+tutuşan akp'li tayfaydı. bi tık normal karşılıyorum.
+
+[b][u]telegram[/u][/b]
+
+whatsapp alternatifi dendiğinde en çok akla gelen uygulama. yiğidi öldür
+hakkını yeme, görüp görebileceğiniz en kullanışlı mesajlaşma yolu bu. bu
+konuda whatsapp'i ayrı, signal ve diğerlerini ayrı ayrı tokatlar. ama
+bizim aradığımız şey üst seviye kullanışlılık ve egzantrik özellikler
+değil. düzgün çalışsın, özgür olsun ve mahremiyeti korusun yeter.
+
+telegram tamamen özgür değil, cihazınızda çalışan uygulaması(istemcisi)
+özgür. sunucu tarafı özgür değil. bu da demektir ki isterseniz
+telegram'ın kodlarını alıp değiştirerek farklı bir telegram istemcisi
+hazırlayabilirsiniz(bkz: forkgram, telegram foss) ama [u]hazırladığınız
+bu istemci sadece telegram'ın sunucularına bağlanabilir[/u]. o sunucuya
+illa uğranacak. kaçarı yok.
+
+belirli kesimlerce telegram'ın hakkı yeniyor diye düşünüyorum.
+"[i]telegram'da uçtan uca şifreleme varsayılan değil, telegram
+kullanacağınıza whatsapp kullanın daha iyi"[/i] demenin saçma olduğu
+kanaatindeyim. telegram'da uçtan uca şifrelemenin varsayılan olarak
+gelmemesi bir eksi olsa da 'cambridge analytica' başta olmak üzere
+sayısız mahremiyet skandalının faili konumundaki facebook tarafından
+yürütülen bir uygulamadan bahsediyoruz. açıkçası facebook'un yaptığı
+şifrelemeye de güvenmiyorum. ayrıca whatsapp, sunucusundan istemcisine
+kadar kapalı kaynaklı. telegram en azından uygulamayı kapattığınızda
+arkada aleyhinizde çalışmıyor, telegram kullanımınız haricinde metaveri
+toplamıyor.
+
+telegram'ı mesajlaşma fasilitesi de olan bir sosyal ağ olarak
+düşünebiliriz. neticede internette neredeyse hiçbir mesaj şifrelenmez,
+şu an yazıyor olduğum bu yazı gibi. bu yüzden ne yaptığınızın
+bilincindeyseniz whatsapp'ı silip telegram kullanmakta bir beis
+görmüyorum.
+
+[b][i]telegram >>> whatsapp[/i][/b]
+
+[b][u]signal[/u][/b]
+
+kullanışlılık açısından whatsapp ile eşit. hatta birebir aynı.
+whatsapp'ın verdiği her şeyi veriyor, vermediği şeyleri vermiyor. mesela
+android/ios cihazınızda whatsapp yüklü değilse başka platformlardan
+giriş yapamıyorsunuz, bu whatsapp kullandığım dönemlerde sinirimi çok
+bozardı. aynı şey signal'da da var.
+
+gizlilik konusunda ise iki şey hariç kusursuz bir uygulama:
+
+1. kayıt için telefon numarası istiyor
+2. federe(dağıtık) değil, merkeziyetçi
+
+şimdi bu saydığım iki özellik de önceki uygulamalarda da olduğundan
+peşinen şunu diyelim de kafalar karışmasın.
+
+[b][i]signal >>> telegram >>> whatsapp[/i][/b]
+
+telegram'dan bile daha az metaveri toplayan signal'ın baştan aşağı her
+bileşeni özgür yazılım. sunucudan istemciye kadar. bu da demektir ki
+dilerseniz signal'ın bütün kodlarını alıp kendi mesajlaşma uygulamanızı
+oluşturabilirsiniz, signal sunucusuna da bağlanmak zorunda değilsiniz
+ancak [u]kendi sunucunuzu açarsanız sadece kendi sunucunuzdaki kişilerle
+mesajlaşabilirsiniz[/u]. yani sunucular arası iletişim yok. işte
+federasyon budur, sunucular arası iletişim.
+
+teknoloji güzel şey, baksanıza am bulduk kıllısını arıyoruz. : D ama
+böyle bir lüksümüz var. yaşasın özgür yazılım.
+
+şaka bi yana, federasyon kavramının öneminden kısaca bahsedeyim.
+
+e-posta 80'lerin başında kurulduğunda [b]compuserve[/b], [b]at&t[/b] ve
+[b]sprint[/b] gibi şirketler yalnızca aynı sistemdeki kullanıcılarla
+e-posta gönderimi yapmanıza izin veren izole edilmiş e-posta
+toplulukları kurdular. [u]e-postanızı bir servisten aldıysanız ve
+arkadaşınız başka bir servisten aldıysa birbirinize mesaj
+gönderemezdiniz[/u]. bu, temel olarak bugün anlık mesajlaşmada
+bulunduğumuz durumdur.
+
+yok yok, uzun uzun anlatıcam. yoksa rahat edemem.
+
+[b][u]nasıl özgür olunur?[/u][/b]
+
+bir piyasada tekel ya da oligopol varsa kullanıcıya geçmiş olsun. çünkü
+o piyasada istediği şekilde at koşturabilir, kullanıcıya eziyet
+edebilir. çoğumuzun her duyduğunda küfürlerle andığı [b]turkcell[/b],
+[b]türk telekom[/b], [b]vodafone[/b] üçlüsünü düşünün. her ne kadar
+sevmesek de tıpış tıpış gidip onlardan hizmet almak zorundayız.
+
+yazılım alanında da tekelciliği iliklerimize kadar hissediyoruz. bir ara
+windows işletim sisteminde internet explorer hariç web tarayıcısı
+kullanılamıyordu, mahkeme kararıyla döndüler bu hareketten. ya da
+whatsapp'in gizlilik sözleşmesi çoğu insanı korkuttu ama yine de bir
+olup bir anda uygulama değiştiremediklerinden sonunda sözleşmeyi kabul
+ettiler.
+
+özgür yazılım, tekelcilerin ve oligopollerin en korkunç rüyasıdır. çünkü
+özgür bir yazılım, kullanıcısının istemediği bir hareket yaptığı an
+anında çatallanır ve bu yeni çatal ile kullanıcı istekleri doğrultusunda
+hayatına devam eder. ürün, kullanıcıya hiçbir şeyi dayatamaz.
+
+ama interaktif bir yazılım kullanıyorsak(sosyal medya ve mesajlaşma
+uygulaması gibi), yazılımın özgür olması tek başına yeterli değildir.
+özgür olmakla birlikte [b]federe[/b] de olmalıdır.
+
+signal'ın merkeziyetçi yapısı, uygulamayı çatallama imkanınız olsa da
+sizi bunu yapmaktan alıkoyar. çünkü iyi niyetle veya kötü niyetle,
+[u]kullanıcıların tümünü tek bir sunucuya mahkum eder. neden?
+birbirleriyle konuşmak zorundalar da ondan.[/u]
+
+eğer federasyon yoksa, tek bir merkeze güvenmek zorunda kalırız.
+telegram'da pavel durov'un, signal'da ise signal vakfı'nın
+mahremiyetimizi koruyacağına güvenmek zorundayız. aslında güvenmekte
+mesele yok. insanlar güvenmeden yaşayamaz. ama kimseye güvenmek zorunda
+değilken bok mu var da güveniyoruz?
+
+ayrıca kişi ve kurumların güvenilirliğinden bağımsız olarak, devletlerle
+muhatap olan hiçbir kişi ve kuruma tam olarak güvenmemeliyiz. belki
+sizin verilerinizi para ile satmazlar ama devlet o verileri istediğinde
+"eğer elinde varsa" a'dan z'ye bu bilgileri vermek zorundadır.
+
+merkeziyetçi bir platformda metaveri ne kadar az toplanırsa toplansın,
+tek bir sunucuda yığılmaya neden olacağından yine değer kazanacaktır.
+metaveri, yalnızca büyük kitleler ölçeğinde değerlidir.
+
+federe bir platformda ise tüm metaveriler farklı sunucularda
+depolandığından sunucuların elindeki tek tük metaveri değersizdir.
+ayrıca kayıt esnasında telefon numarası istemediklerinden sizi gerçek
+kimliğinizle eşleştirmeleri pek mümkün olmayacaktır. bazı sunucular mail
+bile istemiyor. yani güvenmeye ihtiyacınız yok. çok pimpirikliyseniz
+çoğu sunucu güvenceye de sahip. çok ama çok pimpirikliyseniz de kendi
+sunucunuzu açarak kendinizi tamamen güvene alabilirsiniz. mümkün böyle
+şeyler. şahane di mi?
+
+gelin beraber bu mükemmel dünyaya adımımızı atalım. ^_^///
+
+[b][u]xmpp[/u][/b]
+
+federe ailenin ilk üyesi. istemcileri düzgün çalışmıyor, kullanıcı dostu
+da değil. uçtan uca şifreleme varsayılan olarak gelmiyor, üstüne üstlük
+şifrelemeyi konfigüre etmek gerekiyor. ben insanları buna maruz
+bırakamam. bir tek android istemcisi olan [b]conversations[/b] bu konuda
+sıkıntı çıkarmıyordu diye hatırlıyorum ama masaüstünde doğru düzgün
+çalışan bir istemci bulamadım. birbirleriyle alakaları yok sanki. zaten
+cross-platform denen bir şey hiç yok.
+
+aslında sağlam bir protokol. whatsapp, zoom ve şu an emin olamadığım
+bayaa bi mainstream mesajlaşma uygulaması xmpp'yi taban almış ama
+federasyonu kapalı tutuyorlar tabii ki. bu sağlamlığına rağmen
+istemcilerinin nasıl bu kadar berbat durumda olduğunu da anlamış
+değilim. günün birinde düzgün ve kolay bir istemci üretilirse bir şansı
+kesinlikle hak ediyor. çünkü özgürlük açısından açık ara en iyi seçenek.
+
+ama ben birincilik ödülünü [b]matrix[/b] protokolüne vermek istiyorum.
+
+[b][u]matrix[/u][/b]
+
+kolay, dağıtık, özgür, sağlam. zaten gözlemlerime göre özgür
+yazılımcılar tarafından da en çok tercih edilen seçenek bu.
+
+özgürlük açısından sadece xmpp'ye kıyasla eksileri var. merkeziyetçi
+uygulamalardan çok daha iyi. kullanışlılık açısından ise telegram'dan
+sonra ikincilik madalyasını alıyor gözümde. totalde birincidir.
+
+birincilik ödülünü verdik diye şımarmasın, söyleyeceklerim var.
+
+1. neden insanların çoğu homeserver olarak matrix.org kullanıyor? ve
+   neden element istemcisinin kayıt kısmında farklı sunucu
+   alternatiflerini göstermeyip insanları kendi sunucunuza
+   yönlendiriyorsunuz?
+2. resmi istemciniz olan [b]element[/b] neden bu kadar kaynak tüketiyor?
+3. yine resmi matrix sunucu yazılımı [b]synapse[/b] neden bu kadar
+   kaynak tüketiyor? xmpp için herkes sunucu kurabilirken matrix için
+   neden çok daha güçlü bir sistem gerekiyor?
+4. her şeyi geçtim, neden [b]element matrix services[/b] adı altında
+   matrix sunucusu açmak isteyenlere hosting hizmeti veriyorsunuz? gerçi
+   bu protokolün yayılması açısından faydalı bir hareket olabilir. ama
+   güvenimi zedeler. özellikle de matrix sunucusu açmak bu kadar
+   maliyetliyken.
+
+hani federasyon varsa bir merkeze güvenmek zorunda değiliz demiştim ya,
+matrix vakfı'na da güvenmiyorum. ama bu, matrix protokolünü kullanmamı
+engellemez çünkü hem sunucu hem de istemci tarafında farklı seçeneklerim
+var. şahsen resmi matrix ürünlerinden uzak duruyorum. sizden de bunu
+rica ederim.
+
+1. istemci olarak [b]fluffychat[/b] şu anda en iyi seçenek gibi
+   gözüküyor.
+2. sunucu olarak element matrix services kullanmayan bağımsız bir sunucu
+   tercih ediyorum. (bkz. envs.net, tchncs.de, halogen.city)
+3. günün birinde kendi sunucumu açarsam(açmayı düşünüyorum) synapse
+   değil [b]conduit[/b] gibi hafif ve bağımsız bir sistem kullanacağım.
+
+bunun misyonerliğini yapmak bir tık zor olabilir. "fluffychat yükle ama
+matrix.org'dan değil şuradan bağlan" demek yani. ama olsun, özgürlük
+hiçbir zaman kolay olmadı.
+
+ama sadece bunu anlatması zor, yapması çok kolay. bakın, ben değil
+fluffychat'in kendisi söylüyor.
+
+[quote] [cite/t:@akdeniz:tchncs.de] sizi FluffyChat'e davet etti. 1.
+FluffyChat kurun: https://fluffychat.im 2. Kaydolun veya giriş yapın
+[[file:burada%20ben%20bir%20ekleme%20yapayım,%20matrix.org%20değil%20envs.net%20ya%20da%20tchncs.de][b]][/b] 3.
+Davet bağlantısını açın:
+https://matrix.to/#/[cite/t:@akdeniz:tchncs.de?client]=im.fluffychat
+[/quote]
+
+son olarak, unutmadan:
+
+[b][i]matrix >>> signal >>> telegram >>> whatsapp[/i][/b]
+
+iyi günler.
+
+--------------
+
+akruX | 2023-09-07 06:24:23 UTC | #2
+
+[quote="akdeniz, post:1, topic:223"] matrix >>> signal >>> telegram >>>
+whatsapp [/quote]
+
+ben buna katılmıyorum telegram'ın bildiğim kadarıyla uctan uca
+şifrelemesi yok ama whatsapp'ın var.
+
+--------------
+
+yusufipek | 2023-09-07 07:00:07 UTC | #3
+
+Eline sağlık. Telegram Whatsapp'tan kullanışlılık olarak zaten iyi ama
+uçtan uca şifreleme noktası tartışılır. Gerçi WhatsApp'ın da istemci
+tarafı kapalı. Anahtarları üretirken sunucuya gönderip göndermediğini
+veya mekanizmada arka kapı açmadıklarını doğrulamanın bir yolu var mı
+bilmiyorum.
+
+Aileyi ve arkadaşları dağıtık ağa geçirmek zor iş. 😄
+
+--------------
+
+Khanateyktech | 2023-09-07 07:24:09 UTC | #4
+
+[quote="yusufipek, post:3, topic:223, full:true"] Aileyi ve arkadaşları
+dağıtık ağa geçirmek zor iş. 😄 [/quote] İşte bu yüzden herkes Whatsapp
+kullaniyor,cünkü yakınlarınız Whatsapp kullaniyorsa sizde Whatsapp
+kullanmak zorunda kalıyorsunuz.
+
+--------------
+
+akdeniz | 2023-09-07 19:23:51 UTC | #5
+
+Telegram'ın tek kusuru uçtan uca şifrelemeye sahip olmaması ki şifreleme
+yapıp yapmadığına bile güvenemeyeceğimiz kapalı kaynak bir client'ın
+telefonumuzda sürekli olarak çalışmasından iyidir. Telegram'ın çok güzel
+bir uygulama olduğunu iddia edemem ama Whatsapp'ten kötü olduğunu iddia
+etmek çok aşırıya kaçmak oluyor.
+
+Uçtan uca şifreleme meselesine ayrıca yazıda değinmiştim:
+
+#+begin_quote
+belirli kesimlerce telegram'ın hakkı yeniyor diye düşünüyorum.
+"telegram'da uçtan uca şifreleme varsayılan değil, telegram
+kullanacağınıza whatsapp kullanın daha iyi" demenin saçma olduğu
+kanaatindeyim. telegram'da uçtan uca şifrelemenin varsayılan olarak
+gelmemesi bir eksi olsa da 'cambridge analytica' başta olmak üzere
+sayısız mahremiyet skandalının faili konumundaki facebook tarafından
+yürütülen bir uygulamadan bahsediyoruz. açıkçası facebook'un yaptığı
+şifrelemeye de güvenmiyorum. ayrıca whatsapp, sunucusundan istemcisine
+kadar kapalı kaynaklı. telegram en azından uygulamayı kapattığınızda
+arkada aleyhinizde çalışmıyor, telegram kullanımınız haricinde metaveri
+toplamıyor.
+
+telegram'ı mesajlaşma fasilitesi de olan bir sosyal ağ olarak
+düşünebiliriz. neticede internette neredeyse hiçbir mesaj şifrelenmez,
+şu an yazıyor olduğum bu yazı gibi. bu yüzden ne yaptığınızın
+bilincindeyseniz whatsapp'ı silip telegram kullanmakta bir beis
+görmüyorum.
+
+telegram >>> whatsapp
+
+#+end_quote
+
+--------------
+
+Efe | 2023-09-07 20:03:23 UTC | #6
+
+Ah! Kullanmasalar, ah!
+
+--------------
+
+MuhammedBilgtkn | 2023-09-08 19:22:59 UTC | #7
+
+Matrix daha çok Discord'a alternatif bir uygulama, WhatsApp'e tam bir
+alternatif atanıyorsa kesinlikle Signal olmalı. Başarılı yazı tebrik
+ederim.
+
+--------------
+
+akdeniz | 2023-09-08 19:45:11 UTC | #9
+
+makyajlanması discord şeklinde diye discord alternatifi denip
+geçilmemeli. ayrıca kayıt için telefon numarası isteyen mesajlaşma
+yazılımlarına karşıyım. eğer whatsapp'e alternatif olması için
+whatsapp'e bu şekilde "benzemesi" gerekseydi şu anda bir alternatif
+arayışı içinde olmazdım.
+
+kozmetiğe fazla aldanmamak gerek. aslında space'ler bile discord'un
+sunucu sistemini tam olarak karşılamıyor. space'ler birden fazla çoklu
+sohbet odasının listelenmiş hâlinden başka bir şey değil. yusuf ipek'in
+matrix'i discord alternatifi şeklinde tanıtması da biraz şanssız bir
+tesadüftü.
+
+matrix bir mesajlaşma protokolüdür ve bir mesajlaşma protokolünün
+yapması gerekenleri yapar, discord gibi oyun oynarken sesli konuşma
+imkanlarına ya da discord'un yeni pazarlama stratejisinde olduğu gibi
+sunucuların oluşturduğu sosyal ortamlara kanalize olmaz. discord'un
+bunlarla uğraşırken süs niyetine verdiği şifresiz direkt mesajlaşma
+özelliğinin karşısında matrix, whatsapp'in de yaptığının ötesinde
+güvenilir bir uçtan uca şifreleme sunar. velhasılıkelam, discord her şey
+olmaya çalışan hafifmeşrep bir uygulama parçasıyken matrix babalar gibi
+bir mesajlaşma çözümüdür. hakkını yemeyelim. ^_^///
+
+--------------
+
+teq | 2023-09-08 19:56:46 UTC | #10
+
+Telefon rehberimin %96 sı WhatsApp kullanıyor. Bunu değiştirmek için
+uğraştım ama insanların alışkanlıklarını değiştirmek çok zor.
+
+--------------
+
+akdeniz | 2023-09-08 20:14:25 UTC | #12
+
+ben whatsapp'i kaldırdım. insanların alışkanlıkları her şeye rağmen
+değişmiyor, çok yakın arkadaşlarım bile olsa kullandığım uygulamayı
+whatsapp'in yanına yüklemeyip bana arayarak ulaşanlar oldu. */ama
+yükleyenler de oldu./* zaten herkesin alışkanlıklarını değiştirmemize
+gerek yok. kullanıcı olarak yapabildiğimizi yapmamız yeterli. insanlara
+özgür yazılımın neden iyi olduğunu anlatmak ve özgür yazılımları
+önermek. bu şekilde damlaya damlaya göl olacaktır.
+
+enseyi karartma. dijital özgürlük bir kişilik biçimidir, bir
+karakterdir. üzerimizde gururla taşıdığımız sürece başka insanlar da
+bundan etkilenir, az ya da çok. en kötü ihtimalle haberleri olur, en iyi
+ihtimalle bizim kadar hassasiyet gösteren bir kişi daha kazanmış oluruz.
+
+--------------
+
+Boranity | 2023-09-08 20:17:47 UTC | #13
+
+En iyisi bu arada Whatsapp'ı kaldırmak istemeyenler Matrix ile Whatsapp
+Bridge kurabilir tavsiye ederim. Mautrix projesi bu iş için uygun başka
+platformlar içinde bridgeleri var.
+https://docs.mau.fi/bridges/go/whatsapp/index.html
+
+--------------
+
+teq | 2023-09-08 20:24:27 UTC | #14
+
+İngiltere'de insanların %77 si gizliliklerini korumak istiyor, ama aynı
+İngiltere'de E2E için arka kapı konulmasına pek tepki yok. Bu bence o
+kadar da önemsemediklerini gösteriyor.
+
+Kaynak : [[https://proton.me/reports/privacy-uk2023][Proton AG]]
+
+--------------
+
+akdeniz | 2023-09-08 22:12:32 UTC | #15
+
+insanlardan bi beklentim yok ki. insanların ne mal olduğunu biliyorum.
+insanlara dair gerçeklerle barışmadan toplumsal bir değişim yaratılamaz
+zaten. bunlar "kitle yönetimi" dedikleri zımbırtı. insanları
+gizliliklerini koruduklarına inandırarak tepkiyi azaltma çabası. aynı
+şey çevrecilikte de var. plastiğin geri dönüştürüldüğüne inanan bir sürü
+insan çevreci reflekslerini bıraktı ve tonlarca plastiğin yakılarak
+atmosfere verilmesinden haberdar bile olmadı. insanlar olarak bu tür
+manipülasyonlara açığız.
+
+eğer insanlar gizliliklerini korumayı gerçekten isteseydi ben "olmuşu
+oldurmak" için bu kadar çabalıyor olmazdım. peki sen? sen eğer bu
+mesajında sorun addettiğin şey ortadan kalksaydı, yani insanlar
+gizliliklerini korumayı gerçekten isteselerdi, "olmuşu oldurmak" için
+çabalamaya dair motivasyona sahip olur muydun? yoksa bu mesajı yazmanın
+tek sebebi umursadığın bir konuya dair umutsuzluğunu bir çözüm önerisi
+sunmaksızın millete bulaştırmak mı?
+
+insanların ne kadar akıllı, zeki, duyarlı, bilinçli vesaire olduğuyla
+ilgilenmiyorum. dolayısıyla paylaştığın haber umurumda bile olmadı. bir
+çözüm önerisiyle gelmediğin sürece de asla umurumda olmayacak.
+
+iyi geceler.
+
+--------------
+
+melih_tanir | 2023-09-10 10:55:00 UTC | #16
+
+Katılıyorum. Telegram ve WhatsApp'ı her ne kadar gereklilikden dolayı
+kullansam da bu onların suçsuz olduğu anlamına gelmez. Keşke
+alternatifleri daha yaygın hale gelse de geçiş yapabilsem.
+
+--------------
+
+akdeniz | 2023-09-10 12:11:09 UTC | #17
+
+her şeye rağmen geçiş yaparak, bu mümkün değilse de kullandığımız
+mesajlaşma uygulamalarının yanına yükleyerek alternatiflerin
+yaygınlıklarını arttırabiliriz. ^_^
+
+--------------
+
+melih_tanir | 2023-09-10 12:17:32 UTC | #18
+
+Geçiş yapmaktan kastım yüklemek değil. Yüklüler zaten ama sorun hem
+kimseyi buna itememem. Hem de çevremin sadece WhatsApp Telegram gibi
+platformları kullanması. Onlarda aslında hak veriyorum. Sırf bana mesaj
+atmak için yüklemek istemiyorlar. Diyecek bir şey yok. Zorla yükletip
+oradan konuşamam. Eninde sonunda el mahkum. Kullanmak zorunda kalıyorum.
+
+--------------
+
+akdeniz | 2023-09-10 12:21:41 UTC | #19
+
+benim de geçiş yapmaktan kastım yüklemek değil. mesela ben sadece
+yüklemekle kalmadım, geçiş yaptım. doğru olduğuna inandığım mesajlaşma
+yolunu(matrix) kullanmaya başladım ve bununla da kalmayıp whatsapp ve
+telegram'ı sildim. artık insanlara "benimle konuşmak istiyorsanız bu
+uygulamayı yükleyin" diyorum. kimseyi zorlamadığım için de vicdanım
+rahat. yüklemek istemeyen arayarak yahut SMS ile ulaşıyor sonuç olarak
+: )
+
+--------------
+
+melih_tanir | 2023-09-10 12:33:57 UTC | #20
+
+Yani dediğiniz doğru ama benim tam olarak geçmeme engel olan şey iş
+odaklı mesajlaşmalar. Yoksa normal kullanıcıyı zaten itmek kolay.
+Zamanında Discorda gelin demiştim zarzor ikna edip birçok arkadaşımı
+Discord kullanmaya ikna etmiştim. Aynı şekilde şimdi ise Mastodon. Ama
+iş resmiyete gelince hiçbir kurumdaki çalışana WhatsApp yok diyemiyorum.
+Bir kere sildim aynı sizin dediğiniz hesap geri döndürdüler. A kişiye
+mesaj atmam gerek bir iş için. Normalden ya otomatik operatöre ya da
+teknik desteğe düşüyor. WhatsApp bu durumlarda zorunlu oluyor. Sildikten
+2 gün sonra yükledim geri istemeyerek olsa da. Ama dediğiniz en doğrusu
+uzun zamandır düzgün bir düzene geçip tamamen bu platformlardan
+kurtulmayı da planlıyorum zaten. Zamanı tutturabilirsem de ilk fırsatta
+geçip bunu nasıl yaptığım hakkında bir rehber de yaparım. Çünkü nereye
+baksam yıllar öncesinden kalıntılar var. Haliyle tüm verileri bulup
+ondan sonra bu işe kalkışmak en iyisi.
+
+--------------
+
+d0x | 2023-09-10 12:34:39 UTC | #21
+
+Arkadaşım ben bütün ailemi xmppye geçirdim!
+
+--------------
+
+basaransemih | 2023-09-10 13:11:47 UTC | #23
+
+[quote="akdeniz, post:1, topic:223"] */benim uzun zaman önce kendi
+sayfam için yazdığım bir yazıydı. şu anda bir tartışma başlatması
+ümidiyle paylaşıyorum. her şeyi bilen adam edasıyla yazmış olmama
+aldırış etmeyin, farklı fikirlere açığım. saygılar sevgiler <3/*
+
++++ [/quote]
+
+Hocam mesele şu ki o kadar grup varki hepsinin telegrama signale veya
+..ya geçmesi imkansız yani zaten çoğu kişi mecburi WhatsApp kullaniyor
+
+--------------
+
+Sucuk | 2023-09-10 13:24:22 UTC | #24
+
+Hocam yaklaşık 1,5 ay önce zor bir göreve başladım; *ailemi ve
+arkadaşlarımı WA'dan Signal'e geçirmeye çalışıyorum.* Ama şu ana kadar
+sadece annem geçti o da benimle konuşmak için :sweat_smile:. Diğer
+kişileri geçirmek de biraz zaman alacağa benziyor. Ama bir kere başladık
+işe, *pes etmek yok!*
+
+Telegram'da normal olarak E2EE olmadığı için onu eledim zaten. XMPP ve
+Matrix gibi platformlara hiç alışık değilim ve kendi sunucumu kurmam
+gerekir büyük ihtimalle ki bende onun için deneyim ve para yok
+:smiling_face_with_tear:.
+
+Not: Okul, iş vb. gruplarını geçirmek zaten neredeyse imkansız. O yüzden
+mecbur kullanacağız öyle ya da böyle :smiling_face_with_tear:.
+
+--------------
+
+basaransemih | 2023-09-10 13:27:10 UTC | #25
+
+[quote="d0x, post:21, topic:223, full:true"] Arkadaşım ben bütün ailemi
+xmppye geçirdim! [/quote]
+
+Hocam ya arkadaşınız yok yada arkadaşlarınız sizi çok seviyor...
+
+--------------
+
+d0x | 2023-09-10 13:28:17 UTC | #26
+
+yok zaten olsa parabola gnu/linux-libre kullanır mıydım arkadaşım!
+
+--------------
+
+Boranity | 2023-09-10 19:10:43 UTC | #27
+
+Arkadaşlar aileniz Whatsapp'tan başka bir platforma geçmiyorsa siz
+Matrix ile Whatsapp köprüsü kurun en azından kendiniz için :smiley: .
+
+--------------
+
+EminAZE | 2023-09-10 19:25:00 UTC | #28
+
+bence en mantıklısı bu.
+
+--------------
+
+eayavas | 2023-09-10 19:26:04 UTC | #29
+
+WhatsApp'ı kullanmayı bırakmayı düşünüyordum bir zamanlar. Tabi altından
+çok sular aktı, geçen gece bir baktım Instagram kuruyorum. Neden böyle
+oldu ki? Bilinmez.
+
+--------------
+
+akdeniz | 2023-09-10 20:38:53 UTC | #30
+
+ben özgür yazılım felsefesinden taviz veriyorsam genelde kızlar için
+veriyorum :smiling_face_with_tear:
+
+--------------
+
+kayra150 | 2023-09-14 09:31:57 UTC | #31
+
+Bırakmak isteriz ama yaygın olduğu için bırakamayız. İşte iş grubun
+olur, iş arkadaşların ve patronlarınla hem sohbet hem iş materyalleri
+paylaşılır. Okul grubun olur veli grubu, öğrenci grubu, ödev grubu...
+bir sürü grup. Bir tane oyun oynarsın onda klan, birlik gibi topluluk
+olur onun WhatsApp grubu olur. Bir kursa mursa başlarsın grup kurulur ki
+o grup Whatsapp grubudur.
+
+E hadi bırak şimdi bırakabilirsen. Whatsapp her yeri ele geçirmiş
+durumda. Telegram yine bir tık yayılmayı başardı tebrik ediyorum. Ancak
+diğer uygulamaların akbeti ülkemizde içler acısı durumda. Whatsapp ben
+de sevmiyorum ama mecbur kullanıyorum. Signal, Delta chat, Session, Wire
+falan bir ara hevesle kurup hesap açtım ama aylarca öyle atıl bir
+şekilde durdu. En sonunda silmek zorunda kaldım.
+
+Bu whatsapp'ı bırakma düşüncesi kağıt üstünde çok mantıklı ve gerekli
+bir şey ama özellikle ülkemizde pratikte imkansıza yakın bir şey
+maalesef. Whatsapp kullanmayanı dövüyorlar resmen. Çoğu zaman mecaz
+anlamda tabi.
+
+--------------
+
+akdeniz | 2023-09-14 10:02:18 UTC | #32
+
+öyle maalesef. ben gözü karartanlardanım. ha tabii silmeden önceki
+korkum olan bir şeyleri kaçırma korkusu gereksizmiş onu anladım, hiçbir
+şeyi kaçırmıyorsun aslında. bazı şeyler biraz zor halloluyor ama yine
+halloluyor. benim için bir tek yeni kişilerle tanışma mevzusu problem.
+yeni tanıştığım kişiyle iletişimde kalabilmek için ya whatsapp ya da
+instagram kullanmak zorundayım. ben de tercihimi instagram'dan yana
+kullandım çünkü instagram adresimi kime verebileceğimi ve instagram'ı ne
+kadar/ne zaman kullanacağımı seçebiliyorum. whatsapp kimseye sormadan
+herkesi birbirine bağladığı için yüklediğim anda bütün ilişkilerimi
+kontrolü altına alabiliyor, bu bağlamda özgürlüğüme çok daha büyük bir
+tehdit whatsapp.
+
+--------------
+
+morgan | 2023-09-14 19:01:15 UTC | #33
+
+Çok güzel bir yazı olmuş. Gayet açıklayıcı ve bilgilendirici bir yazı
+olmuş.
+
+Geçiş yapmak ve herkesi bilgilendirmek çok önemli. Bilinçli bir
+teknoloji kullanıcısı olarak ve mahremiyetimize önem veren uygulamalar
+kullanarak devam etmeliyiz ancak bu pratikte pek mümkün olmuyor. Çoğu
+zaman son kullanıcı yine kolaylık ve çoğunluğa bakıyor. Bu tür
+uygulamarı da çoğunluk kullandığı için bilinçli kullanıcılar da bu tür
+uygulamalar kullanmak zorunda kalıyor.
+
+--------------
+
+ypisad | 2023-09-14 19:46:02 UTC | #34
+
+session yok mu hocam
+
+--------------
+
+akdeniz | 2023-09-14 19:59:29 UTC | #35
+
+session ile ben ve en az benim kadar enthusiast arkadaşım bile doğru
+düzgün konuşamıyoruz maalesef. zaten session'ın son kullanıcıyı
+hedeflemediği, tercih ettiği ID ile bağlanma şeklinden belli. kimseyi bu
+yönteme alıştıramazsın. ayrıca bütün bunlar olmasa bile federasyon(xmpp,
+matrix) her zaman daha özgürdür.
+
+--------------
+
+BruhMan | 2023-10-11 07:47:32 UTC | #36
+
+Matrix synapse'nin fazla kaynak tüketmesinin nedeni python ile
+yazılması. Synapse yerine
+[[https://github.com/matrix-org/dendrite][Dendrite]] adında, golang
+dilini kullanarak yeni bir sunucu yazıyorlar. Bu, performansı ciddi
+ölçüde arttıracak ve sunuculardaki yükü hafifletecektir.
+
+--------------
+
+pinguftw | 2023-10-14 00:33:50 UTC | #37
+
+Çok açıklayıcı ve güzel bir yazı olmuş elinize sağlık.
+
+--------------

@@ -1,0 +1,376 @@
+:PROPERTIES:
+:ID:       64dec1c8-4f2e-4bca-a3a6-abd708f8d595
+:END:
+#+title: Neden Org Mode
+#+DATE: <2024-01-14 Paz>
+#+AUTHOR: Ömer Kurt
+
+* Neden org mode
+Neden org-mode markdown'a göre çok iyi? Benim için bir çok nedeni var ve sadece o nedenlerden birkaçını göstermem bile org-mode bakış açınızı değiştirecek. Markdown'a çok alıştık o da mükemmel araçlardan bir tanesi fakat org-mode kadar değil. Başlık oluşturmak için markdownda # kullanıyoruz çok farkı yok mantık olarak sadece işaretimiz * oluyor.
+* Tablo ve basit syntax
+#+begin_src
+| Basit syntax | orgmode       |
+| Kalın        | *kalın*       |
+| italic       | /italic/      |
+| Alt çizgi    | _alt çizgi_   |
+| üst çizili   | +üstü çizili+ |
+| kode         | ~kode~        |
+| vurgu        | =vurgu=       |
+#+end_src
+| Basit syntax | orgmode       |
+| Kalın        | *kalın*       |
+| italic       | /italic/      |
+| Alt çizgi    | _alt çizgi_   |
+| üst çizili   | +üstü çizili+ |
+| kode         | ~kode~        |
+| vurgu        | =vurgu=       |
+
+
+#+begin_src
+* Liste
+1. bu liste
+2. liste
+3. liste3
+
+-----
+- liste
+- liste2
+- liste3
+#+end_src
+* Liste
+1. bu liste
+2. liste
+3. liste3
+
+-----
+- liste
+- liste2
+- liste3
+
+* Linkler
+#+begin_src
+[[https://btt.community]]
+[[https://orgmode.org][orgmode]]
+[[https://orgmode.org/resources/img/org-mode-unicorn.svg]]
+#+end_src
+[[https://btt.community]]
+[[https://orgmode.org][orgmode]]
+[[https://orgmode.org/resources/img/org-mode-unicorn.svg]]
+
+* Kod blok
+#+begin_src python
+def topla(a,b):
+    return (a+b)
+return topla(4,5)
+#+end_src
+
+#+RESULTS:
+: 9
+
+#+begin_src shell
+echo $HOME
+#+end_src
+
+#+RESULTS:
+: /home/omerkurt
+#+begin_src js :results output
+console.log("Bu bir javascript");
+#+end_src
+
+#+RESULTS:
+: Bu bir javascript
+
+* Export
+İstediğimiz formata dönüştürebiliyoruz.
+
+
+
+
+
+
+** Org Mode
+Az övüldüğünü düşünüyorum.
+Biraz org-mode övelim.
+[[https://orgmode.org/resources/img/org-mode-unicorn.svg]]
+:PROPERTIES:
+:ID:       64dec1c8-4f2e-4bca-a3a6-abd708f8d595
+:END:
+#+title: Neden Org Mode
+#+DATE: <2024-01-14 Paz>
+#+AUTHOR: Ömer Kurt
+
+* Neden org mode
+Neden org-mode markdown'a göre çok iyi? Benim için bir çok nedeni var ve sadece o nedenlerden birkaçını göstermem bile org-mode bakış açınızı değiştirecek. Markdown'a çok alıştık o da mükemmel araçlardan bir tanesi fakat org-mode kadar değil. Başlık oluşturmak için markdownda # kullanıyoruz çok farkı yok mantık olarak sadece işaretimiz * oluyor.
+* Tablo ve basit syntax
+#+begin_src
+| Basit syntax | orgmode       |
+| Kalın        | *kalın*       |
+| italic       | /italic/      |
+| Alt çizgi    | _alt çizgi_   |
+| üst çizili   | +üstü çizili+ |
+| kode         | ~kode~        |
+| vurgu        | =vurgu=       |
+#+end_src
+| Basit syntax | orgmode       |
+| Kalın        | *kalın*       |
+| italic       | /italic/      |
+| Alt çizgi    | _alt çizgi_   |
+| üst çizili   | +üstü çizili+ |
+| kode         | ~kode~        |
+| vurgu        | =vurgu=       |
+
+
+#+begin_src
+* Liste
+1. bu liste
+2. liste
+3. liste3
+
+-----
+- liste
+- liste2
+- liste3
+#+end_src
+* Liste
+1. bu liste
+2. liste
+3. liste3
+
+-----
+- liste
+- liste2
+- liste3
+
+* Linkler
+#+begin_src
+[[https://btt.community]]
+[[https://orgmode.org][orgmode]]
+[[https://orgmode.org/resources/img/org-mode-unicorn.svg]]
+#+end_src
+[[https://btt.community]]
+[[https://orgmode.org][orgmode]]
+[[https://orgmode.org/resources/img/org-mode-unicorn.svg]]
+
+* Kod blok
+#+begin_src python
+def topla(a,b):
+    return (a+b)
+return topla(4,5)
+#+end_src
+
+#+RESULTS:
+: 9
+
+#+begin_src shell
+echo $HOME
+#+end_src
+
+#+RESULTS:
+: /home/omerkurt
+#+begin_src js :results output
+console.log("Bu bir javascript");
+#+end_src
+
+#+RESULTS:
+: Bu bir javascript
+
+* Export
+İstediğimiz formata dönüştürebiliyoruz.
+
+
+
+
+
+
+** Org Mode
+Az övüldüğünü düşünüyorum.
+Biraz org-mode övelim.
+[[https://orgmode.org/resources/img/org-mode-unicorn.svg]]
+:PROPERTIES:
+:ID:       64dec1c8-4f2e-4bca-a3a6-abd708f8d595
+:END:
+#+title: Neden Org Mode
+#+DATE: <2024-01-14 Paz>
+#+AUTHOR: Ömer Kurt
+
+* Neden org mode
+Neden org-mode markdown'a göre çok iyi? Benim için bir çok nedeni var ve sadece o nedenlerden birkaçını göstermem bile org-mode bakış açınızı değiştirecek. Markdown'a çok alıştık o da mükemmel araçlardan bir tanesi fakat org-mode kadar değil. Başlık oluşturmak için markdownda # kullanıyoruz çok farkı yok mantık olarak sadece işaretimiz * oluyor.
+* Tablo ve basit syntax
+#+begin_src
+| Basit syntax | orgmode       |
+| Kalın        | *kalın*       |
+| italic       | /italic/      |
+| Alt çizgi    | _alt çizgi_   |
+| üst çizili   | +üstü çizili+ |
+| kode         | ~kode~        |
+| vurgu        | =vurgu=       |
+#+end_src
+| Basit syntax | orgmode       |
+| Kalın        | *kalın*       |
+| italic       | /italic/      |
+| Alt çizgi    | _alt çizgi_   |
+| üst çizili   | +üstü çizili+ |
+| kode         | ~kode~        |
+| vurgu        | =vurgu=       |
+
+
+#+begin_src
+* Liste
+1. bu liste
+2. liste
+3. liste3
+
+-----
+- liste
+- liste2
+- liste3
+#+end_src
+* Liste
+1. bu liste
+2. liste
+3. liste3
+
+-----
+- liste
+- liste2
+- liste3
+
+* Linkler
+#+begin_src
+[[https://btt.community]]
+[[https://orgmode.org][orgmode]]
+[[https://orgmode.org/resources/img/org-mode-unicorn.svg]]
+#+end_src
+[[https://btt.community]]
+[[https://orgmode.org][orgmode]]
+[[https://orgmode.org/resources/img/org-mode-unicorn.svg]]
+
+* Kod blok
+#+begin_src python
+def topla(a,b):
+    return (a+b)
+return topla(4,5)
+#+end_src
+
+#+RESULTS:
+: 9
+
+#+begin_src shell
+echo $HOME
+#+end_src
+
+#+RESULTS:
+: /home/omerkurt
+#+begin_src js :results output
+console.log("Bu bir javascript");
+#+end_src
+
+#+RESULTS:
+: Bu bir javascript
+
+* Export
+İstediğimiz formata dönüştürebiliyoruz.
+
+
+
+
+
+
+** Org Mode
+Az övüldüğünü düşünüyorum.
+Biraz org-mode övelim.
+[[https://orgmode.org/resources/img/org-mode-unicorn.svg]]
+:PROPERTIES:
+:ID:       64dec1c8-4f2e-4bca-a3a6-abd708f8d595
+:END:
+#+title: Neden Org Mode
+#+DATE: <2024-01-14 Paz>
+#+AUTHOR: Ömer Kurt
+
+* Neden org mode
+Neden org-mode markdown'a göre çok iyi? Benim için bir çok nedeni var ve sadece o nedenlerden birkaçını göstermem bile org-mode bakış açınızı değiştirecek. Markdown'a çok alıştık o da mükemmel araçlardan bir tanesi fakat org-mode kadar değil. Başlık oluşturmak için markdownda # kullanıyoruz çok farkı yok mantık olarak sadece işaretimiz * oluyor.
+* Tablo ve basit syntax
+#+begin_src
+| Basit syntax | orgmode       |
+| Kalın        | *kalın*       |
+| italic       | /italic/      |
+| Alt çizgi    | _alt çizgi_   |
+| üst çizili   | +üstü çizili+ |
+| kode         | ~kode~        |
+| vurgu        | =vurgu=       |
+#+end_src
+| Basit syntax | orgmode       |
+| Kalın        | *kalın*       |
+| italic       | /italic/      |
+| Alt çizgi    | _alt çizgi_   |
+| üst çizili   | +üstü çizili+ |
+| kode         | ~kode~        |
+| vurgu        | =vurgu=       |
+
+
+#+begin_src
+* Liste
+1. bu liste
+2. liste
+3. liste3
+
+-----
+- liste
+- liste2
+- liste3
+#+end_src
+* Liste
+1. bu liste
+2. liste
+3. liste3
+
+-----
+- liste
+- liste2
+- liste3
+
+* Linkler
+#+begin_src
+[[https://btt.community]]
+[[https://orgmode.org][orgmode]]
+[[https://orgmode.org/resources/img/org-mode-unicorn.svg]]
+#+end_src
+[[https://btt.community]]
+[[https://orgmode.org][orgmode]]
+[[https://orgmode.org/resources/img/org-mode-unicorn.svg]]
+
+* Kod blok
+#+begin_src python
+def topla(a,b):
+    return (a+b)
+return topla(4,5)
+#+end_src
+
+#+RESULTS:
+: 9
+
+#+begin_src shell
+echo $HOME
+#+end_src
+
+#+RESULTS:
+: /home/omerkurt
+#+begin_src js :results output
+console.log("Bu bir javascript");
+#+end_src
+
+#+RESULTS:
+: Bu bir javascript
+
+* Export
+İstediğimiz formata dönüştürebiliyoruz.
+
+
+
+
+
+
+** Org Mode
+Az övüldüğünü düşünüyorum.
+Biraz org-mode övelim.
+[[https://orgmode.org/resources/img/org-mode-unicorn.svg]]

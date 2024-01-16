@@ -1,0 +1,123 @@
+:PROPERTIES:
+:ID:       9393d89f-086a-447e-98e5-ab9b0621686c
+:END:
+bytemeowster | 2023-12-22 22:40:26 UTC | #1
+
+* Giriş
+:PROPERTIES:
+:CUSTOM_ID: giriş
+:END:
+Herkese selamlar. Bu forumdaki ilk yazıma hoş geldiniz :wave:. Bu yazıda
+sizlerle yaşamış olduğum bir sorunu nasıl çözdüğümü paylaşmak istiyorum.
+Ancak baştan belirtmekte fayda var, bu çözümü uyguladıktan sonra dizüstü
+bilgisayarımızın dahili klavyesini tekrar etkinleştirinceye kadar
+kullanamayacağız.
+
+* Denenen Dağıtımlar
+:PROPERTIES:
+:CUSTOM_ID: denenen-dağıtımlar
+:END:
+
+#+begin_quote
+Bu çözüm yolunu Linux Mint ve Arch tabanlı CachyOS'te (Grub bootloader'ı
+ile) başarıyla test ettim.
+
+#+end_quote
+
+* Devre Dışı Bırakma
+:PROPERTIES:
+:CUSTOM_ID: devre-dışı-bırakma
+:END:
+Laptop dahili klavyesini Linux'ta nasıl devre dışı bırakırız, gelin
+yakından bakalım.
+
+1. Terminali açalım.
+2. Terminali açtıktan sonra =sudo nano /etc/default/grub= yazıp
+   ENTER'layalım.
+3. Root şifremizi girelim.
+4. Açılan metin dosyasında GRUB_CMDLINE_LINUX_DEFAULT satırını bulalım.
+   [[upload://qgAROh3XvdXAEkYtPDdjDrXG2Vn.png]] Bende bu şekilde
+   gözüküyor. Sizde de buna benzer bir şeyler yazacaktır. Burada yazan
+   parametrelerin hiçbirini silmenize ya da bendeki gibi yapmanıza gerek
+   yok sadece bir sonraki maddemizdeki parametreyi sona eklemeniz
+   yeterli.
+5. Burada yapmamız gereken şey, bu satırda yazan en sondaki parametrenin
+   sonuna bir boşluk bırakarak; yani tek tırnak işaretinden önceki yere,
+   yine tek tırnak sonda olacak şekilde =i8042.nokbd= yazmak. *Burada
+   çok önemli bir nokta var. Eklediğimiz parametreyi var olan tek
+   tırnakların içine yazdığımızdan emin olmalıyız. Yazdıktan sonra
+   aşağıdaki gibi gözükmeli.*
+   [[upload://ikWFRYNItci5z7WTuiqX8zAmByn.png]]
+
+/ÖNEMLİ NOT: Üstte de belirttiğim gibi siz de bu satırda yazanlara hiç
+dokunmadan sadece en sona i8042.nokbd'yi eklemelisiniz. Orada yazan
+diğer parametrelere dokunmuyoruz./
+
+6. [@6] Daha sonra ise önce CTRL + X yapıyoruz, ardından E (sistemi
+   İngilizce kullanıyorsanız Y olacaktır) tuşuna basarak onaylıyoruz ve
+   en son olarak da yazılacak dosya adını değiştirmeden ENTER'a basıp
+   çıkıyoruz.
+7. Terminale =sudo update-grub= yazarak GRUB dosyasını güncelliyoruz.
+
+#+begin_quote
+Arch tabanlı bir işletim sistemi kullanıyorsanız bu komut
+çalışmayacaktır. Bunun (7. adım) yerine
+=sudo grub-mkconfig -o /boot/grub/grub.cfg= komutunu kullanmamız
+gerekiyor. Bu şekilde GRUB dosyasını güncelleyebiliriz.
+
+#+end_quote
+
+8. [@8] Bu işlemleri tamamladıktan sonra bilgisayarımızı yeniden
+   başlatıyoruz.
+
+Bu 8 adımı izleyerek sizler de dizüstü bilgisayarınızın klavyesinde bir
+sorun varsa klavyeyi devre dışı bırakabilir, bilgisayarınızı harici bir
+klavye ile kullanmaya devam edebilirsiniz.
+
+* Tekrar Etkinleştirme
+:PROPERTIES:
+:CUSTOM_ID: tekrar-etkinleştirme
+:END:
+Eğer tekrar laptop dahili klavyenizi etkinleştirmek isterseniz; 1.
+Terminali açalım. 2. Terminali açtıktan sonra
+=sudo nano /etc/default/grub= yazıp ENTER'layalım. 3. Root şifremizi
+girelim. 4. Açılan metin dosyasında GRUB_CMDLINE_LINUX_DEFAULT satırını
+bulalım. [[upload://ikWFRYNItci5z7WTuiqX8zAmByn.png]] 5. Daha önce
+eklemiş olduğumuz =i8042.nokbd= ibaresini *tek tırnak işaretini
+silmeden* silelim. 6. Daha sonra ise önce CTRL + X yapalım, ardından E
+(sistemi İngilizce kullanıyorsanız Y olacaktır) tuşuna basarak
+onaylayalım ve en son olarak da yazılacak dosya adını değiştirmeden
+ENTER'a basıp çıkalım. 7. Terminale =sudo update-grub= yazarak GRUB
+dosyasını güncelleyelim. > Arch tabanlı bir işletim sistemi
+kullanıyorsanız bu komut çalışmayacaktır. Bunun (7. adım) yerine >
+=sudo grub-mkconfig -o /boot/grub/grub.cfg= komutunu kullanmamız
+gerekiyor. Bu şekilde GRUB dosyasını güncelleyebiliriz. 8. Bu işlemleri
+tamamladıktan sonra bilgisayarımızı yeniden başlatalım.
+
+İşte bu kadar! Artık bilgisayarımız tekrardan dahili klavyeyi
+görecektir.
+
+Okuduğunuz için teşekkür ederim. Yazımın sonuna gelmiş bulunmaktayız.
+Faydalı bulduysanız beğenebilir; yazım hakkındaki düşüncelerinizi,
+eleştirilerinizi ve eklemek istediklerinizi yorum olarak yazabilirsiniz.
+İyi forumlar dilerim!
+
+--------------
+
+Quitaxd | 2023-09-05 13:26:10 UTC | #2
+
+Bunun systemd-boot halini ben yazayim:
+
+=sudo nano /boot/loader/arch.conf || sudo nano /efi/loader/arch.conf=
+yazin terminale.
+
+Gelen yerde =options= satirinin sonuna =i8042.nokbd= ekleyin. Sonrasinda
+terminalde =bootctl update= yazin ve sistemi yeniden baslatin.
+
+Eger etkinlestirmek isterseniz ekledigimiz kismi silin.
+
+#+begin_example
+NOT: Bunu ben test etmedim. Test eden biri olursa cevap verebilir.
+#+end_example
+
+--------------

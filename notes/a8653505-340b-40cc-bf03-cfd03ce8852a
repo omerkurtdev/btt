@@ -1,0 +1,152 @@
+:PROPERTIES:
+:ID:       a8653505-340b-40cc-bf03-cfd03ce8852a
+:END:
+flewvar | 2023-09-08 22:29:44 UTC | #1
+
+Selamlar. Bu rehberde sizlere Linuxta Türkiye içerisinde yasaklı olan
+sitelere nasıl erişim sağlayabileceğinizi anlatacağım. Video halinde
+izlemek isteyenler için rehberin en aşağısında bu rehberin videosu
+bulunmaktadır. Kullanacağımız özgür yazılımın adı "Zapret"
+
+*Her şeyden önce işletim sistemimizde / modemimizde bir dns sunucusu
+kullanmamız gerekmekte.* *(1.1.1.1, 8.8.8.8 vb.)*
+
+*GNOME* > Ayarlar>Ağ > LAN yada WIFI kartınızı seçip, ayarlar tuşuna
+basın > IPv4 sekmesinde DNS kısmında otomatik seçeneğini devre dışı
+bırakıp 1.1.1.1 yazın.
+
+*KDE* > Ayarlar>Bağlantılar > LAN yada WIFI kartınızı seçin. > IPv4
+sekmesinde "Otomatik" ayarını "Otomatik (Sadece adresler)" yapın ve DNS
+kısmına 1.1.1.1 yazın.
+
+*Bu işlemler bittikten sonra bilgisayarımızı yeniden başlatıyoruz.*
+
+*ZAPRET:* Öncelikle terminalimizi açıp bu komutları yazıyoruz:
+
+#+begin_quote
+git clone =https://github.com/bol-van/zapret= cd zapret
+
+#+end_quote
+
+#+caption: 2023-09-08_20-08|624x160, 75%
+[[upload://mVwCWjBbjWWWb9rJs0a0GQUm4dP.png]]
+
+Ve sonradan programın erişebilmesi için binary'leri yüklememiz
+gerekiyor.
+
+#+begin_quote
+sudo ./install_bin.sh
+
+#+end_quote
+
+#+caption: bin|539x169, 75%
+[[upload://4XKrepwKqcwJCtBTFuzs9aFWyzl.png]]
+
+Her internet sağlayıcısı için yazılımın kullandığı seçenekler farklı.
+Sizin için çalışacak olan seçenekleri bulmak için blockcheck script'i
+var.
+
+#+begin_quote
+sudo ./blockcheck.sh
+
+#+end_quote
+
+Script'i açtığınızda size hangi erişim engeli olan siteyi kullanmak
+istediğinizi soracak (test etmek için) Ben test etmesi için
+=pastebin.com= yazdım. Ondan sonra çıkacak olan soruları enter tuşuna
+basarak onaylayıp beklemelisiniz.
+
+İşlmen bittikten sonra size kullanmanız gereken komutları gösteriyor.
+bizi alakadar eden komutlar son iki satır (HTTP artık kullanılmıyor)
+[[upload://mntftODlXI7jgnf6qsetL4X0vVF.png]] benim için "nfqws" ve
+"--dpi-desync=fake --dpi-desync-ttl=3" seçenekleri çalışıyor. Bunu
+kopyalıyoruz. Ve şimdi bu komudu kullanarak yüklemeye geçebiliriz.
+
+#+begin_quote
+sudo ./install_easy.sh
+
+#+end_quote
+
+Ve sizi şimdi çıkacak olan her seçenek için yönlendireceğim.
+
+1. [[upload://sqGZiYJajf75RlOPwBW7TSABAS.png]] Y tuşu ile onaylayın
+
+2. [[upload://hwQHNlgZWunQDR8S5o3XSmddUrK.png]] ENTER tuşu ile onaylayın
+
+3. [[upload://xoDqkCok5FY5x35V1HbIvxEgVFS.png]] ENTER tuşu ile onaylayın
+
+4. [[upload://dOR6vMgCmxCS9FN8yU18fqDiUIz.png]] ENTER tuşu ile onaylayın
+
+5. [[upload://hpIOkqrSpE831JmpUyFFkvTrudZ.png]] Benim için nfqws
+   çalışıyordu. O yüzden 3'e basıp devam ediyorum.
+
+6. [[upload://uQiGYBWQMFGJ6pPMrUpzWQ4l3Yp.png]] Y tuşu ile onaylayın
+
+7. [[upload://kmgKuAUWmTNK1ZSi22KMt8slxVQ.png]] Ekranınıza büyük
+   ihtimalle yazı düzenleme uygulaması olan nano geldi. Kopyalamış
+   olduğunuz komutları yukarıdaki gibi tırnağın arasına önceki
+   yazılanları silerek yapıştırıyoruz. Nano'dan çıkıp kaydetmek için:
+   "*CTRL+X*" > "*Y*" > "*ENTER*"
+
+8. Ve bundan sonra karşınıza gelecek soruları ENTER tuşuna basarak
+   oynaylayın.
+
+Ardından bu işlemler sonucu sonunda linux sisteminize zapret'i kurmuş,
+ve erişim engelli sitelerin engelini kaldırmış bulunmaktasınız. Güle
+güle kullanma dileği ile.
+
+Eğer yazı şeklinde takip edemiyorsanız video anlatımı burada.
+https://www.youtube.com/watch?v=pyzyFlctxlQ
+
+--------------
+
+Kerem | 2023-09-10 06:45:39 UTC | #2
+
+Sanırım https://github.com/ValdikSS/GoodbyeDPI bu programın linux için
+yapılmış hali gibi. Teşekkürler.
+
+--------------
+
+Metin | 2023-09-16 12:07:49 UTC | #3
+
+dns e gerek yok turknet ile dnssiz kullanabiliyorum. Teşekkürler gayet
+güzel bir kaynak.
+
+--------------
+
+Quitaxd | 2023-12-03 07:38:36 UTC | #4
+
+Windows diyecektin sanirsam. Linkte for Windows yaziyor da.
+
+--------------
+
+schwarz | 2023-12-10 15:46:47 UTC | #5
+
+hocam dediklerinizi yaptım fakat bende hem =tpws= hem de =nfqws=
+çalışıyor olarak gösterdi hangisini seçeyim sizce fark var mıdır
+arasında?
+
+#+caption: 10-12-17-41-45|690x89
+[[upload://1tBMjK8BAOx3SyGRWjxTH9EzkdL.png]]
+
+--------------
+
+ypisad | 2023-12-10 19:46:50 UTC | #6
+
+iyi de bu dns cloudflare'a ait ama. 1.1.1.1
+
+--------------
+
+schwarz | 2023-12-16 21:13:26 UTC | #7
+
+Edit: ilk başta 'tpws' denedim fakat sürekli sorun çıkarıyordu. Ayrıca
+çoğu yasaklı siteye de yine giremiyordum. Ardından 'nfqws' denedim şu an
+sorunsuz bir şekilde çalışıyor, her siteye girebiliyorum. Biraz bekledim
+ki hata verip vermeyeceğini göreyim.
+
+[quote="ypisad, post:6, topic:807, full:true"] iyi de bu dns
+cloudflare'a ait ama. 1.1.1.1 [/quote]
+
+Quad9 için o kısma =9.9.9.9, 149.112.112.112= yazabilirler.
+
+--------------

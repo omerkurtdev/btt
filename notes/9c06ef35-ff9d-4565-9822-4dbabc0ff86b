@@ -1,0 +1,75 @@
+:PROPERTIES:
+:ID:       9c06ef35-ff9d-4565-9822-4dbabc0ff86b
+:END:
+twoxa | 2023-09-09 16:15:59 UTC | #1
+
+Bu rehberimde rootlu olmayan Android telefonlarda uygulamalara shell
+yetkisi verebilmenizi saglayan Shizuku'nun nasil kullanildigini
+anlatacagim.
+
+Oncelikle Shizuku'yu Github'dan indirip kuralim.
+https://github.com/RikkaApps/Shizuku/releases/tag/v13.5.1
+[[upload://vh9sYDWJfiPa4O2VKlKdZDyRp5G.png]]
+
+Uygulamayi actiginizda sizi bu ekran karsilayacak.
+[[upload://fMe38J6fq8wSHAjj53a3xN0sV01.png]]
+
+Shizuku'yu baslatmanin 3 yontemi var. Bunlar; 1- Wireless Debugging 2-
+Computer / ADB 3- Root
+
+*Wireless Debugging Yöntemi* Bu yontemi kullanmak icin bir Wi-Fi agina
+bagli olmaniz lazim.
+
+Ayarlardaki "Cihaz Hakkında" bolumundeki "Derleme Numarası" secenegine 7
+kere basip gelistirici seceneklerini aktif etmeniz gerekiyor.
+[[upload://yfBfxiWZrpqgIKsPe6dPJt8l1yU.png]]
+[[upload://s40GTT7FGGe5pWAI7ae1t2cQmiZ.png]]
+[[upload://30PKcOpNMSGrDpVE6tQRHsrsQLj.png]] Gelistirici seceneklerini
+aktif ettikten sonra ayarlardaki "sistem" kismindan "gelistirici
+secenekleri" menusune girin.
+[[upload://5ssvFtKGZPvWPL9hicWnNyLBe5X.png]]
+
+Alta inip "USB Hata ayıklama" ve "Kablosuz Hata Ayıklama" seceneklerini
+etkinlestirin. [[upload://uv92NJb9qkjSrGiwrclcgsr5TSj.png]] Wireless
+Debugging'i etkinlestirmeye calistiginizda bir pencere acilacak, "bu
+ağda her zaman izin ver"i etkinlestirip izin verin.
+[[upload://bj07Cq1StzEwxLnJlcdsCJJX3IL.png]]
+
+Gerekli secenekleri etkinlestirdikten sonra Shizuku'yu açıp "Pairing"
+tusuna basin. [[upload://s1vHSN5ihkcerT7vp8KAexM6eFN.png]] Alta inip
+Developer Options secenegini secin, bir daha Gelistirici Secenekleri
+menusune yönlendirileceksiniz.
+[[upload://b546yQZoLfyH3Ow6vm4hzLiEuqM.png]] Alta inip Wireles Debugging
+*yazısının* üstüne basın ve "Eslestirme koduyla eşle" seçeneğini seçin.
+[[upload://pG5ubTWPZlQmdKHt5c89aKzQDC7.png]]
+[[upload://lPDYQ2zCRiDK21HTkV0MCcNtlBF.png]] Yaklasik 3 saniye icinde
+Shizuku'dan bir bildirim alacaksınız. Bildirime tiklayip ekranda yazan 6
+haneli kodu yazin ve gönderin.
+[[upload://pVBmPgSKTbrpzT2PZohJ5pvj2uZ.png]]
+[[upload://dd9VQxjeFXK4vs5mpcCDzzKWh1G.png]]
+[[upload://lQEubAdefUPwnEa6tEKp5mzQsfB.png]] "Pairing Successful"
+bildirimi geldiginde Shizuku uygulamasina dönüp "Start" tusuna basin.
+[[upload://q02eSOhIoZvXBzPSJKwFRd5wrlj.png]]
+[[upload://tkB3sqRrH8VV2AgMH6w0utNQdUB.png]] Herseyi dogru
+uyguladiysaniz ana ekranin bu sekilde gorunmesi lazim.
+[[upload://tYUFfeq0ruv8spXc7yb4Y9eQwZv.png]]
+
+*Computer/ADB Yöntemi* USB hata ayiklamayi etkinlestirin ve bu komutu
+calistirin:
+=adb shell sh /storage/emulated/0/Android/data/moe.shizuku.privileged.api/start.sh=
+
+*Root Yöntemi* Telefon rootluyken Shizuku'ya gerek yok ama yinede root
+ile baslatma secenegi var. Start For rooted devices kismindaki Start
+tusuna bastiginizda Shizuku sizden root izni isteyecek ve baslayacak.
+
+Shizuku basladiginda Shizuku destekli uygulamalar sizden bu sekilde izin
+isteyecek. [[upload://2RVbj44ny6VlitVelXBcWVi8XxH.png]]
+
+--------------
+
+Kn0 | 2023-09-09 11:29:00 UTC | #2
+
+Rehber için teşekkürler. Tek ekleyebileceğim şey Shizuku'in asıl hedefi
+uygulamalara daha kolay bir şekilde SystemAPI'larına erişim sağlamak.
+
+--------------

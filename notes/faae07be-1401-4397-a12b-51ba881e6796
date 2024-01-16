@@ -1,0 +1,213 @@
+:PROPERTIES:
+:ID:       faae07be-1401-4397-a12b-51ba881e6796
+:END:
+Heisenberg | 2023-09-07 19:48:12 UTC | #1
+
+Linuxta LoL yüklemek aslında oldukça basit bir işlem ancak wine
+bağımlılıkları ve ekran kartı driverlarının doğru yüklenmemesi sebebiyle
+kullanıcılar pek çok hatayla karşılaşıyor.
+
+Bugün Fedora üzerinden örnek vericeğim ancak siz linkini verdiğim
+rehberler ile LoL'ü Archlinux, Ubuntu, Opensuse gibi işletim dağıtımlar
+da yükleyebilirsiniz.
+
+İlk önce wine'ı ve wine bağımlılıklarını yüklüyoruz .Örneğin fedora da
+bu =sudo dnf install wine= / =sudo dnf install wine-core wine-core.i686=
+komutlarıyla yapılıyor diğer dağıtımlar için bu rehberi takip
+edebilirsiniz;
+https://github.com/lutris/docs/blob/master/WineDependencies.md
+
+İkinci Olarak ekran kartı driverımızı yükleyecek ve vulkan desteğini
+etkinleştireceğiz .Ekran kartınızın vulkan desteği olup olmadığını merak
+ediyorsanız , nvidia için;
+https://nouveau.freedesktop.org/CodeNames.html linkinde bulunan
+Kepler,Maxwell,Pascal,Volta,Turing,Ampere kategorileri altındaki
+kartlar, AMD kullanıyorsanız ise bu sitede
+https://www.amd.com/en/technologies/vulkan en altta Vulkan™-compatible
+components kısmında bulunan tüm kartlar vulkan destekler.
+
+Eğer kartınız vulkan desteklemiyorsa vulkan kütüphanleri indirmenize
+gerek yok.Vulkan desteklemeyen kartlar için sonda ek bir adım daha var .
+
+Örneğin Fedora Workstation için GeForce/Quadro/Tesla serisi kartlarda
+mağazaya gidip depolardan nonfree nvidia deposunu etkinleştiriyoruz
+=sudo dnf install akmod-nvidia= /
+=sudo dnf install xorg-x11-drv-nvidia-cuda= yazdıktan sonra bilgisayarı
+yeniden başlatıyoruz =nvidia-smi= ile driver ve cuda sürümümüzü ardından
+=inxi -G= komutu ile de hangi driverı kullandığımızı kontrol ediyoruz.
+Detaylı rehber; https://rpmfusion.org/Howto/NVIDIA
+
+Vulkan desteği için =sudo dnf install vulkan-loader vulkan-loader.i686=
+komutunu çalıştırıyor ve =vkcube= komutu ile vulkanın çalışıp
+çalışmadığını kontrol ediyoruz .Diğer dağıtımlar için lutrisin rehberi
+;https://github.com/lutris/docs/blob/master/InstallingDrivers.md
+
+Bu adımları tamamladıktan sonra lutrisi indirmeye hazırsınız, fedoranın
+depolarında olduğu için ben =sudo dnf install lutris= komutu ile
+indiriyorum. Lutris açıldıktan sonra ise + butonuna tıklatıp lutris
+websitesinde ara seçeneğini seçiyoruz. League of Legends yazıp önümüze
+gelen [[upload://2wB8KHNuMTR1CcsGPvnjLjGI4yd.png]] seçeneğini seçiyoruz
+ardından (standart)EUW seçeneğini seçiyor ve install
+diyoruz(serverınızın ne olduğu farketmez istemciden
+değiştirebilirsiniz)ayrıca wine mono installer gelirse onaylıyoruz.(dil
+seçme ekranında istediğiniz dili seçebilirsiz)
+
+League of Legends indirme ekranı geldiğinde ise kesinlikle hesap
+girmiyoruz, yalnızca yüklemenin tamamlanmasını bekliyoruz ve yükleme
+tamamlandıktan sonra önce pencereyi sonra ekteki riot client system
+tray'ine [[upload://cncqk7o2ptug1liXMxFlG06tz7M.png]] sağ tıklayıp
+kapatıyoruz.Ardından ´´İnstallation Complete ´´ yazısı gelene kadar
+bekliyoruz.
+
+Rehber bu kadardı ancak eğer ekran kartınız vulkan desteklemiyorsa
+lutriste league of legendsa tıklayıp start butonun sağ kısmında bulunan
+oktan ek seçeneklere ulaşıyor ve configure/yapılandır kısmından runner
+options/başlatma seçeneklerinden dxvk'yı kapatıyoruz.
+
+--------------
+
+wise | 2023-09-08 21:37:33 UTC | #2
+
+Ellerinize sağlık. Güzel bir rehber olmuş.
+
+[quote="Heisenberg, post:1, topic:430"] Bu adımları tamamladıktan sonra
+lutrisi indirmeye hazırsınız, fedoranın depolarında olduğu için ben
+=sudo dnf install lutris= komutu ile indiriyorum. Lutris açıldıktan
+sonra ise + butonuna tıklatıp lutris websitesinde ara seçeneğini
+seçiyoruz. League of Legends yazıp önümüze gelen [/quote] Şu kısımdan
+sonrasına biraz görünürlük kazandırmak açısından Yusuf İpek'e ait bu
+konuyla ilglii shorts videosunu ekliyorum.
+
+https://www.youtube.com/shorts/T2fPME7l_sE
+
+--------------
+
+alperokur | 2023-09-10 15:22:38 UTC | #3
+
+https://github.com/kassindornelles/lol-for-linux-installer/releases/tag/v.2.5.7
+
+Eskiden Lutris veya Snap üzerinden oynamaya çalışırdım fakat yukarıdaki
+link sayesinde oyunun hem kurulum aşaması otomatik yapılıyor hem de oyun
+anında açılıyor. Ekstra bir programla da uğraşmak zorunda kalmıyorsunuz.
+
+#+caption: Ekran Görüntüsü - 2023-09-08 07-41-39|690x388
+[[upload://5McoI0db51qWP5ED3Zccq4BKeOd.jpeg]]
+
+--------------
+
+LordErenify | 2023-09-16 08:34:16 UTC | #4
+
+Kolaymış ben daha zor sanıyordum.
+
+--------------
+
+kayra150 | 2023-09-17 11:15:04 UTC | #5
+
+Bunu az önce denedim indirme kısmında dondu indirmedi. Tekrar denedim
+aynı sorun. İndirdiği klasöre baktığımda da 6 GB küsur sadece Wine
+indirmişti.
+
+Gerçi konu sahibinin yönteminde de sonuç aynı. Launcher açılıyor 0.1
+KB/s hızında installing yazıyor. Kenardan bakıyorum diski, ağı kullanan
+program var mı diye, hiç indirme yükleme yükü yok. Sorun bende demek ki.
+😃
+
+--------------
+
+alperokur | 2023-09-17 16:26:20 UTC | #6
+
+https://github.com/kassindornelles/lol-for-linux-installer/releases/tag/v.2.5.2
+
+Debian/Ubuntu sürümler için 2.5.2 sürümü sorunsuz çalışıyor. Dün
+tekrardan kurdum. Yeni gelen sürümleri test etmeden canlıya almışlar
+sanırsam... Wine 8 başarılı bir şekilde çalışmıyor.
+
+--------------
+
+kayra150 | 2023-09-17 16:29:58 UTC | #7
+
+Hmm 2.5.2 diyorsun. Bir dahaki açışımda deneyeceğim sağolasın. 👍
+
+--------------
+
+Metin | 2023-09-17 16:30:12 UTC | #8
+
+bende lol for linux installer kuruyordu ama oyunu başlatmıyordu sadece
+riot istemcisini açıyordu.
+
+--------------
+
+alperokur | 2023-09-17 16:33:16 UTC | #9
+
+Komple bir kaldırın arkadaşlar. Oyunu kurduğunuz klasörü ve
+~/.config/league_install_path.json dosyasını da temizleyin. 2.5.2 sürümü
+deneyin bakalım sorun çözülecek mi. Ben de dün bayağı denedim Debian 12
+sürümünde de en son bu sürüm sorunsuz çalıştı.
+
+#+begin_example
+sudo apt purge lolfor* && sudo rm ~/.config/league_install_path.json
+#+end_example
+
+--------------
+
+kayra150 | 2023-09-17 16:46:58 UTC | #10
+
+Bu sürüm ilerliyke cidden donmadı install ekranında ama tam da internet
+hızının yavaş olduğu zamana denk geldi. Bakalım.
+
+--------------
+
+kayra150 | 2023-09-17 17:03:44 UTC | #11
+
+Yav arkadaş bu linuxta oyun oynamaya çalışmak da ne meşşakatli iş...
+Kardeşim diğer bilgisayarda online oyun oynuyor diye duraklatayım dedim
+şimdi dondu geri başlamıyor indirmeye. 😃 Daha uygun zamanda sıfırdsn
+deneyeceğim illa.
+
+--------------
+
+cannnAvar | 2023-09-17 17:12:33 UTC | #12
+
+riotun kendi installerı yok mu yada neden kendi installerlarını linuxa
+getirmiyorlar
+
+--------------
+
+Metin | 2023-09-17 17:24:20 UTC | #13
+
+oyunu portlamaları lazım ve linux te oynayanların sayısı genel
+oynaynları %1i fln o yüzden hem zaman hem de para gerek.
+
+--------------
+
+kayra150 | 2023-09-17 17:33:48 UTC | #14
+
+Bari steame falan gelseydi de proton ile deneseydik ne bu eziyet cidden.
+
+--------------
+
+Metin | 2023-09-17 17:35:26 UTC | #15
+
+zaten bu kullanılan toollar proton ile çalışıyor daha doğrusu protonun
+kullandığı şekilde çalışıyor proton kullanmadan
+
+[quote="alperokur, post:6, topic:430"]
+https://github.com/kassindornelles/lol-for-linux-installer/releases/tag/v.2.5.2
+[/quote]
+
+--------------
+
+kayra150 | 2023-09-17 18:06:17 UTC | #16
+
+Demek istediğim indirme ve kurma adımları sancılı oluyor önceki
+yorumlarda dediğim gibi, donup başlamıyor/duraklatsan devam etmiyor vb.
+Steam olsa ortada herhalde en azından bu süreçler daha az uğraştırırdı.
+
+--------------
+
+yusufipek | 2023-09-24 15:20:51 UTC | #18
+
+1 gönderi yeni bir konuya bölündü:
+[[/t/lutris-lol-kurulumunda-hata/1716][Lutris LoL Kurulumunda Hata]]
+
+--------------

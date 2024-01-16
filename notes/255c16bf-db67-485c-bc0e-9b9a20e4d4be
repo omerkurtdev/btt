@@ -1,0 +1,148 @@
+:PROPERTIES:
+:ID:       255c16bf-db67-485c-bc0e-9b9a20e4d4be
+:END:
+anon21506950 | 2023-09-14 11:10:13 UTC | #1
+
+Son günlerde düşündüm ve bu yazıyı yazmaya karar verdim. Kullandığım 🖥️
+*Linux'umda neler var*? Bu yazıda tüm kendi kurduğum yazılımları
+anlatacağım. Arkanıza yaslanın, macera biraz uzun olacak.
+
+#+begin_html
+  <!-- pagebreak -->
+#+end_html
+
+** 🖥️ Programlar
+:PROPERTIES:
+:CUSTOM_ID: programlar
+:END:
+#+caption: Nautilus
+[[upload://trxiNX6Gzgx4xaFL8vC9MDHorL8.webp]]
+
+Öncelikle bu bilgisayarda *GNOME* masaüstü ortamı kurulu olup, *SDDM*
+oturum yöneticisi kuruludur. Oturum yöneticisi sistem açılırken onla
+birlikte aktifleşiyor. Böylelikle oturum açarken TTY1 oturumu ile
+muhattap olmuyorum. Bunun dışında, *GNOME*'u öyle sade bir şekilde
+kullanmıyorum. Bunları aşağıda eklenti ve görevi ile yazdım. Bunlardan
+sonra tamamen altbaşlıklar yoluyla ilerleyeceğim.
+
+*** 🖥️ GNOME Shell eklentilerim
+:PROPERTIES:
+:CUSTOM_ID: gnome-shell-eklentilerim
+:END:
+- Add to Desktop: Bir dizindeki simgeyi veya dosyayı masaüstüne alır.
+- Desktop Icons: Neo: Masaüstündeki simgeleri gösteren uygulamadır.
+  Aslında *Desktop Icons NG* çatalıdır.
+- Extension List: Üst alana bir eklenti listesi ekler.
+- Show Desktop Button: Masaüstüne dönmek için kullanılıyor.
+- Tray Icons: Reloaded: Discord vb. gibi olan uygulamaların olduğu yer.
+- User Themes: Gnome-Shell temalarınızı daha rahat değiştirme alanı.
+- Window List: Açık pencereleri görebilme şansını veriyor.
+
+*** 🖥️ Internet tarayıcılarım
+:PROPERTIES:
+:CUSTOM_ID: internet-tarayıcılarım
+:END:
+- Mozilla Firefox: İlk göz ağrım.
+- WaterFox ve Palemoon: Misafiler içindir. Bu ikisi de Mozilla
+  çatalıdır.
+- Floorp: Diğer kanalım için Japonlar tarafından yapılan bir Mozilla
+  çatalıdır.
+
+*** 🖥️ Yazı & İçerik için araçlarım
+:PROPERTIES:
+:CUSTOM_ID: yazı-içerik-için-araçlarım
+:END:
+- Ghostwriter: Yazılarımı ve planlarımın olduğu yazılım.
+- Flameshot: Kendisi bir görsel çekme aracıdır.
+- GIMP: Bu ve diğer sitelerim için kullandığım tüm görsellerimi
+  ayarladığım yazılım.
+
+*** 🖥️ Uçbirim ve diğer şeyler
+:PROPERTIES:
+:CUSTOM_ID: uçbirim-ve-diğer-şeyler
+:END:
+- GNOME-Terminal: CTRL+SHIFT+ESC ile açıyorum. Uçbirimsel ihtiyaçlarım
+  için kullanıyorum. Linux Mint bunu istemez ama ben dayanamam.
+- Neofetch: Sistem bilgilerimi gördüğüm alan diyebilirim.
+- ZSH: Şu anki kullandığım bash uygulaması.
+- Mozc: Japonca için şart.
+- PCManFM: Bazen ihtiyaç anında bulundurduğum bir dosya yöneticisi.
+- Wine: Windows uygulamalarını kullanmak için.
+
+*** 🖥️ Internet araçlarım
+:PROPERTIES:
+:CUSTOM_ID: internet-araçlarım
+:END:
+- Discord: Bir çok arkadaşımın olduğu yer.
+- Spotify: Müzik dinlemek için kullandığım uygulama.
+- Steam: Ücretli olan oyunlarımı oyun oynamak için.
+
+*** 🖥️ Windows çöpleri
+:PROPERTIES:
+:CUSTOM_ID: windows-çöpleri
+:END:
+- Google Sketchup: Kendisi bir 3D modelleme aracı.
+
+** 🖥️ Oyunlar
+:PROPERTIES:
+:CUSTOM_ID: oyunlar
+:END:
+#+caption: PCManFM
+[[upload://mNXp3XLYptNk0ap6ThG4wEDFVP6.webp]]
+
+Bilgisayarımdaki oyunların hepsi burası kadar değil ama en çok
+oynayacaklarımı tuttuğumun alan.
+
+*** 🖥️ Steam
+:PROPERTIES:
+:CUSTOM_ID: steam
+:END:
+- Half-Life, Counter-Strike 1.6, Counter-Strike: Condition Zero ve
+  Counter-Strike: Condition Zero: Deleted Scenes: Bu oyunları anlatmak
+  gerek yok.
+- Papers, Please: Evraklar lütfen.
+- Stardew Valley: Bir çiftçilik oyunu.
+
+*** 🖥️ Non-Steam
+:PROPERTIES:
+:CUSTOM_ID: non-steam
+:END:
+- Corechess: Bir satranç istemcisidir.
+- Minetest: Bir Minecraft çatallamasıdır.
+- RVGL ve Modları: Bunlar Re-Volt'un XBOX sürümünün sızdırılan kodların
+  sonucudur.
+- SuperTux 2: Bir Super Mario Bros. çatallamasından daha fazlası.
+- SuperTuxKart: Bir car-combat yarış oyunu. Re-Volt'ta o türdendir.
+- Trigger Rally: Bir ralli oyunudur.
+
+*** 🖥️ Windows oyunları
+:PROPERTIES:
+:CUSTOM_ID: windows-oyunları
+:END:
+- Need for Speed: Underground 2: Kendisi bir araba özelleştirme ve yarış
+  oyunu.
+- Need for Speed: Most Wanted: Kendisi polis kovalaması olan bir yarış
+  oyunudur.
+
+** 🖥️ Kaynakça
+:PROPERTIES:
+:CUSTOM_ID: kaynakça
+:END:
+Benim Linux'ta bunlar var. Ayrıca Ofis uygulamalarını sildim.
+
+--------------
+
+timucin | 2023-09-15 08:25:48 UTC | #2
+
+Sistem özelliklerin neler.
+
+--------------
+
+anon21506950 | 2023-09-15 08:37:29 UTC | #3
+
+#+caption: img_ 15-Eyl-2023-11-37-11-Cuma|491x473
+[[upload://lvpcvl61vajmHwSnCA3pWaoULr1.png]]
+
+Sistem bilgim böyle.
+
+--------------

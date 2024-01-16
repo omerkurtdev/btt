@@ -1,0 +1,89 @@
+:PROPERTIES:
+:ID:       43db3f89-3e05-4b18-8264-658e10f2df7a
+:END:
+tempestian | 2023-09-11 17:56:42 UTC | #1
+
+Hepinize iyi akşamlar dilerim. Yeni başlayan ve Dual Boot yapan
+arkadaşlara çözüm sunmak istiyorum. Umarım işinize yarar.
+
+Aynı diskte birden fazla işletim sistemi kullanıyorsak GRUB genelde
+otomatik olarak algılar ancak benim gibi 2 farklı disk kullanıyorsanız
+algılayamaz. Algılaması için 2 işlem yapabiliriz. Bunlardan biri daha
+zor diğeri ise çok basit ama ikisi de kısa yöntemler.
+
+Bu rehberde örnek olarak aşağıdaki şekilde göstereceğim, sizlerde
+farklılık olabilir. Kendinize göre düzenlemeniz gerekir.
+
+Benim HDD ve SSD'm var. SSD'de Arch Linux, HDD'de Windows 10 ve Android
+TV kurulu. SSD üzerindeki Arch Linux'un GRUB menüsü, diğer diskteki
+işletim sistemlerini otomatik algılamıyor. Rehberde HDD: /dev/sda, SSD:
+/dev/sdb olarak anlatılmaktadır.
+
+*1)* *OS-Prober ile diski göstermek.* OS-Prober'e diski göstererek
+algılayıp GRUB menüsüne eklemesini sağlayabiliriz. Bunun için
+kullandığınız dağıtıma =os-prober= ve =update-grub= paketlerini
+kurmalısınız.
+
+SSD üzerindeki GRUB'a Windows 10 ve Android TV'yi göstermek için:
+
+Kod:
+
+#+begin_example
+os-prober /dev/sda
+#+end_example
+
+Yazıyoruz ve OS-prober'in /dev/sda içine kurulmuş işletim sistemlerini
+algılamasını sağlıyoruz.
+
+OS-prober'in algıladığı işletim sistemlerinin GRUB menüsünde görünmesini
+sağlamak için =sudo update-grub= yazarak GRUB menüsünü güncelliyoruz.
+
+Bu işlem işe yaramadıysa biraz daha uzun olan 2. yönteme bakınız.
+
+2) [@2] GRUB menüsüne elle işletim sistemini eklemek. Öncelikle GRUB'a
+   eklemek istediğiniz işletim sistemini boot eden dosyaların hangi
+   diskin hangi bölümünde olduğundan emin olmalısınız. Windows yaklaşık
+   50 MB'lik bir kısımda saklar bunu, hangisinde olduğunu görmek için:
+   =lsblk= yazın. Ardından her diskin her bölümü kaç MB olduğuyla
+   birlikte terminalinizde görünecektir. Örneğimize göre Windows 10
+   işletim sistemi /dev/sda1 içerisinde kurulu. GRUB'a manuel olarak
+   ekleyebilmemiz için UUID'sini öğrenmemiz gerekiyor.
+
+Bunu şu şekilde yapmalıyız: =blkid /dev/sda1=.
+
+UUID kısmını kopyalamalıyız. Ardından =/etc/grub.d/40_custom= dosyasını
+nano ile açmalıyız (Ben vim kullanıyorum ancak bu rehberi yeni
+kullanıcılara uygunanlatmak istediğim için bu rehberde Nano'yu
+öneriyorum.) Bunun için =sudo nano /etc/grub.d/40_custom= yazmamız
+gerekiyor. Açılan dosyada (UUID yapıştır) yazdığım kısma UUID'yi
+parantez olmadan yapıştırıp sonra da dosyayı CTRL ve X tuşuna aynı anda
+basarak kaydedin.
+
+Kod:
+
+#+begin_example
+menuentry "Windows 10" { insmod ntfs search --no-floppy --set=root --fs-uuid (uuid yapıştır)
+ntldr /bootmgr }
+#+end_example
+
+Ardından az önce elle eklemiş olduğumuz Windows 10'u GRUB menüsünde
+görmek için GRUB'ın config dosyasını güncelleyelim. Bunu şu komutla
+yapmalıyız: =sudo grub-mkconfig -o /boot/grub/grub.cfg=. Bu komutu
+yazmamız ardından sistemi yeniden başlattığınızda GRUB menüsünde işletim
+sistemleriniz görünmeli ve açılmalıdır.
+
+--------------
+
+Tokgoz | 2023-09-12 09:05:34 UTC | #2
+
+Çok teşekkür ederim verdiğiniz faydalı bilgilerden dolayı. Ben tek HDD
+si olan laptopuma windows kurulu sistemin yanına linux kurmak istedim.
+Kurulumda Windowsun EFİ kısmını EFİ/Boot seçip ayırdığım 20 GB lık kısma
+linux kurdum. Grub açılış menüsü gelmeden direk linux sistemi açılıyor.
+Grub menüsünde windowsu nasıl ekleriz. Şunuda merak ediyorum Grub
+dosyası EFİ bölümüne yazılıyor. BIOS açılışta Linux ve Windows seçeneği
+geliyor. Bahsettiğim şekilde yapılan Kurulum sonunda 1.olarak Windowsu
+mu göstermeliyiz. İşin içinden çıkamadığım için sormak zorunda kaldım.
+yardımcı olursanız sevinirim.
+
+--------------

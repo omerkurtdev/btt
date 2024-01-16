@@ -1,0 +1,252 @@
+:PROPERTIES:
+:ID:       80e32e44-50fb-464b-9008-ae6f918329d8
+:END:
+omer | 2023-09-07 17:39:03 UTC | #1
+
+#+begin_quote
+Bu rehberdeki bazı işlemler Harici Disk'inize zarar verebilir, bu
+durumda herhangi bir sorumluluk kabul etmiyorum.
+
+#+end_quote
+
+#+begin_quote
+Tavsiyem kenara attığınız bir Harici Disk varsa veya yeni bir Harici
+Disk aldığınızda boşta kalan Harici Disk'inizin durumu kötü ise
+yapmanız. Birincil Harici Disk'inize yaptığınızda bozulabilir veya
+tamamen kullanılamaz hale gelebilir.
+
+#+end_quote
+
+*1. Diskimizdeki Tüm Sektörleri Temizlemek* Sektör derken aklınıza
+sadece bozuk sektörler gelmesin, tüm sektörlerden bahsediyoruz
+:slight_smile: Bunun için /Low Level Format/ denilen bir yöntem
+kullanacağız. Bunun için
+[[https://hddguru.com/software/HDD-LLF-Low-Level-Format-Tool/HDDLLFsetup.4.40.exe][HDD
+Guru LLF Tool]] dosyasını indiriyoruz. Ben burada anlatım amaçlı WinPE
+kullandım siz isterseniz başka şekillerde de kullanabilirsiniz.
+(Bilgisayarınız sisteminin yüklü olduğu diskde KESİNLİKLE yapmayın!)
+
+[[upload://jhL8JC3bSrZNeG6aO1KhugzYVcD.png]] *Burada diskinizi seçin,
+fakat dikkatli olun istemediğiniz bir depolama aygıtını seçmeyin.*
+/Continue >>>/ Yazısına basın.
+
+[[upload://6lYHaEeSae2eRCP9e9Bbpdvhn2O.png]] Karşınıza böyle bir ekran
+çıkar, isterseniz S.M.A.R.T verilerinizi ilgili menüden bakabilirsiniz
+fakat bizim girmemiz gereken yer *LOW-LEVEL FORMAT* kısmı.
+
+[[upload://bwDIX8Cda4msKBOXRzvRsvby592.png]] Burada öncelikle Perform
+Quick Wipe (just remove partitions and MBR) seçerek FORMAT THIS DEVICE
+diyelim. Bu hızlı olacaktır fakat bundan sonra bu tiki tekrar kaldırarak
+aynı seçeneği seçeceğiz. İşte bu kısım diskinize, donanımınıza bağlı
+olarak 24 Saati bulabilir.
+
+- İlk olarak Quick Wipe attık böylece diskteki bölümleri silmiş olduk ve
+  ayrıca MBR de silindi bu şekilde diskimiz tek bir kısma toplandı,
+  fakat MBR silindiği için şuan Çevrimdışı olarak nitelendirilebilir.
+
+- Ardından Low Level Format denilen işlemi gerçekleştirdik. Bu kısımd
+  diskimizdeki tüm sektörlere 0 yazıldı. Yani eğer ki 000100100 olan
+  sektörler vardı ise bunlar 000000000 oldu böylece diskimiz tamamen
+  temizlendi.
+
+*Not; Aşırı büyük disklerde bu işlem diskin manyetiğini bozabilir, uzun
+süre diskin üzerine 0 yazılması sonucu disk yıpranabilir. Sorumluluk
+size ait.*
+
+*2. Diskimizdeki Bozuk Sektörlerin Üstünü Örtmek*
+
+Bozuk sektörler genelde düzeltilemez, bu sebeple onların üstüne
+yazılmasını engelleyerek onların *Üstünü Örtmüş Olursunuz* bu veri
+kaybını en aza indirir. Bunu [[http://www.dposoft.net/][HDD
+Regenerator]] ile yapacağız.
+
+*NOT; Çok hasarlı veya çok eski disklerde (ayrıca çok büyük disklerde)
+bu işlem aşırı miktarda diskte azalmaya sebep olabilir, işlem sonucu
+belki 100GB'dan fazla bir kısım yazılamaz olarak işaretlenebilir.
+Sorumluluk size ait.* *VE BU İŞLEMİ LÜTFEN 1. ADIMDAN HEMEN SONRA
+YAPMAYIN DİSKİ ÇOK FAZLA ISITABİLİRSİNİZ!*
+[[upload://o0ATkJMFu0jT3nAWdlBxFArIEhI.png]] Bu ekranda Bootable USB
+Flash kısmını seçelim.
+
+[[upload://7OIeMyhwr3wbqCRWmDPO9l1aCXR.png]] Kullanmak istediğiniz USB
+Flash'ı seçin.
+
+[[upload://71fiVbV93d9qQZWnPGM4MQRT5m9.png]] Burada hemen yeniden
+başlatarak boot etmek isterseniz YES diyebilirsiniz. (Eğer
+istemiyorsanız tabii ki NO'ya basın :smiley: )
+
+Bu kısımdan sonra USB ile açalım programı. Bunun için aşırı değişken
+yöntemler var bunu Google Amca'ya "boot menu key on ASUS /motherboards/
+veya /laptops/" gibi yazarak bulabilirsiniz. Aklınızda bir fikir
+oluşması için eski de olsa
+[[https://www.enpedi.com/2010/02/bios-onyukleme-boot-onceligini.html][bu
+yazı]] işinize yarayabilir.
+
+#+caption: image|690x367, 75%
+[[upload://wS2TOp4EWTbI70gTewYMTvsd3Eh.png]]
+
+Bu ekran sizde pencere olarak tabii ki çıkmaz örnek olması için koydum,
+burada 2 yazacağız.
+
+#+caption: image|690x367, 75%
+[[upload://kYuYVVnZBoTVjWSndOWsHFv7SJs.png]]
+
+Burada direkt taramadan sonra onarıma geçmek için tavsiyem 1 yazmanız
+fakat isteğe bağlı 2 seçeneği ile direkt onarıma geçmeyebilirsiniz. Ya
+da 3 ile kendinize göre ayarlayabilirsiniz.
+
+#+caption: image|690x367, 75%
+[[upload://gomMLPEmLMgeE2ZSmk6b3YdgkJx.png]]
+
+Bu tarz bir ekran farklı şekillerde çıkabilir. Bu süreç diskin
+büyüklüğüne göre saatler sürebilir.
+
+- Şimdi burada ne yaptığımızı söyleyelim, öncelikle program diskimizde
+  bulunan geç tepki veren sektörleri buldu. Sonra bozuk sektörlerimizi
+  buldu ve son olarak bunları yazılamaz olarak işaretledi. Böylece olası
+  veri kayıplarından kurtulmuş olduk.
+
+- Bu işlemden sonra diskinizin depolamasında biraz değişim olabilir
+  eskiliğine ve sektörlerin bozukluğuna bağlı 10GB kadar bir azalma
+  olabilir. Fakat bu daha büyük ve daha eski disklerde belki 50-100GB
+  gibi değerlere ulaşabilir. Bu değişimin sebebi, sektörlerin yazılamaz
+  olarak işaretlenmesi. Kısaca *BOZUK SEKTÖRLER BU YÖNTEM İLE
+  DÜZELTİLMEZ SADECE ÜSTÜ ÖRTÜLÜR!*
+
+- /Ek olarak not düşme gereği duydum, 1. Adımdan önce bu adımı da
+  yapabilirsiniz size kalmış fakat içi dolu sektörler ile bunu yapmak
+  bence çok sağlıklı olmaz yani ilk önce bunu yapmak(ya da sadece bunu
+  yapmak) daha fazla sektör kaybına sebep verebilir./
+
+- *Ve son olarak bitişimiz, bu işlemler geçici çözümler olarak
+  düşünülebilir çünkü bunlar kalıcı değiller arada tekrar yapabilirsiniz
+  fakat asla sonsuza kadar gidemezsiniz bu şekilde, her diskin bir ömrü
+  var. Eski disklerini değerlendirmek isteyenler için bu rehberi
+  hazırlamak istedim...*
+
+1. Neler Yaptık?
+
+2. Öncelikle sektörlerimizi tamamen temizledik, böylece bozuk sektörler
+   daha kolay bulunabilir oldu.
+
+3. Sonra bu ortaya çıkan bozuk sektörlerimizi yazılamaz olarak
+   işaretledik.
+
+4. Yazılamaz olarak işaretlemin sonucunda diskimizin bir miktarını
+   kaybetmiş olduk.
+
+5. Fakat diskimizin kaybettiğimiz kısmını eğer ki yazılamaz
+   işaretlemeseydik bazı verilerimiz bozulabilirdi, bu sayede bozulmayı
+   en aza indirmiş olduk.
+
+--------------
+
+F2010furs | 2023-09-07 17:53:40 UTC | #2
+
+Bunları bir linux dağıtımında nasıl yapabiliriz?
+
+--------------
+
+omer | 2023-09-07 18:11:31 UTC | #3
+
+O konuda çok bir bilgim yok, o yüzden yanlış yönlendirmek istemem. HDD
+Regenerator zaten USB'den açılıyor Low Level Format içinde tavsiyem
+WinPE kullanılabilir. Ama belki
+[[https://linux.m2osw.com/low-level-formatting-hdd-or-ssd][şu yazı]] Low
+Level Format için işe yarayabilir. HDD Regenerator yerine de belki
+[[https://www.google.com/amp/s/www.debugpoint.com/scan-repair-bad-sector-disk-linux/%3famp=1][şu
+yazı]] faydalı olabilir.
+
+Ayrıca adımlarda ne yapıldığını da açıkladım bunları linux da nasıl
+yaparım diye de araştırabilirsiniz.
+
+--------------
+
+Alp-D | 2023-09-08 20:53:09 UTC | #4
+
+Gerekli aparatları alır, modeme usb girişinden takar ve bulut sunucu
+alternatifi olarak kullanırdım.
+
+--------------
+
+Valentinus | 2023-09-08 22:22:05 UTC | #5
+
+Sadece disk ile sunucu kuramazsınız ki, elinizde ancak eski bir PC ya da
+Raspberry Pi vs varsa home server ya da dilediğiniz gibi
+kullanabilirsiniz. Ek olarak Samba (yazılım) ve NAS araştırmanısı
+öneririm. :smile:
+
+--------------
+
+Alp-D | 2023-09-09 07:18:40 UTC | #6
+
+Şuan sadece usb bellek ile yapıyorum gayet başarılı. Sizin dediğiniz
+biraz emek istiyor yanlış anlamadıysam. Modemimde böyle bir özellik
+bulunuyor.
+
+--------------
+
+Valentinus | 2023-09-09 08:29:42 UTC | #7
+
+Hmm, sanırım siz modem Multimedia Sharing yapıyorsunuz. O da güzel bir
+fikirmiş, denenir. :+1:
+
+--------------
+
+anon21506950 | 2023-09-09 13:58:18 UTC | #8
+
+Konu başlığı ve içeriği çok mantıklı değil. Bence "Eski HDD'nizi hayata
+döndürme" olabilirdi.
+
+--------------
+
+omer | 2023-09-10 11:30:35 UTC | #10
+
+Burada sadece hataların üstünü örtüyoruz o yüzden hayata döndürmek biraz
+yaniltmaca olabilir, sektörler sonradan çoğalır yani yine bozulur bu HDD
+bozulmadan son dönüş yani sadece geciktiriyoruz ne zaman bozulacağını
+
+--------------
+
+cografyakaderdir | 2023-09-10 22:15:50 UTC | #11
+
+Kıymetli verileriniz için sorunlu disk kullanmak risklidir. Ama günlük
+önemsiz işleriniz için low level candır. Diskinizi çöpe atmak yerine
+gittiği yere kadar kullanabilirsiniz. Aceleniz var ise
+gnome-disk-utility gibi bir araçla format disk/slow (partitionı değil
+komple diski formatlamaktan bahsediyorum) yöntemini kullanmak işinize
+yarayabilir. Bu yöntemi kullanarak 10 yıldan daha yaşlı eski laptopımı
+ve badsectorlü diskini mutlu mesut kullanmaya devam edebildim)
+
+--------------
+
+kayra150 | 2023-10-21 10:14:13 UTC | #12
+
+Keşke HDD Regenerator gibi ücretli/kısıtlı sürüm kullandırtan bir
+programa birkaç ücretsiz alternatif de ekleseydeniz. İlerleyemeyince
+hevesim kırıldı. Şimdi Victoria diye bir program buldum orada deniyorum
+deneyeceğimi.
+
+Not: Bu işlere daha önce hiç girmemiş kişilere tavsiyem, paranız varsa
+diskteki yedeklenmesi gereken bilgileri alın ve diski çöp kutusuna atın.
+İnternette bu tarz sorunlarla arama yaptığınızda bulabildiğiniz 2 adet
+bilgi var. 1) Tarama yapma. Tarama yapmak bir çözüm olmasa da her yerde
+üstüne basıla basıla sanki sorununuzu çözecek bir işlemmiş gibi tarama
+işlemi anlatılır önerilir. Yahu arkadaş ben sorunu taratarak buldum
+diyelim, çözümü ne? O yok işte tabiri caizse devlet sırrı mübarek.
+
+2) [@2] En sonki işlemlere gelince sizi paralı/kısıtlı programlara
+   yönlendirmek. Adım adım bulduklarınızı uygularsınız, bir de
+   bakarsınız ki tam en son adıma gelmişsiniz programda işinize
+   yarayacak işlem hemen sizden para dilenir... Ne heves kalır ne
+   istek...
+
+O yüzden sizlere tavsiyem, çok uğraşmayı seven biri değilseniz ve
+başınız bad sector gibi sorunlarla dertteyse direkt diski çöpe atın
+kafanız da cebiniz de rahat olsun. Aylık bilmem kaç dolar vermek yerine,
+en ucuz ssd ya da hdd alsanız bile kardasınız sayılır..
+
+Bu arada konu sahibi yanlış anlamasın ben genel olarak yazdım. Yıllardır
+bu konularla internette çok dolaştım. Deneyimim bu şekilde.
+
+--------------

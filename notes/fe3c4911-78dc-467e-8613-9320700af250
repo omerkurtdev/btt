@@ -1,0 +1,83 @@
+:PROPERTIES:
+:ID:       fe3c4911-78dc-467e-8613-9320700af250
+:END:
+omer | 2023-09-08 17:13:52 UTC | #1
+
+#+begin_quote
+Diskiniz yarıda kalan bir format sonrası dosya gezgini arayüzü ile
+erişilmeye çalışıldığında ulaşılamaz olabilir ayrıca disk yönetimi bu
+diski görmeyebilir veya bunda bir işlem yaparken donabilir, hata
+verebilir. Bu durumlarda sizi kurtaracak olay diskpartdır. Bu rehber
+diskpart ile diskinizi nasıl kurtaracağınızı anlatır.
+
+#+end_quote
+
+*1. Adım - Ortamı Hazırlayın*
+
+İlk olarak =Windows + R= tuşları ile Çalıştır penceresini açarak
+=diskpart= yazalım.
+
+[[upload://drcjrzUWgwWehSpeAbCWPRLy1WL.png]] Bu ekrana geldiğiniz zaman
+=list disk= komutunu yazarak diskinizin numarasını öğrenin. Burada biz
+numarayı 1 olarak alacağız çünkü ben şuan bir USB diskimi kurtarıyorum.
+
+*2. Adım - Diski Temizleyelim*
+
+Şimdi bazı çeşitli olaylar sebebi ile diskinizin dosya sistemi yanlış
+yapılandırılmış olabilir veya diskinizin bölümlendirmesi de yanlış
+olabilir bunun için öncelikle =clean= komutunu kullanacağız
+
+Bundan önce diskimizi seçmemiz gerekiyor;
+[[upload://bs1vk9frv61FAigy7glWDS07Igz.png]] Az önce numarasını
+aldığımız diskimizi seçtik
+
+Şimdi =clean= komutunu yazarak diski temizleyelim.
+[[upload://dpOs4L1dLPL65N30gU7sYaWOfDA.png]]
+
+#+begin_quote
+/Önemli!/ *Bundan sonra diskiniz aşağıdaki şekilde görünebilir. Diğer
+komutlarımızı da tamamladığımız zaman bu düzelecek.*
+[[upload://dqKaDIRalnJPKeEHE2ox0zhRwYS.png]]
+
+#+end_quote
+
+Şu anda diskimizdeki tüm bölümler silindi! Eee... biz bölümler olmadan
+bu havalı dosyaları nereye koyacağız :smiley: İşte şimdi bunun için
+=create partition primary= komutu ile bir bölüm oluşturalım.
+
+#+caption: image|506x77
+[[upload://lvaHcNiKW5mWA2YdIzBMnqUxdgr.png]]
+
+İşte böyle artık bölümümüz var... Ama dosya sistemi yok! Havalı
+dosyalarımız üzgün :frowning: Hadi onları mutlu etmek için sonraki adıma
+geçelim!
+
+*Adım 3 - Diski Tekrar Kullanılabilir Hale Getirelim*
+
+Şimdi burada eğer ki USB diski teyp, TV vs. gibi cihazlarda kullanacak
+iseniz *FAT32* seçin, fakat bu bir HDD ise veya bu diskte
+[[https://support-tr.wd.com/app/answers/detailweb/a_id/43011/~/bir-usb-fla%C5%9F-bellek-veya-haf%C4%B1za-kart%C4%B1na-4gb-tan-b%C3%BCy%C3%BCk-dosya-kopyalama#:~:text=Bu%20FAT32%20s%C4%B1n%C4%B1rlamas%C4%B1ndan%20dolay%C4%B1d%C4%B1r.%204GB%27%20tan%20b%C3%BCy%C3%BCk%20olan%20dosyalar%20FAT32%20hacmine%20kaydedilemez.%20Fla%C5%9F%20belle%C4%9Fi%20exFAT%C2%A0veya%C2%A0NTFS%27%20e%20bi%C3%A7imlendirme%20sorunu%20%C3%A7%C3%B6zecektir.][4GB
+üstü dosyalar]] koyacaksanız *NTFS* tercih edin.
+
+/NTFS tercih etti iseniz;/ =format fs=ntfs quick=
+
+/FAT32 tercih etti iseniz;/ =format fs=fat32 quick=
+
+/Quick format yerine tüm sektörleri mi temizlemek istiyorsunuz? O zaman
+[[https://btt.community/t/eski-hddnizi-nasil-degerlendirsiniz/386][bu
+rehberime]] göz atabilirsiniz :)/
+
+Ben burda FAT32 tercih ettim
+[[upload://AnYN4EcoQRcjz2gR1OEO1xT28QH.png]]
+
+Tamam güzel hoş fakat... Bu sürücünün bir harfi olmazsa nasıl bulacağız
+ki, şuan başı boş takılıyor eğer bir harfi olmazsa bizim şu havalı
+dosyalar ne yapar!
+
+Son olarak =assign= ile diskimize şuan müsait olan bir harfi atadık.
+[[upload://kv5P9qgB6iqnFd7LckW9jeFcGG.png]]
+
+Bakın diskimiz ortaya çıkmış bile :slight_smile:
+[[upload://xmTHoGdFeXaZolBjRxnwSVrmoHN.png]]
+
+--------------

@@ -1,0 +1,111 @@
+:PROPERTIES:
+:ID:       404f4ad3-17b0-4f0b-aa92-68c1bf6687ff
+:END:
+twoxa | 2023-09-10 15:44:15 UTC | #1
+
+Şuanda Linux'da Android uygulamalarını çalıştırmanın en iyi yolu olan
+Waydroid ne yazık ki X11'de çalışmıyor. Waydroid'i X11 üzerinde
+çalıştırmak için Weston adlı Wayland Compositor'unu kullanmanız lazım.
+Öncelikle kullandığınız dağıtım paket yöneticisini kullanarak =weston=
+paketini kurun.
+
+#+begin_example
+sudo dnf install weston   #fedora
+sudo pacman -S weston     #arch
+sudo apt install weston   #debian/ubuntu
+sudo emerge weston        #Gentoo
+sudo xbps-install weston  #Void
+#+end_example
+
+Weston'u kurduktan sonra direkt olarak =weston= komutu ile
+başlatabilirsiniz. [[upload://9fbCpK18eBRx6xCrgxuYi0m64qZ.jpeg]]
+Weston'u başlattığınızda sizi bu pencere karşılayacak
+[[upload://ocT63iHBP8jq1BPSoJh5sIwJovM.jpeg]] Pencerenin sol üstündeki
+terminal iconuna tıklayarak bir terminal penceresi açın ve
+=waydroid show-full-ui= komutunu çalıştırın, Waydroid weston
+penceresinin içinde açılacak.
+[[upload://5jIv7InRz5rZKM29LdorAPu9e36.jpeg]]
+
+https://www.youtube.com/watch?v=QFTyTepeyX0
+
+--------------
+
+tempestian | 2023-09-10 19:12:44 UTC | #2
+
+Ubuntu touch, post market os gibi mobil GNU/Linux dağıtımları da Weston
+kullanıyor ve böylece Waydroid açabiliyor. Ben de bu sayede Weston'u
+öğrenmiştim. X11'de yapmak aklıma gelmemişti. Ellerinize sağlık hocam.
+
+--------------
+
+twoxa | 2023-09-10 19:13:02 UTC | #3
+
+Teşekkürler :grin: PostmarketOS'de gnome-mobile, plasma-mobile ve
+phosh(?) Wayland kullanıyor bu arada, onlarda direkt olarak
+çalıştırıyor. Bu üçü dışındakilerde weston kullanıyor yine.
+
+--------------
+
+tempestian | 2023-09-10 19:14:19 UTC | #4
+
+PostMarket OS wikisinde Weston ile alakalı yazı görmüştüm. Kullanmadığım
+için bilmiyorum. Rehberi sizin yaptığınızı da yeni fark ettim hocam
+:slight_smile:
+
+--------------
+
+anon21506950 | 2023-09-15 12:56:53 UTC | #5
+
+#+caption: img_ 15-Eyl-2023-15-56-12-Cuma|690x388
+[[upload://s9o6rDLnaHlYc692WmkEKualvXS.png]]
+
+Gereken her şeyi kurdum ama böyle bir hata alıyorum. Ekran kartımda
+vulkan yok.
+
+--------------
+
+twoxa | 2023-09-15 13:38:05 UTC | #6
+
+=killall waydroid= Yapin ve tekrar deneyin waydroid dogru sekilde
+kuruluysa.
+
+--------------
+
+Telemetri | 2023-09-15 13:37:25 UTC | #7
+
+İlk önce waydroid'i bilgisayarına kurman lazım. Yusuf'un bu konu
+hakkında videosu vardı.
+
+--------------
+
+MrEnessHS | 2023-10-21 19:51:50 UTC | #8
+
+Ubuntu Touch Ubuntu'nun geliştirdiği Mir ekran sunucusunu kullanıyor. Bu
+ekran sunucusu aynı zamanda Wayland'i de desteklemekte. Küçük bir
+düzeltme 😉
+
+--------------
+
+dengesizkokarca | 2023-10-22 09:05:00 UTC | #9
+
+Ben de yazacaktım bir rehber bu konuda. Ben cage ile yapıyorum. Gerekli
+paketler cage alacritty (veya başka herhangi bir terminal) waydroid TR-Q
+klavye ile çalıştırmak için; XKB_DEFAULT_LAYOUT=tr cage -- alacritty
+--hold -e waydroid show-full-ui
+
+--------------
+
+dengesizkokarca | 2023-10-22 09:06:34 UTC | #10
+
+Bütün distrolarda killall çalışmıyor. yerine pkill kullanın ve ayrıca
+bende waydroid kapanmak için root yetkisi istiyor.
+
+--------------
+
+twoxa | 2023-10-22 09:41:18 UTC | #11
+
+Cogu dagitim killall kullandigindan killall dedim. Pkill favorim zaten,
+Void Linux'un default'u. Her sistemde root yetkisi ister waydroid'i
+öldürmek.
+
+--------------

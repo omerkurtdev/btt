@@ -1,0 +1,250 @@
+:PROPERTIES:
+:ID:       1f78474e-8659-495e-8757-99b7176c5de8
+:END:
+Kutay | 2023-09-10 15:57:04 UTC | #1
+
+#+caption: NTLite Logo
+[[upload://pBdkOEzxKNTX2PAQRNlm3896e49.png]]
+
+Bu Rehberde, NTLite adlı güçlü bir Windows ISO düzenleme aracını indirme
+ve kullanma adımlarını öğreneceksiniz.
+
+** Adım 1: NTLite İndirme
+:PROPERTIES:
+:CUSTOM_ID: adım-1-ntlite-indirme
+:END:
+1. NTLite resmi web sitesini ziyaret edin:
+   [[https://www.ntlite.com/][NTLite Resmi Web Sitesi]].
+
+2. Ana sayfanın üst kısmında bulunan "Download" düğmesine tıklayın.
+   [[upload://qx2bjFWbqVGgEEUFAivQdunmGnu.png]]
+
+3. NTLite'ın 64 ya da 32 bit sürümünü seçin ve indirme işlemini
+   başlatın.
+
+** Adım 2: NTLite Kurulumu
+:PROPERTIES:
+:CUSTOM_ID: adım-2-ntlite-kurulumu
+:END:
+1. İndirilen NTLite kurulum dosyasını açın. Kurulum sihirbazını takip
+   edin ve kurulum işlemi tamamlandığında NTLite'ı başlatın.
+
+2. Lisans Kısmında "free" seçeneğine tıklayıp "Active" diyin.
+   [[upload://7o0YCq856n7hTdnBl9yqKBcAW7P.png]]
+
+** Adım 3: Windows Image (ISO) Dosyası Seçme
+:PROPERTIES:
+:CUSTOM_ID: adım-3-windows-image-iso-dosyası-seçme
+:END:
+1. NTLite açıldığında, bir Windows ISO dosyasını seçmek için "Add"
+   menüsünden "Image" seçeneğini kullanın. (Eğer ISO dosyanızı klasöre
+   çıkardıysanız yukarıdaki seçeneği seçebilirsiniz.)
+   [[upload://41kudMITHLciUG37How33yzW437.png]]
+
+2. ISO dosyanızı seçtikten sonra "New Edit" düğmesine basın. Bu, sizin
+   için ISO'nun düzenlenebilir bir kopyasını oluşturacaktır.
+   [[upload://ojKxLu5vIZ8FqBlnONLorVueCs3.png]]
+
+3. Kullanmayacağınız Windows sürümlerini silmek için versiyonları
+   seçebilirsiniz. İso export edilirken dosya boyutunu önemli ölçüde
+   etkileyebilir (ISO oluşturma aşamasında da yapılabilir).
+
+4. Düzenlemek istediğiniz sürümü sağ tıklayın ve "Load" seçeneğini
+   seçin. Bu, install.wim dosyasını değiştirebilmeniz için geçici bir
+   klasörde açacaktır. [[upload://ynMmekL4PEJLSMWLYjAxbsqXT3.png]]
+
+** Adım 4: Özelleştirme ve Düzenleme
+:PROPERTIES:
+:CUSTOM_ID: adım-4-özelleştirme-ve-düzenleme
+:END:
+1. Seçilen ISO dosyası NTLite içinde açılacaktır. Burada, sol taraftaki
+   menüden Windows bileşenlerini özelleştirebilir, sürücüler ekleyebilir
+   ve daha fazla düzenleme yapabilirsiniz.
+
+*** Özelleştirme Seçenekleri
+:PROPERTIES:
+:CUSTOM_ID: özelleştirme-seçenekleri
+:END:
+**** Updates
+:PROPERTIES:
+:CUSTOM_ID: updates
+:END:
+1. Bu seçenek altında internetten son Windows güncellemelerini çekerek
+   ISO'nuzu güncelleyebilirsiniz.
+   [[upload://4JOIQE89IWegNygSMXgSfa8HLaU.png]]
+
+**** Driver
+:PROPERTIES:
+:CUSTOM_ID: driver
+:END:
+- Bu seçenek altında ISO'ya eklemek istediğiniz sürücüleri .inf
+  dosyalarını seçerek ekleyebilirsiniz (Örneğin, Windows 7'de AMD mouse
+  ve klavye sorununu gidermek için kullanabilirsiniz).
+
+**** Registry
+:PROPERTIES:
+:CUSTOM_ID: registry
+:END:
+- Bu seçenek altında varsayılan Registry değerlerini değiştirebilir veya
+  yeni değerler ekleyebilirsiniz.
+
+**** Post Setup
+:PROPERTIES:
+:CUSTOM_ID: post-setup
+:END:
+- Bu seçenek altında Windows açıldığında çalışmasını istediğiniz
+  uygulamaları veya komut dosyalarını ekleyebilirsiniz.
+
+**** Components
+:PROPERTIES:
+:CUSTOM_ID: components
+:END:
+- Bu seçenek altında bilgisayarınıza yüklü gelen uygulamalar, sürücüler,
+  dil seçenekleri, fontlar, sistem uygulamaları, servisler ve daha
+  fazlasını özelleştirebilirsiniz. Dikkat edin, kapatılan bileşenler
+  sistemin kurulmamasına neden olabilir.
+
+**** Scheduled Tasks (Premium Feature)
+:PROPERTIES:
+:CUSTOM_ID: scheduled-tasks-premium-feature
+:END:
+- Bu seçenek altında =C:\Windows\System32\Tasks= içeriğini yönetmenizi
+  sağlar.
+
+**** Features
+:PROPERTIES:
+:CUSTOM_ID: features
+:END:
+- Bu seçenek altında yüklü gelen Windows Features (özellikleri)
+  özelleştirebilirsiniz, örneğin WSL, HyperV, Windows Sandbox gibi.
+
+*** Settings
+:PROPERTIES:
+:CUSTOM_ID: settings
+:END:
+- Bu seçenekte genellikle Registry üzerinden ayarlanan özellikleri
+  etkinleştirebilir veya devre dışı bırakabilirsiniz. Bu, örneğin
+  varsayılan dil, karanlık tema, mouse ivmesi, hazır yüklü gelen
+  uygulamalar gibi birçok özelliği yönetmenize yardımcı olur.
+
+*** Services
+:PROPERTIES:
+:CUSTOM_ID: services
+:END:
+- Bu seçenek varsayılan servis ayarlarını yönetmenizi sağlar. Genellikle
+  telemetry ve güncelleme servislerini kapatmak için kullanılır.
+
+*** Extra Services
+:PROPERTIES:
+:CUSTOM_ID: extra-services
+:END:
+- Bu seçenek Windows sistem servislerini yönetmenizi sağlar. Burada
+  kapattığınız bir servis, sisteminizin açılmamasına veya Bluetooth gibi
+  servislerin çalışmamasına neden olabilir.
+
+*** Unattended
+:PROPERTIES:
+:CUSTOM_ID: unattended
+:END:
+- Bu seçenek Windows kurulumu sırasında karşınıza çıkan soruları
+  otomatik olarak yanıtlayabilir ve varsayılan değerleri değiştirebilir.
+
+** Adım 5: ISO Oluşturma
+:PROPERTIES:
+:CUSTOM_ID: adım-5-iso-oluşturma
+:END:
+1. Düzenlemeler tamamlandığında, "Options" kısmında "Create ISO"
+   seçeneğine tıklayarak ISO dosyanızın adını belirleyin ve sol üst
+   köşedeki "Process" düğmesine tıklayarak özelleştirilmiş ISO dosyanızı
+   oluşturun. [[upload://hCcDbQyIQlQXbpMbpMiJuSj254T.png]]
+
+2. İşlem tamamlandığında, özelleştirilmiş Windows ISO dosyanız hazır
+   olacaktır.
+
+*** Notlar
+:PROPERTIES:
+:CUSTOM_ID: notlar
+:END:
+- ISO dosyanızın boyutunu düşürmek isterseniz "High Compression"
+  seçeneğini seçebilirsiniz, ancak işlem süresini uzatacaktır.
+- Windows güvenlik duvarını devre dışı bırakmak, işlem hızını
+  artırabilir, ancak bazen yanlış pozitif sonuçlara neden olabilir.
+- İsteğe bağlı olarak Windows 10 özel ISO yapılandırmasını Windows 11
+  için güncelleyebilirim.
+
+** Sonuç
+:PROPERTIES:
+:CUSTOM_ID: sonuç
+:END:
+Artık NTLite ile özelleştirilmiş bir özel Windows ISO oluşturmak için
+gereken adımları öğrendiniz. Bilgisayarınıza kurmadan önce test etmeyi
+unutmayın. Sorularınız veya yardıma ihtiyacınız varsa, forumda bana
+ulaşmaktan çekinmeyin!
+
+--------------
+
+EminAZE | 2023-09-10 19:48:19 UTC | #2
+
+Ellerinize sağlık hocam Ognitorenks hocamında rehberi ile ben custom
+windows kurdum kurmaz olaydım elimden geldiğince az hizmet silsem bile
+silmediğim servisleri kapatmışdım nede olsa (sorunlar olmaması için
+yapmıştım) sanırım 2021 ltsc sürümünde sürüm farkından olsa gerek azacık
+hafifleme bile hiss edemedim ki şuan Sadece Oyun hesabım windows 11
+desste]inden ötrü ReviOS olsa bile kalan herşey linux kullanıyorum ve
+gizliliğimide böylelikle korumuş oluyorum.
+
+*> REHBER . NTLite ile Windows 10 Lite/Performans sistem hazırlama v3*
+Sizin NT lite ile deneyimiziniz ne oldu ognitorenks hocamın rehberine
+yazacak ilaveleriniz veya başka birşey varmı acaba?
+([[https://www.technopat.net/sosyal/konu/ntlite-ile-windows-10-lite-performans-sistem-hazirlama-v3.1821107/][ognitorenks
+hocamınn rehberinin linki]])
+
+--------------
+
+Kutay | 2023-09-10 20:07:34 UTC | #3
+
+Hocam, internet üzerinde birçok config.xml dosyası bulunuyor. Bunları
+inceleyebilirsiniz. Ayrıca, FPS artışını sağlayan bat dosyaları gibi
+dosyaları inceleyip sanal makine üzerinde performans katkısını test edip
+kayıt defterine ekleyebilirsiniz veya Post Setup Kısmına
+ekleyebilirsiniz. Sadece belirli özellikleri kapatmanızın
+performansınıza pek bir fark yaratmayacağını belirtmek isterim.”
+
+--------------
+
+EminAZE | 2023-09-10 20:14:16 UTC | #4
+
+Hocam belirli özelliklerden kastınız nedir. Bunları aça bilirmisiniz
+veya direkt yanıtınıza düzenleme ile ekleye bilirmisiniz.
+
+--------------
+
+wise | 2023-09-10 20:16:24 UTC | #5
+
+Ntlite'ın kendi içinde bulunan
+[[https://www.ntlite.com/community/index.php?threads/guide-choosing-a-preset.3284/][preset
+template'lere]] gözatma şansınız oldu mu acaba? Onları çok mantıklı
+bulmuştum. Mesela Gizlilik veya Oyun gibi çeşitli seviye ve ihtiyaçlar
+için ayrı ayarlar mevcut.
+
+--------------
+
+Kutay | 2023-09-10 20:34:34 UTC | #6
+
+Belirli özellikden kastım örneğin "sadece X(1) ayarını kapatın, 10 fps
+artışı yaşayacaksınız". Ve eklemek isterim, bu konuyu şunu kapatın, bunu
+açın dememe sebebim, Windows'a sürekli yeni ayarlar geliyor. Açıcağım
+konu bugün işe yarasada 2 yıl sonra daha güzel ayarlar keşfedilebilir ve
+işlemi yapacak kişinin internetten güncel konuları, güncel seçenekleri
+aratmasını daha mantıklı buluyorum.
+
+--------------
+
+EminAZE | 2023-09-10 20:36:57 UTC | #7
+
+NT lite forumlarında birçok insanın yazıları var ancak bunlara çok fazla
+göz atamadım sadece ltsc 2019 sürümünün sıkıntılı olup 2021 sürümünün
+daha modlana bilir olduğunu okudum ama doğruluğundan emin değilim ki
+bende 2021-i modlayacaktım.
+
+--------------

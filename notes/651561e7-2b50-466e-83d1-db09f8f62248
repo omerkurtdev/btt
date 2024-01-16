@@ -1,0 +1,55 @@
+:PROPERTIES:
+:ID:       651561e7-2b50-466e-83d1-db09f8f62248
+:END:
+twoxa | 2023-09-09 16:09:14 UTC | #1
+
+Bu rehberimde MtkClient yazılımını kullanarak MediaTek işlemcili
+telefonlarda EDL modundan partisyon çekmeyi göstereceğim. Not: Bu taktik
+tüm işlemcilerde/telefonlarda çalışmaz.
+
+https://github.com/bkerler/mtkclient
+
+*Kurulum* Sisteme kurmamız gereken paketler: =pip3 libusb git python3=
+
+/Debian/Ubuntu/: =sudo apt install python3 git libusb-1.0-0 python3-pip=
+/Arch Linux/: =sudo pacman -S  python python-pip git libusb=
+
+Paketleri sisteme kurduktan sonra:
+
+#+begin_example
+git clone https://github.com/bkerler/mtkclient
+cd mtkclient
+pip3 install -r requirements.txt
+python3 setup.py build
+python3 setup.py install
+#+end_example
+
+Ve son olarak
+
+#+begin_example
+sudo usermod -a -G plugdev $USER
+sudo usermod -a -G dialout $USER
+sudo cp Setup/Linux/*.rules /etc/udev/rules.d
+sudo udevadm control -R
+#+end_example
+
+Kurulumu tamamladıktan sonra =mtkclient= klasöründe =mtk_gui= dosyasını
+root olarak çalıştırın. [[upload://9gOyeLqghm2VjZtPXwbl9OwPqqm.jpeg]] Bu
+ekran geldiğinde telefonu normal şekilde bilgisayara bağlayın, program
+telefonu algılamazsa (her seferinde kabloyu çıkartıp geri takarak) ses
+tuşlarına teker teker ve aynı anda basılı tutmayı deneyin. Bu her
+telefona göre değişiyor, benim telefonumda sadece ses kısma tuşuna
+basılı tutulduğunda edl mode aktif oluyor.
+[[upload://p2witTdM23zfgB5LBkEFneJNUBv.jpeg]] Telefona/işlemciye göre
+bazı hatalar çıkabilir, program "Phone Detected" diyorsa bir sorun
+olmayacaktır. Program telefonu gördüğünde ekrana partisyonlar
+gelecektir, bilgisayara çekmek istediğiniz partisyonları seçip "Read
+partition(s)" tuşuna basıp istediğiniz partisyonları bilgisayara
+çekebilirsiniz. [[upload://iRgDmaX74et2CGnKnToMQlXRdCS.png]]
+[[upload://5R1eQfLvIwd6WmTBIUTKjTwdleg.jpeg]]
+[[upload://amQaJPmIkkdNS7v0lRrXQYQJKI8.png]]
+
+Programda read harici yapacağınız işlemler telefonu Hard-Brick edebilir,
+dikkatli olun.
+
+--------------

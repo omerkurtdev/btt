@@ -1,0 +1,108 @@
+:PROPERTIES:
+:ID:       81312897-8e97-4c4e-b133-304319da35b0
+:END:
+linux | 2023-09-06 08:56:46 UTC | #1
+
+* Giriş
+:PROPERTIES:
+:CUSTOM_ID: giriş
+:END:
+İnternette barındırılan jpg, png, webp, jpeg, gif, ico uzantılı
+fotoğrafları, /fotoğrafın barındırıldığı siteye gitmeden/
+görüntüleyebileceğinizi biliyor musunuz?
+
+Bunu yapmak için DuckDuckGo proxy'sinden yararlanabilirsiniz.
+
+Yapmanız gereken tek şey
+=https://external-content.duckduckgo.com/iu/?u== bağlantısının sonuna
+fotoğraf URL'nizi yapıştırmak.
+
+* *Örnek kullanım:*
+:PROPERTIES:
+:CUSTOM_ID: örnek-kullanım
+:END:
+Orijinal fotoğraf URL'si:
+https://files.cults3d.com/uploaders/15154189/illustration-file/1e797e71-20bf-479e-9bc3-88c27aaac6ca/tux_solo.png
+
+Değiştirilmiş fotoğraf URL'si:
+https://external-content.duckduckgo.com/iu/?u=https://files.cults3d.com/uploaders/15154189/illustration-file/1e797e71-20bf-479e-9bc3-88c27aaac6ca/tux_solo.png
+
+İşte bu şekilde fotoğrafları gizli ve güvenli bir şekilde
+görüntüleyebiliyorunuz. Ayrıca tek güvenmeniz gereken
+[[https://duckduckgo.com/privacy][DuckDuckGo'nun gizlilik politikası]]
+oluyor.
+
+* Otomatikleştirme
+:PROPERTIES:
+:CUSTOM_ID: otomatikleştirme
+:END:
+Son olarak bunu otomatikleştirmenin bir yolu da var. Bunun için hem
+Chromium hem de Firefox tabanlı tarayıcılar için olan
+[[https://github.com/einaregilsson/Redirector][Redirector]] eklentisini
+kullanabiliriz. Bu eklenti sayesinde istediğiniz her URL'yi istediğiniz
+her URL'ye yönlendirebilirsiniz.
+
+** Yapmamız gerekenler:
+:PROPERTIES:
+:CUSTOM_ID: yapmamız-gerekenler
+:END:
+1. Eklentiyi indirmek
+2. Eklenti ayarlarını açmak
+3. En aşağıda bulunan kodu .json olarak kaydedip "Import" kısmından
+   import etmek
+
+İşte bu kadar! Artık herhangi bir fotoğraf URL'sine tıkladığınızda sizi
+fotoğrafın barındırıldığı sunucuya göndermek yerine DuckDuckGo üzerinden
+yönlendirecek.
+
+** *Uyarılar:*
+:PROPERTIES:
+:CUSTOM_ID: uyarılar
+:END:
+- Bazen çok nadir çalışmıyor, bunu eklentiyi kapatarak çözebilirsiniz.
+- Eğer [[https://en.wikipedia.org/wiki/Reverse_image_search]["Reverse
+  image search" (Tersine görsel arama)]] yapıyorsanız bazen sorun
+  çıkarabilir. Bunu da yine eklentiyi kapatarak çözebilirsiniz.
+
+** Json kodları:
+:PROPERTIES:
+:CUSTOM_ID: json-kodları
+:END:
+#+begin_example
+{
+    "createdBy": "Redirector v3.5.3",
+    "createdAt": "2023-08-19T10:51:18.267Z",
+    "redirects": [
+        {
+            "description": "Image proxy for privacy.",
+            "exampleUrl": "https://www.example.com/image.jpg",
+            "exampleResult": "https://external-content.duckduckgo.com/iu/?u=https://www.example.com/image.jpg",
+            "error": null,
+            "includePattern": "(.*\.(?:jpg|png|webp|jpeg|gif|ico))$",
+            "excludePattern": "",
+            "patternDesc": "",
+            "redirectUrl": "https://external-content.duckduckgo.com/iu/?u=$1",
+            "patternType": "R",
+            "processMatches": "noProcessing",
+            "disabled": false,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame"
+            ]
+        }
+    ]
+}
+#+end_example
+
+--------------
+
+yusufipek | 2023-09-04 13:46:35 UTC | #2
+
+Güzel rehber. 10 saniyelik videosunu falan yüklemek de görsellik
+açısından iyi olabilir. Bazı arkadaşlar görselle daha iyi anlıyor. 😄
+
+--------------
+
+wise | 2023-10-15 18:45:42 UTC | #3
+
+--------------

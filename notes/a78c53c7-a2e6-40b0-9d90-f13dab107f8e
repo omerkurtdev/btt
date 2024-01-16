@@ -1,0 +1,122 @@
+:PROPERTIES:
+:ID:       a78c53c7-a2e6-40b0-9d90-f13dab107f8e
+:END:
+Emir_Faruk_Topal | 2023-09-07 17:12:46 UTC | #1
+
+Merhaba Arch Linux kullanıcıları! Bu makalede, Arch Linux işletim
+sisteminize farklı masaüstü ortamlarını nasıl kuracağınızı
+öğreneceksiniz. Arch Linux, kullanıcılarına yüksek derecede
+özelleştirilebilirlik sunar, bu nedenle masaüstü ortamı seçiminiz
+tamamen sizin tercihlerinize ve ihtiyaçlarınıza bağlıdır. İşte adım adım
+rehberimiz:
+
+*1. Sistem Güncellemesi*
+
+Her zaman olduğu gibi, önce sisteminizi güncellemekle başlayın.
+Terminali açın ve aşağıdaki komutu çalıştırın:
+
+#+begin_example
+sudo pacman -Syu
+#+end_example
+
+*2. X Window System Kurulumu*
+
+Masaüstü ortamını kullanabilmek için X Window System'i kurmanız
+gerekecektir:
+
+#+begin_example
+sudo pacman -S xorg
+#+end_example
+
+*3. Ekran Sürücüleri*
+
+Ekran kartınıza uygun sürücüleri yüklemelisiniz. Nvidia veya AMD gibi
+özel sürücüler varsa, bunları kurmanız gerekebilir.
+
+*4. Masaüstü Ortamı Seçimi*
+
+Arch Linux'ta kullanabileceğiniz birçok masaüstü ortamı bulunmaktadır.
+İşte bazı popüler seçenekler ve bunların kurulum komutları:
+
+*GNOME:* GNOME masaüstü ortamı kurmak için:
+
+#+begin_example
+sudo pacman -S gnome
+#+end_example
+
+*KDE Plasma:* KDE Plasma masaüstü ortamını kurmak için:
+
+#+begin_example
+sudo pacman -S plasma-meta
+#+end_example
+
+*Xfce:* Xfce masaüstü ortamını kurmak için:
+
+#+begin_example
+sudo pacman -S xfce4
+#+end_example
+
+*LXQt:* LXQt masaüstü ortamını kurmak için:
+
+#+begin_example
+sudo pacman -S lxqt
+#+end_example
+
+*5. Ekstra Masaüstü Ortamı Paketleri*
+
+Masaüstü ortamınız için ekstra paketleri yüklemek isteyebilirsiniz.
+Temalar, simgeler ve ekstra uygulamalar gibi her masaüstü ortamının
+kendi ekstra paketleri olabilir.
+
+*6. Giriş Yöneticisi (Display Manager) Kurulumu*
+
+Masaüstü ortamınıza giriş yapmak için bir giriş yöneticisi (display
+manager) kurmalısınız. Örneğin, LightDM veya SDDM gibi giriş
+yöneticilerini kullanabilirsiniz. İlgili giriş yöneticisini kurun ve
+başlangıç hizmetini etkinleştirin:
+
+#+begin_example
+sudo pacman -S lightdm
+sudo systemctl enable lightdm
+#+end_example
+
+*7. Sistem Yeniden Başlatma*
+
+Masaüstü ortamınızı kullanmaya başlamadan önce sistemi yeniden başlatın:
+
+#+begin_example
+sudo reboot
+#+end_example
+
+Artık Arch Linux'ta yeni masaüstü ortamınızı keyifle kullanabilirsiniz!
+İyi çalışmalar!
+
+--------------
+
+yusufipek | 2023-09-07 17:13:11 UTC | #2
+
+Foruma hoş geldin dostum! Rehber için teşekkürler. :slight_smile:
+
+Rehberler #urettikleriniz:rehber kategorisine gidiyor.
+
+--------------
+
+Emir_Faruk_Topal | 2023-09-07 17:14:20 UTC | #3
+
+Ricaderim abi arara paylaşacağım böyle gönderiler birazdan yenisi
+geliyor
+
+--------------
+
+Tokgoz | 2023-12-30 21:26:20 UTC | #4
+
+Masaüstü kurulumuna ilave olarak wayland ve hyprland uyumlu çalışması
+için ilave bilgi verebilir misiniz? archinstall aracıyla arch kurdum.
+hazır kde ve hyprland masaüstü kurdum. Ekran kartı driverı sorunsuz
+yüklendi ama hyprland açılmadı. kde x11 de açılıyor ancak wayland te
+açılmıyor. Bir kaç defa kurulum yaptım. Her yaptığım kurulumda farklı
+sorunlar çıktı. Aynı yöntemle kurulum yapmama rağmen farklı farklı durum
+çıkıyor. Arch kurulumuyla ilgili detaylı bir anlatım paylaşa bilir
+misiniz.teşekkür ederim.
+
+--------------

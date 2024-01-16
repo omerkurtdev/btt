@@ -1,0 +1,81 @@
+:PROPERTIES:
+:ID:       407808e4-b0ce-4b99-b0a1-dd15a80ba64f
+:END:
+yusufipek | 2023-09-06 09:33:46 UTC | #1
+
+* Wiki Gönderisi Nedir?
+:PROPERTIES:
+:CUSTOM_ID: wiki-gönderisi-nedir
+:END:
+Discourse'ta Wiki gönderisi diye bir özellik var dostlar. *Wiki* olarak
+işaretlenmiş gönderileri diğer üyeler de düzenleyebiliyor. Böylece
+yenilik geldiğinde veya ekleme yapılmak istediğinde diğer insanlar da
+buna katkı sağlayabiliyor.
+
+* Wiki Gönderisi Nasıl Açılır?
+:PROPERTIES:
+:CUSTOM_ID: wiki-gönderisi-nasıl-açılır
+:END:
+Wiki gönderisi açmak için güven seviyenizin en az 3 olması gerekli. Bu
+da zamanla forumu kullandıkça artacak bir şey.
+
+Yetkiyi aldıktan sonra konuya gelip üç noktaya tıklıyorsunuz ve ayarlar
+kısmından wiki yap diyebilirsiniz.
+
+#+caption: image|448x351
+[[upload://kASzNfj0KgKtCNgAzce2uDUXezz.png]]
+
+** Wiki Gönderisi Nasıl Düzenlenir?
+:PROPERTIES:
+:CUSTOM_ID: wiki-gönderisi-nasıl-düzenlenir
+:END:
+Aynı şekilde açılmış wiki gönderilerini düzenleyebilmek için de güven
+seviyenizin 2 olması gerekli. Şu an sitede 2 olan kimse yok. Dediğim
+gibi bu zamanla forumu kullandıkça artacaktır.
+
+Bir gönderi wiki olduktan sonra direkt düzenleme simgesine tıklayarak
+düzenlemeye başlayabilirsiniz.
+
+#+caption: image|690x209
+[[upload://ew64wtCUIdU5eOsmZzydGn0bpEU.png]]
+
+* Düzenlenirken Dikkat Edilmesi Gerekenler
+:PROPERTIES:
+:CUSTOM_ID: düzenlenirken-dikkat-edilmesi-gerekenler
+:END:
+1. Wiki sayfalarında başlıklar çok önemli. Sağ tarafta iskelet olarak
+   gözükür. Dolayısıyla başlıkları düzgün atalım ve markdown
+   hiyerarşisine uyarak atalım.
+   [[upload://jsvfkUUSgPYbgWttdo0HqeF7WLl.png]]
+
+2. Düzenlediğiniz gönderiye bir şey eklediğinizden emin olun. Sırf
+   düzenlemek için düzenlemeyin. Ya hataları düzeltin ya da yeni bir şey
+   ekleyin ve formata uygun olarak eklediğinizden emin olun.
+
+* Forumdaki Wiki Gönderileri
+:PROPERTIES:
+:CUSTOM_ID: forumdaki-wiki-gönderileri
+:END:
+1. https://btt.community/t/fedora-silverblue-kinoite-yay-ve-aur-kurulumu/195
+2. https://btt.community/t/linux-ta-laptop-dahili-klavyesini-nasil-devre-disi-birakabiliriz/137
+
+* Sonuç
+:PROPERTIES:
+:CUSTOM_ID: sonuç
+:END:
+Genel olarak #incelemeleriniz ve #urettikleriniz kısmındaki gönderiler
+wiki olabilir. Hepsi olmak zorunda değil sadece herkesin düzenleyip
+katkıda bulunabileceği yazıları wiki yapabiliriz. Bunu güven seviyesi 3
+olan arkadaşlar da yapabilir moderatörler de yapabilir. Tabii bu kararı
+alırken "İleride başka birisinin katkı yapabileceği bir gönderi mi?"
+sorusunu sormakta fayda var.
+
+--------------
+
+yusufipek | 2023-09-06 09:33:31 UTC | #3
+
+--------------
+
+yusufipek | 2023-09-06 09:36:23 UTC | #4
+
+--------------

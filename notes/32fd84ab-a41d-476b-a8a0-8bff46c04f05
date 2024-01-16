@@ -1,0 +1,64 @@
+:PROPERTIES:
+:ID:       32fd84ab-a41d-476b-a8a0-8bff46c04f05
+:END:
+Salih | 2023-09-13 17:32:35 UTC | #1
+
+Waydroid'i
+
+#+begin_example
+yay -S waydroid
+#+end_example
+
+komutunu kullanarak varsayılan ayarlarla kurduysanız, uygulamalar
+kısmında Waydroid'i arattığınızda karşınıza
+[[upload://1NP2yreEpnUrUm4iL2nqPe00SmA.png]] bu tür bir logo gelecektir.
+
+Uygulamayı açtıktan sonra uygulama size bir indirme kutusu sunacaktır.
+Google Play ile kullanmak istiyorsanız Gapps'i seçerek iso dosyasını
+indirmiş olmalısınız.
+
+DİKKAT: Nvidia kartlar ile inen bu iso'yu açmayı denemeyin açamazsınız,
+destek yok. (Direkt Waydroid desteklemiyor. Ya da bir çözüm yolu varsa
+ben bilmiyorum.)
+
+İndirme işlemi bitip Waydroid'i kapat aç yaptıktan sonra karşınıza
+Android ekranı gelecektir. İnternete bağlanma konusunda muhtemelen
+sıkıntı yaşayacaksınızdır. Bu sıkıntıyı çözmek için bilgisayarı her
+yeniden başlattığınızda Waydroid kullanmadan önce şu komutu
+yazmalısınız:
+
+=❯ firewall-cmd --zone=trusted --add-interface=waydroid0=
+=❯ sudo waydroid session stop= =❯ sudo waydroid container stop=
+
+Ardından Waydroid'i açtığınızda internet bağlantınızın düzelmiş olduğunu
+göreceksinizdir. Lâkin hâlen Google Play'i kullanamıyorsunuzdur. Bunun
+çözümü için ise şu komutlarda da yatmaktadır:
+
+=❯ sudo waydroid shell= ve ardından
+
+#+begin_example
+ANDROID_RUNTIME_ROOT=/apex/com.android.runtime ANDROID_DATA=/data ANDROID_TZDATA_ROOT=/apex/com.android.tzdata ANDROID_I18N_ROOT=/apex/com.android.i18n sqlite3 /data/data/com.google.android.gsf/databases/gservices.db "select * from main where name = \"android_id\";"
+#+end_example
+
+Sonda çıkan 4684655423246264787 tarzındaki numarayı kopyalayıp
+https://www.google.com/android/uncertified linkine girin ve *Google
+Services Framework Android Ki...* yazan kısma bu kopyaladığınız numarayı
+yapıştırın.
+
+Ben robot değilimi tamamladıktan sonra *Kayıt*'a basın.
+
+5 Dakika bekledikten sonra Waydroid'inizi kapatın ve şu komutları yazın:
+=❯ sudo waydroid session stop= =❯ sudo waydroid container stop=
+
+Ardından Waydroid'inizi açtıktan sonra sorunsuz bir şekilde internete
+bağlanabildiğinizi ve Google Play'i kullanabildiğinizi fark
+edeceksinizdir.
+
+NOT: Google Play işlemi 1 kereye mahsus iken, interneti bağlama işlemi
+bilgisayarınızı her yeniden başlattığınızda yapmanız gereken bir
+işlemdir.
+
+Kaynaklar: https://docs.waydro.id/faq/google-play-certification
+https://docs.waydro.id/debugging/networking-issues
+
+--------------

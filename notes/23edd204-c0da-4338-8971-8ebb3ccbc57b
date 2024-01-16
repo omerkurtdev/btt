@@ -1,0 +1,75 @@
+:PROPERTIES:
+:ID:       23edd204-c0da-4338-8971-8ebb3ccbc57b
+:END:
+Salih | 2023-09-13 18:01:10 UTC | #1
+
+Ara sıra =sudo pacman -Syu= komutunu kullandıktan sonra Cachy OS'da şuna
+benzer hatâlar alırız.
+
+=error: failed retrieving file  'cachy-browser-117.0.1-1-x86_64.pkg.tar.zst' from mirror.cachyos.org :  Recv failure: Connection reset by peer=
+
+ya da
+
+#+begin_example
+error: failed retrieving file 'noto-fonts-1:23.9.1-1-any.pkg.tar.zst' from seoul.mirror.pkgbuild.com : SSL connection timeout
+error: failed retrieving file 'llvm-libs-16.0.6-1-x86_64.pkg.tar.zst' from seoul.mirror.pkgbuild.com : 
+error: failed retrieving file 'webkit2gtk-2.40.5-2-x86_64.pkg.tar.zst' from seoul.mirror.pkgbuild.com : 
+warning: too many errors from seoul.mirror.pkgbuild.com, skipping for the remainder of this transaction
+error: failed retrieving file 'noto-fonts-1:23.9.1-1-any.pkg.tar.zst' from mirror.ubrco.de : 
+error: failed retrieving file 'llvm-libs-16.0.6-1-x86_64.pkg.tar.zst' from mirror.ubrco.de : 
+error: failed retrieving file 'webkit2gtk-2.40.5-2-x86_64.pkg.tar.zst' from mirror.ubrco.de : SSL connection timeout
+warning: too many errors from mirror.ubrco.de, skipping for the remainder of this transaction
+error: failed retrieving file 'llvm-libs-16.0.6-1-x86_64.pkg.tar.zst' from mirror.f4st.host : transfer closed with 30700637 bytes remaining to read
+error: failed retrieving file 'noto-fonts-cjk-20230817-1-any.pkg.tar.zst' from seoul.mirror.pkgbuild.com : 
+error: failed retrieving file 'llvm-libs-16.0.6-1-x86_64.pkg.tar.zst' from archlinux.thaller.ws : HTTP/2 stream 1 was not closed cleanly: CANCEL (err 8)
+error: failed retrieving file 'noto-fonts-1:23.9.1-1-any.pkg.tar.zst' from mirror.f4st.host : Recv failure: Connection reset by peer
+error: failed retrieving file 'llvm-libs-16.0.6-1-x86_64.pkg.tar.zst' from mirror.theo546.fr : Recv failure: Connection reset by peer
+error: failed retrieving file 'noto-fonts-1:23.9.1-1-any.pkg.tar.zst' from archlinux.thaller.ws : HTTP/2 stream 1 was not closed cleanly: CANCEL (err 8)
+error: failed retrieving file 'webkit2gtk-4.1-2.40.5-2-x86_64.pkg.tar.zst' from seoul.mirror.pkgbuild.com : 
+error: failed retrieving file 'webkit2gtk-4.1-2.40.5-2-x86_64.pkg.tar.zst' from mirror.f4st.host : transfer closed with 26077708 bytes remaining to read
+warning: too many errors from mirror.f4st.host, skipping for the remainder of this transaction
+error: failed retrieving file 'llvm-16.0.6-1-x86_64.pkg.tar.zst' from mirror.ubrco.de : 
+warning: failed to retrieve some files
+error: failed to commit transaction (unexpected error)
+Errors occurred, no packages were upgraded.
+#+end_example
+
+Bu hatâlar genellikle güncellemeye çalıştığımız paketlerin sunucusuna
+ulaşmaya çalışırken işletim sistemimizin yaşadığı sıkıntılar sonucuyla
+olur.
+
+Bu sorunu =❯ sudo cachyos-rate-mirrors= komutunu kullanarak çözebiliriz.
+
+Bu komut ile bizim için en stabil sunucuları işletim sistemi otomatik
+olarak bulur ve paketlerimizi bu stabil sunuculardan indirmemizi sağlar.
+
+Bu komuttan sonra tekrar
+
+#+begin_example
+sudo pacman -Syu
+#+end_example
+
+yazdığınızda sorunun çözülmüş olarak görme olasılığınız yüksektir.
+
+Lâkin bu sefer de
+
+#+begin_example
+❯ sudo pacman -S archlinux-keyring
+[sudo] password for salih: 
+error: GPGME error: No data
+error: GPGME error: No data
+error: GPGME error: No data
+error: database 'core' is not valid (invalid or corrupted database (PGP signature))
+error: database 'extra' is not valid (invalid or corrupted database (PGP signature))
+error: database 'multilib' is not valid (invalid or corrupted database (PGP signature))
+#+end_example
+
+hatâlarını alıyorsanız Reddit'deki şu çözümü uygulayabilirsiniz:
+https://www.reddit.com/r/archlinux/comments/16dw953/error_gpgme_error_no_data_when_updating_with_sudo/
+
+Bu hatâ Cachy OS'a husûsi bir hata olmayıp doğrudan Pacman ile alâkadar
+bir hatâdır.
+
+Hepinize hayırlı günler dilerim.
+
+--------------

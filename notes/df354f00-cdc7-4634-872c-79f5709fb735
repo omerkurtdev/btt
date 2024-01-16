@@ -1,0 +1,72 @@
+:PROPERTIES:
+:ID:       df354f00-cdc7-4634-872c-79f5709fb735
+:END:
+Woa | 2023-09-11 11:23:57 UTC | #1
+
+✨ Belirli bir dosya türünü aramak: Eğer belirli bir doküman
+arıyorsanız(PDF, PPT, XLS vb.) Arama teriminizin yanına filetype: ve üç
+harfli dosya uzantısını yazmanız yeterlidir..
+
+Örneğin: Teknoloji filetype:pdf şeklindeki bir aramayla Teknoloji
+hakkında PDF formatındaki sonuçlarını görüntüleyebilirsiniz.
+
+✨ Yıldız(*) İşareti Kullanmak: Hatırlayamadığınız ve ya bilmediğiniz
+eksik kelimelerin yerine yıldız kullanarak aramanızı yapabilirsiniz.
+
+Örneğin: Sabahattin Ali * Yusuf adlı bir arama yaptığınızda yıldız
+işareti size boşluğa uygun nelerin gelebileceğini listeler. Bu vasıtayla
+boşluğa gelebilecek en olası kelime olan "Kuyucaklı" kelimesini bularak
+size aramanızda yardımcı olur.
+
+✨ Belirli Bir Web Sitesinde Arama Yapmak: Kullanımı şu şekilde
+işlemektedir. site: yazıp aradığımız sitenin türüne göre com, org ve edu
+gibi terimleri sitenin sonuna ekleyerek aramak istediğiniz şeyi en sona
+yazınız.
+
+Örneğin: site:com atatürk yazdığınızda karşınıza sadece .com ile biten
+siteler atatürk sonuçlarını verecektir.
+
+✨ Uçuş Arama: Bulunduğunuz konumdan gitmek istediğiniz bir yere olan
+uçuş programlarını rahatlıkla bulabiliriz. Bu arama yöntemini flights
+from x şehri to y şehri şeklinde aratarak kullanabilirsiniz.
+
+Örneğin: flights from Ankara to istanbul
+
+✨ Konuyla Alakalı Arama Yapma: Bu arama ile yaptığınız aramanın sizin
+aradığınız sonuca kesin olmayan, yakın konumdaki sonuçlarını listeler.
+Herhangi bir şeyi tam olarak bilemediğiniz, hatırlayamadığınız durumda
+kullanarak istediğiniz sonuca ulaşabilirsiniz.
+
+Örneğin: related: Kayısı yazdığınızda size kayısı ile alakalı sonuçları
+listeleyecektir.
+
+--------------
+
+Metin | 2023-09-11 11:29:12 UTC | #2
+
+Güzel bir yazı olmuş. Ellerine sağlık.
+
+Bu yönteme google dorks deniyor.
+
+Bu konu hakkında detaylı bilgi için google dorks yazıp aratabilirler
+
+--------------
+
+codeyev | 2023-09-11 11:36:18 UTC | #3
+
+Güzel konu, teşekkürler
+
+--------------
+
+mertssmnoglu | 2023-09-11 14:41:44 UTC | #4
+
+Güzel bir yazı olmuş. Ben de bir tane eklemek isterim.
+
+=Linux chrome installation= araması yaptınız diyelim, size içinde
+=chrome installation= geçen ama windows'a ait olan sonuçlar da
+çıkabilir. Eğer kesin ve net bir sorgulama yapmak istiyorsanız
+="Linux Chrome Installation"= yazarak daha net sonuçlara
+uğraşabilirsiniz. ! Her zaman yapmayın, karşınıza çok dengesiz sonuçlar
+çıktığında kullanırsanız daha fazla verim alırsınız.
+
+--------------

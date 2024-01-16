@@ -1,0 +1,26 @@
+:PROPERTIES:
+:ID:       88b52885-13d2-49e0-a61a-045b4c9d63b7
+:END:
+creeperkafasi | 2023-09-13 14:42:28 UTC | #1
+
+Belli başlı Asus laptoplarında bulunan rgb klavye =asusctl= ile
+ayarlanabiliyor. Ama asusctl sadece klavyenin firmware olarak
+desteklediği ayarları gösteriyor. Bu program ise belli aralıklarla ekran
+görüntüsü alıp ekrandaki ortalama renge göre klavye rengini ayarlıyor.
+Hem X11, hem Wayland'de çalışıyor.
+
+- Programın renk ayarını yapabilmesi için paket yöneticinizden
+  [[https://gitlab.com/asus-linux/asusctl][asusctl]]'i yükleyin.
+- Çalıştırmak için önce =cargo build --release= ile build edin, ardından
+  =/target/release/asus_screen_to_rgb= ile başlatın. Program argümanları
+  GitHub'da var.
+
+https://github.com/creeperkafasi/asus_screen_to_rgb/ /(Ekran görüntüsü
+alma ve ortalama renk hesabı pek optimize olmayabilir, olduğu kadar
+artık...)/
+
+--------------
+
+wise | 2023-10-15 18:45:56 UTC | #2
+
+--------------

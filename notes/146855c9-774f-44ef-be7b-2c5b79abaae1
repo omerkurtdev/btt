@@ -1,0 +1,47 @@
+:PROPERTIES:
+:ID:       146855c9-774f-44ef-be7b-2c5b79abaae1
+:END:
+Quitaxd | 2023-09-06 08:49:13 UTC | #1
+
+Selam dostlar. Bugün sizlerle Kinoite veya Silverblue'ya yay kurup AUR
+kullanabileceğiz.
+
+*NOT:* Eğer kuracağınız uygulama flatpakta varsa veya bir sistem
+uygulamasıysa bu yöntemi kullanmayın. *NOT 2:* Sonunda =*= işareti olan
+adımlar zorunludur. Diğerleri de opsiyonel. **** ## 1. Distrobox
+kurulumu/ Terminale =sudo rpm-ostree install distrobox= yazın. Ve
+sonrasında sistemi yeniden başlatın. Sistem açılınca diğer adıma
+geçebilirsiniz. /*/ ## 2. Container oluşturma/ Bunun için,
+=distrobox-create -n arch -i archlinux:latest= komutunu giriyoruz.
+Kurulum bitince =distrobox enter arch= ile containerimize giriyoruz.
+Yine biraz süren bir işlem olacak. Sonrasında =exit= diyerek
+containerdan çıkalım. ## 3. Distrobox-Tools Bunun için size projenin
+[[https://github.com/Quitaxd/distrobox-tools][GitHub sayfasını]]
+bırakıyorum, okuyabilirsiniz. ## 4. Yay kurulumu/ =distrobox-enter arch=
+komutuyla containera girin ve normal bir şekilde yay kurulumu yapın.
+Gerekli bilgiyi webde bulabilirsiniz. /** ## 5. Yay kullanmak *NOT 3:*
+Bu arada eğer =distrobox-tools= yüklediyseniz ekstra bir adım olacak 5.
+adımın sonunda.
+
+*Distrobox-Tools* kurmadıysanız: =distrobox-enter arch= yazıp =yay=ı
+oradan kullanacaksınız.
+
+*Distrobox-Tools* kurduysanız: yay için bir kereliğine mahsus =dexportc=
+ile linkleme yapacaksınız. Bunun için ana terminalinize =dexportc=
+yazın. Sonrasında gereken bilgiler sizden istenecek. Container name
+kısmına =arch=, komut ismine ise =yay= yazın. Artık =yay=ı kendi
+terminalinizden kullanabilirsiniz.
+
+** 6. Uygulama kurmak
+:PROPERTIES:
+:CUSTOM_ID: uygulama-kurmak
+:END:
+Herhangi bir uygulamayı =yay= ile kurun ve containerinize gidip
+=distrobox-export -a uygulamaadi= yazın. =uygulamaadi= kısmına uygulama
+ismi gelecek. Eğer =distrobox-tools= kurduysanız daha kolay bir yolu
+var. Ana terminalinize =dexporta= yazın ve gereken bilgileri doldurun.
+Eğer terminal uygulaması kurduysanız bu komut sizin için =dexportc=
+olacaktır. Eğer yazım işinize yaradıysa destek yorumu ve destek beğenisi
+beklerim! Bir sonraki yazımda görüşürüz.
+
+--------------

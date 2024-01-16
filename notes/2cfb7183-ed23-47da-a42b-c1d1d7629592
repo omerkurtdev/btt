@@ -1,0 +1,47 @@
+:PROPERTIES:
+:ID:       2cfb7183-ed23-47da-a42b-c1d1d7629592
+:END:
+omer | 2023-09-08 16:48:08 UTC | #1
+
+#+begin_quote
+Maalesef bu rehber Windows ISO'ları ile pek sağlıklı çalışmıyor.
+İsterseniz deneyebilirsiniz fakat sağlıklı bir sonuç alacağınızı
+sanmıyorum...
+
+#+end_quote
+
+[[https://f-droid.org/packages/eu.depau.etchdroid/][EtchDroid (F-Droid
+ile)]] öncelikle bu uygulamayı ister siteden ister F-Droid istemcisi ile
+kuralım.
+
+*1. Adım - ISO'muzu seçelim*
+
+#+caption: image|287x500, 75%
+[[upload://4u7t05P6dXQldXqCmhbOK6xbhVU.png]]
+
+/Dosya yöneticinizde ISO dosyasını seçin/
+[[upload://8xuo2Ae1kh4jTCDzzSs7XwwP5Sm.png]]
+
+/Çıkan menüden USB Belleğinizi seçin/
+[[upload://wWLcZfX0gxGTvpPsZorXjpvTcmc.png]]
+
+/ISO'yu yazabilmesi için izin verelim/
+[[upload://p7cdP8qzhi4faOCnpqiksXHmDQG.png]]
+
+/Bu tarz bir bildirim alabilirsiniz önemli değil/
+[[upload://md34WsKVlgO9W21gwf1Yw1JPyga.png]]
+
+/Bu ekranda herşeyi kontrol edin, yanlış varsa düzeltin/
+[[upload://4Uv6vHfi80MOGepx0eLIXkFnQrQ.png]]
+
+[[upload://sMs6hUQXQTWE2BfwXXhJlAKzByO.png]] Son olarak bu tuş ile
+işlemi başlatın. (Ardından işlemi takip etmeniz için bir bildirim
+gönderilecektir.)
+
+/Örnek Bildirim/ [[upload://bAxpfBNCpIySepqFKrCPs2eiYnJ.png]]
+
+/Önemli!/ *YAZDIRMADAN SONRA USB FLASHI TEKRAR KULLANMAK İÇİN
+GELİŞTİRİCİNİN [[https://etchdroid.depau.eu/broken_usb/][YAZISINI]]
+OKUYUN*
+
+--------------

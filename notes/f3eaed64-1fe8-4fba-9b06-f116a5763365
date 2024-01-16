@@ -1,0 +1,109 @@
+:PROPERTIES:
+:ID:       f3eaed64-1fe8-4fba-9b06-f116a5763365
+:END:
+tempestian | 2024-01-15 16:15:54 UTC | #1
+
+Genshin Impact mobilde ve bilgisayarda farklı fiyatlar sunuyor. Bu da
+benim gibi sürekli oyun içi satın alma yapan insanlar için can sıkıcı
+bir durum olabiliyor. Sırf satın alma yaparım diye telefonuma indirmek
+veya bilgisayara android emülatörüyle Genhsin Impact indirip gereksiz
+alan kaplatmak istemiyorum. Eminim ki diğer oyuncular da bunu yapacak
+kadar çılgın değildir.
+
+Bugün Linux'ta Genshin Impact oynanabilmesi için hazırlanmış açık
+kaynaklı bir launcher tanıtacağım. Bu launcherın ayarları sayesinde
+sanki mobildeymişiz gibi gösterebiliyoruz. Merak etmeyin, oyunun mobil
+sürümünü indirip emülatörle oynamıyorsunuz.
+
+Uygulamamız
+[[https://github.com/an-anime-team/an-anime-game-launcher][Anime Game
+Launcher]] AUR'dan an-anime-game-launcher-bin paketiyle, diğer
+dağıtımlarda da flatpak'ı kullanarak kurabilirsiniz.
+
+[[upload://yCLvgUPYXGqOxF2kcpQJe6m1nqQ.jpeg]] Uygulamayı açtığımızda
+bizi bu şekilde bir sayfa karşılıyor.
+
+[[upload://cpth7a0Fut0xbm5R64aasjXSQm2.jpeg]] Sonrasında Genshin
+Impact'ın Linux'ta indirileceği yeri seçmemiz gerekiyor.
+
+[[upload://raQ0vfRqtzrGNHXc1KkcXZ3sPAa.jpeg]] Ve bu launcherın orijinal
+launchera göre en iyi farklarından biri de bu kısım. Normalde Genshin
+direkt olarak İngilizce iner ve oyunu kurduktan sonra yeni dublaj dili
+ekleyebilirsiniz. Bu launcher sayesinde kurulum sırasında istediğiniz
+dublaj dilini indirebilirsiniz.
+
+[[upload://deIOATnvZBn8PfsSR3nc8BSFX90.jpeg]] Sonrasındaysa
+özelleştirilmiş Wine ve dxvk indirilmesi gerekiyor. Önerilen güncel
+sürüm dışında bir sürüm seçmenizi önermem. Ben ayrı bir Wine sürümü
+denediğimde oyunda ekran çok parlak ve göz yakıcı şekildeydi. Ne oyun
+içi ayarlarla ne de bilgisayarın ayarlarıyla bu sorunu çözememiştim.
+
+İndirme tamamlandıktan sonra launcherı yeniden başlatmanız gerekecek.
+Yeniden başlatma sonrasında oyunu indirme butonunun yanında ayarlar
+simgesi bulunuyor olacak. Ayarlara giriyoruz.
+[[upload://3s4Og5clUO1PQBt9ssm016CgP4a.jpeg]]
+
+Oyun ortamı kısmını "Android" olarak seçtikten sonra oyuna geçebiliriz.
+Oyuna girdiğimizde satın almalar mobil fiyatlar olacak. Rehber
+yapıldığındaki PC ve mobil fiyat farkı yaklaşık 30 tl. Benim gibi tek
+seferde 500-1000 tl arası aylık harcama yapıyorsanız işe yarayacak bir
+konu olduğunu düşünüyorum (Birazcık takıntılıyım bu oyuna.). İyi
+eğlenceler dilerim. :slight_smile:
+
+--------------
+
+Alcatraz | 2024-01-15 16:03:34 UTC | #2
+
+Pc versiyonunu bu şekilde mi oynuyorsunuz yani anladığım kadarıyla hem
+mobil hem pc versiyonu olarak kurulum yapıyorsunuz çünkü daha önce
+lutris ile genshin impact oynamaya çalıştım kurulumu beceremedim
+
+--------------
+
+tempestian | 2024-01-15 16:06:57 UTC | #3
+
+Lutris ve klasik Wine bu oyunu açabilse bile hatalı açıyor hocam. Donma
+yaşamasanız ve yüksek fps alsanız bile görüntü ekrana bakılamaz şekilde
+oluyor. Bu launcher ile kullanmanız gerekli. Ve evet aslında android
+seçerek bir nevi android sürümünün de dosyalarını indiriyorsunuz ama bu
+sadece telefondaymışsınız gibi göstermek için. Klavyeyle tamamen uyumlu
+çalışıyor ve grafikler telefon sürümü değil pc sürümü olarak görünüyor.
+(PC ve mobil sürüm arasında grafik farkı büyük çünkü mobilde PC
+grafiklerinin aynısı olsaydı açabilen çok az mobil cihaz olurdu.)
+
+--------------
+
+Alcatraz | 2024-01-15 17:44:38 UTC | #4
+
+O zaman anladığım kadarıyla bununla sadece mobile grafiklerini elde
+edebiliyoruz aksi halde pc grafiklerini göstermiyor
+
+Düzeltme : şimdi anladım grafikler ve kontroller pc versiyonu oluyor ama
+oyunun kendisi mobil versiyon oluyor
+
+--------------
+
+tempestian | 2024-01-15 18:08:55 UTC | #5
+
+Evet hocam. Asıl oyuna göre daha fazla indirme yapıyorsun ama oyuna
+harcama yapan biriysen buna değiyor.
+
+--------------
+
+Alcatraz | 2024-01-15 19:02:23 UTC | #6
+
+Peki performans olarak kötü bir etkisi var mı ve fazla indirmeden kasıt
+ne kadarlık bir indirme oluyor sence ?
+
+--------------
+
+tempestian | 2024-01-16 08:19:41 UTC | #7
+
+yaklaşık 8-9 gb daha fazla indiriyor. tabii ben farklı dublaj dili
+seçtiğimden dolayı da bu kadar büyük olabilir. performans olarak kötü
+etkisi yok tam tersine iyi etkisi var. ayrıca genshin impact maksimum 60
+fps oynatan, üstüne çıkılamayan bir oyun. bu launcherın ayarlarından
+fps'i daha da yükseltebiliyorsunuz. ben 144 hz ekrana sahip olduğum için
+144'e ayarladım. gözle görülür fark var.
+
+--------------

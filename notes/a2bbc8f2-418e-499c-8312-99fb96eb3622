@@ -1,0 +1,100 @@
+:PROPERTIES:
+:ID:       a2bbc8f2-418e-499c-8312-99fb96eb3622
+:END:
+Mustafa | 2023-09-07 16:36:13 UTC | #1
+
+Merhaba, biliyorsunuz ki Roblox anticheat geldiğinden beri Linux'ta
+çalışmıyor. Ama son 1 ayda bazı araçlar sayesinde çalışmaya başladı. Bu
+araçlardan biri vinegar, vinegar Roblox'su çalıştırması için yapılmış
+bir Wine versiyonu gibi bir şey. Ve bütün dağıtımlarda
+çalıştırabilirsiniz, nasıl mı? Flatpak sayesinde. Şimdi size flatpakı
+anlatmayacağım, her neyse çok boş yaptım şimdi geçiyoruz.
+
+*1.yol uygulama mağazası* Bu en basit yol, kısaca vinegar diye aratıp
+tıklayıp indiriyoruz.
+
+#+caption: 1693770053938.png|1039x596
+[[upload://h1vo2Leoiyu3gXTlLrYYOTFBqZX.png]]
+
+*2.yol terminal* Eğer mağazada bulamadıysanız terminal üzerinden
+kurabilirsiniz. İlk önce flatpak yüklü olması lazım.
+link:[[https://flatpak.org/setup/][Flatpak---the future of application
+distribution]] Ondan sonra terminale.
+=flatpak install flathub io.github.vinegarhq.Vinegar= Yazın ve.
+=flatpak run io.github.vinegarhq.Vinegar= Yazın.
+
+*optimize etme* Eğer az FPS veya drop giriyorsa, kendi configinizi
+yazabilirsiniz.
+Link:[[https://vinegarhq.github.io/Configuration/index.html][Configuration -
+Vinegar]]
+
+İyi günler ve iyi oyunlar.
+
+Not: Eğer İngilizce bilmiyorsanız yorumlarda config yardım
+isteyebilirsizniz. Ve Bu Technopat Kendi Yazımı Gönderdim
+
+Extra:AUR'da Direk Bulunuyor Archta Flatpaka İhtiyaç Yok
+
+--------------
+
+yusufipek | 2023-09-07 16:31:00 UTC | #2
+
+Merhaba dostum foruma hoş geldin ve rehber için teşekkür ederiz. :) Oyun
+olsa da rehber olduğu için #urettikleriniz:rehber kategorisine aldım.
+Etiket olarak oyun etiketini hala kullanabiliriz.
+
+--------------
+
+tempestian | 2023-09-07 16:31:57 UTC | #3
+
+Waydroid ile daha hızlı çalışıyor. En azından kişisel deneyimim.
+
+--------------
+
+Mustafa | 2023-09-07 16:38:10 UTC | #4
+
+Bu Basit Yolu, Hemde De/Wm Farketmez Şekilde Yüklüyeyebiliyoruz Ve
+Basitce Config Olayı Baya Performansı Artırıyor, Yorumunuz İçin
+Teşekürler
+
+--------------
+
+F2010furs | 2023-09-08 17:56:32 UTC | #6
+
+Ya anticheat hata vermiyor muydu?
+
+--------------
+
+Mustafa | 2023-09-08 17:58:09 UTC | #7
+
+3 hafta önce açıldı, ama bu yol bozuk yenisi gelicek
+
+--------------
+
+anonim | 2023-09-15 18:16:59 UTC | #8
+
+Grapejuice şuan düzgün çalışıyor bu yöntem mi daha iyi yoksa grapejuice
+mi?
+
+--------------
+
+Quitaxd | 2023-09-15 18:21:45 UTC | #9
+
+Bende sorunsuz ama? Tekrar dene istersen.
+
+--------------
+
+Quitaxd | 2023-09-16 06:44:14 UTC | #10
+
+İkisinde de Roblox var. Ama bence Vinegar daha sağlıklı. Sonuçta Roblox
+için bu. Optimizasyon mutlaka vardır.
+
+--------------
+
+anonim | 2023-09-16 08:09:15 UTC | #11
+
+Ben Waydroid'den roblox'u açınca ilk normal bir şekilde roblox
+yükleniyor yazıyor ve ardından oturum açma ekranı yerine siyah ekran
+çıkıyor
+
+--------------

@@ -1,0 +1,74 @@
+:PROPERTIES:
+:ID:       621f7d9c-f5cf-442e-9a5e-8d493dc8b89a
+:END:
+bytemeowster | 2023-09-07 12:27:46 UTC | #1
+
+BTT forumumuzdan Android ve IOS cihazlarımızda anlık bildirim almak
+için;
+
+1. İlk olarak uygulama mağazalarından DiscourseHub adlı uygulamayı
+   cihazımıza yüklüyoruz. [[upload://6IDB7lkxPCp2DoMDz7mQRyjZLkp.jpeg]]
+
+[details="İndirme Linkleri"]
+🔗https://play.google.com/store/apps/details?id=com.discourse
+🔗https://apps.apple.com/tr/app/discourse-hub/id1173672076 [/details]
+
+2. [@2] Uygulamamıza giriyoruz.
+
+#+begin_quote
+Uygulama ilk başta açılmadan atabilir, tekrar tıklıyoruz. Yüksek
+ihtimalle açılacaktır.
+
+#+end_quote
+
+3. [@3] Açılan ekrandan "+Add your first site" butonuna tıklıyoruz.
+
+#+caption: Screenshot_20230907-133740_Discourse|288x500
+[[upload://mh4Q10fo8EBQ0QWziWthKYoqGmQ.jpeg]]
+
+4. [@4] Açılan metin kutusuna "btt.community" yazıyoruz (tırnaklar
+   olmadan) ve klavyemizden Tamam/Enter tuşuna basıyoruz.
+   [[upload://n8GSl9hedN5qoRDVh9JgZJSLfe3.jpeg]]
+
+5. Çıkan sonucun karşısındaki "connect" tuşuna basıyoruz.
+   [[upload://agPCNN613lpwrekp96yMhMaHPE5.jpeg]]
+
+6. Açılan tarayıcı penceresinde "Yetkilendir" butonuna basıyoruz.
+   [[upload://k9zrAEjn9VVljhVvkLs6bU6ILwR.jpeg]]
+
+7. İşte bu kadar! Artık forum bildirimlerinizi telefonunuzda anlık
+   olarak alabilirsiniz. [grid]
+   [[upload://yNSG2aCt8hQ5tknAzA42iNB0Ca1.jpeg]]
+   [[upload://bINFpBhMwGllbXqh8tDDUbgiIw.jpeg]]
+   [[upload://isXxy0Ui1qxlyNjfTF34XJXQBU6.jpeg]] [/grid]
+
+--------------
+
+Efe | 2023-09-07 19:18:19 UTC | #2
+
+Seni buralarda görmek çok güzel.
+
+--------------
+
+Kn0 | 2023-09-07 19:44:28 UTC | #3
+
+Aslında "push notification" üzerinden tarayıcı aracılıyla bildirimleri
+alabilirsiiniz :) böylelikle ekstra bir uygulama kurmaya gerek kalmaz
+:stuck_out_tongue:
+
+--------------
+
+bytemeowster | 2023-09-07 20:03:35 UTC | #4
+
+Teşekkürler hocam, siz de aramıza hoş geldiniz! 😊
+
+--------------
+
+bytemeowster | 2023-09-07 20:05:35 UTC | #5
+
+[quote="Kn0, post:3, topic:230"] Aslında "push notification" üzerinden
+tarayıcı aracılıyla bildirimleri alabilirsiiniz [/quote] Tabii ki hocam.
+Discourse'u araştırırken karşıma çıktı, alternatif bir yol olarak
+paylaşmak istedim. 😊
+
+--------------

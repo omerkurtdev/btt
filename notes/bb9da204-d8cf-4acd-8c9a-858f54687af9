@@ -1,0 +1,56 @@
+:PROPERTIES:
+:ID:       bb9da204-d8cf-4acd-8c9a-858f54687af9
+:END:
+ibrahimsert | 2023-09-08 20:28:01 UTC | #1
+
+Mx Linux'da ne zaman kurulum yapsam, türkçe karakterler konusunda
+sıkıntı yaşadım. Kurulum esnasında veya kurulumdan sonra klavye
+ayarlarında Türkçe Klavye için bir çok farklı seçenek bulunuyor.
+
+#+caption: Ekran görüntüsü_2023-09-08_23-20-13|690x456
+[[upload://5DrJrdgJNBg2OtZpCa1HHZzqMiW.png]]
+
+Seçenekleri tek tek denedim fakat sorun çözülmedi. Biraz araştırınca
+terminalden
+
+#+begin_example
+setxkbmap tr
+#+end_example
+
+komutunu çalıştırarak sorunumu çözdüm.
+
+Bilgisayarı yeniden başlattım, ayarın kalıcı olduğunu gördüm.
+
+--------------
+
+F2010furs | 2023-09-08 21:01:48 UTC | #2
+
+Peki eğer =loadkeys trq= yaparsak olur mu?
+
+--------------
+
+wise | 2023-09-08 21:09:47 UTC | #3
+
+Cihazı yeniden başlattığınız takdirde =loadkeys tr/trq='yi tekrar
+yazmanız gerekir. O nedenle =setxkbmap tr= daha uygun bir kullanımdır bu
+senaryoda. Fakat misafir olarak bir cihazı kullandığınız senaryoda sizin
+önerdiğiniz komut daha uygundur. Cihaz sahibinin klavye tercihlerini
+bozmamış olursunuz. İhtiyaç ve senaryoya göre değişmektedir.
+
+--------------
+
+ibrahimsert | 2023-09-08 21:09:51 UTC | #4
+
+bilmiyorum denemedim.
+
+--------------
+
+twoxa | 2023-09-08 21:40:49 UTC | #5
+
+=loadkeys= komutu sadece TTY üzerinde çalışır.
+
+--------------
+
+wise | 2023-10-15 18:45:46 UTC | #6
+
+--------------

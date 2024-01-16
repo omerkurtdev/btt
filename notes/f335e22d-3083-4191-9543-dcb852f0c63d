@@ -1,0 +1,37 @@
+:PROPERTIES:
+:ID:       f335e22d-3083-4191-9543-dcb852f0c63d
+:END:
+emirhan701 | 2023-09-08 18:57:28 UTC | #1
+
+Linux dağıtımlarında olduğu gibi BSD dünyasında da pkg(debianda ki
+dpkg/apt gibi) komutunu kullanarak paket veritabanını güncelleme paket
+depolarını güncelleme uygulama kurma gibi işlemler yapabiliriz.
+
+İlk olarak "pkg install" ile uygulama kurmayı göstereceğim bu komut
+basitçe "sudo pkg instal (paket adı)" şeklindedir. (Not: sudo ile
+başlayan komutlardan sonra yönetici şifrenizi isteyecektir.) Burada
+görmüş olduğunuz örnekte firefox uygulamasını bu yöntemle kuracağım(Eğer
+GhostBSD işletim sistemi kullanıyorsanız varsayılan olarak gelmiştir
+zaten varsa tekrar kuramazsınız)
+[[upload://AitdzxBULYwygDg8YW9B3CiETHG.jpeg]]
+[[upload://kvUebgqHReQhUxJhoD2KDfCoyIk.jpeg]] Yönetici parolamızı
+girdikten sonra ve bize gelen çıktı/lar'a "y" verdikten sonra kurulum
+işlemini onaylayıp kuruluma başlıyoruz.
+
+İkinci olarak "sudo pkg delete" komutuyla uygulama silmeyi göstereceğim.
+Tıpkı firefox u indirdiğimiz gibi "sudo pkg delete firefox" komutunu
+yazarak yönetici parolamızı girip çıktılara "y" girerek firefox'u
+kaldırabiliriz. [[upload://45GGqFyIChKmLybHmhs7sTdjAEh.jpeg]]
+
+Son olarak uygulamaları güncellemek için "sudo pkg update" ve "sudo pkg
+upgrade" komutlarını göstereceğim sudo pkg update: Paket veri tabanını
+güncellemek için kullanılır. sudo pkg upgrade: Paketleri en son sürümüne
+çıkartmak için kullanılır. çoğunlukla bu iki komut bir arada kullanılır
+sizin için daha kolay olması adına bu iki komutu tek bir satırda "&&"
+bağlacı ile yazabilirsiniz. "sudo pkg update && sudo pkg upgrade"
+[[upload://nnb9wqR4CLRSA0LnKT4PfPNBX98.jpeg]]
+[[upload://i0EsC1BG6e37flosRENPqHKWGSE.jpeg]] daha sonrasında verilen
+çıktı/lar'a "y" girip tüm paketlerinizi en güncel sürümüne
+ulaştırabilirsiniz.
+
+--------------
